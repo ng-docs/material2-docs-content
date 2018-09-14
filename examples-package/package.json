@@ -32,7 +32,7 @@
   "dependencies": {
     "tslib": "^1.7.1"
   },
-  "releaseGitCommitSha": "bb473e8cd0516b7f15ec5748417f5c3d038de7d0",
+  "releaseGitCommitSha": "b217ef67c4104f055f0122f3cef4cb92c74630e6",
   "releaseGitBranch": "6.4.x",
   "releaseGitUser": "Zhicheng Wang <zcwang@thoughtworks.com>"
 }
