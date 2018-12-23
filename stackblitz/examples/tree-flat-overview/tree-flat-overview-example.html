@@ -1,12 +1,11 @@
-<mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
-  <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle matTreeNodePadding>
-    <button mat-icon-button disabled></button>
+<html><head></head><body><mat-tree [datasource]="dataSource" [treecontrol]="treeControl">
+  <mat-tree-node *mattreenodedef="let node" mattreenodetoggle="" mattreenodepadding="">
+    <button mat-icon-button="" disabled=""></button>
     {{node.filename}} : {{node.type}}
   </mat-tree-node>
 
-  <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding>
-    <button mat-icon-button matTreeNodeToggle
-            [attr.aria-label]="'toggle ' + node.filename">
+  <mat-tree-node *mattreenodedef="let node;when: hasChild" mattreenodepadding="">
+    <button mat-icon-button="" mattreenodetoggle="" [attr.aria-label]="'toggle ' + node.filename">
       <mat-icon class="mat-icon-rtl-mirror">
         {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
       </mat-icon>
@@ -14,3 +13,4 @@
     {{node.filename}} : {{node.type}}
   </mat-tree-node>
 </mat-tree>
+</body></html>

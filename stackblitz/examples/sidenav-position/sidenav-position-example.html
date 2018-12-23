@@ -1,7 +1,8 @@
-<mat-sidenav-container class="example-container" *ngIf="shouldRun">
-  <mat-sidenav opened mode="side">Start content</mat-sidenav>
-  <mat-sidenav opened mode="side" position="end">End content</mat-sidenav>
+<html><head></head><body><mat-sidenav-container class="example-container" *ngif="shouldRun">
+  <mat-sidenav opened="" mode="side">Start content</mat-sidenav>
+  <mat-sidenav opened="" mode="side" position="end">End content</mat-sidenav>
   Implicit main content
 </mat-sidenav-container>
 
-<div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
+<div *ngif="!shouldRun">Please open on Stackblitz to see result</div>
+</body></html>

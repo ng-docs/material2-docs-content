@@ -1,24 +1,31 @@
-<span class="hljs-keyword">import</span> {FocusMonitor} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/a11y'</span>;
+<html><head></head><body><span class="hljs-keyword">import</span> {FocusMonitor} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/a11y'</span>;
 <span class="hljs-keyword">import</span> {coerceBooleanProperty} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/coercion'</span>;
 <span class="hljs-keyword">import</span> {Component, ElementRef, Input, OnDestroy} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
 <span class="hljs-keyword">import</span> {FormBuilder, FormGroup} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/forms'</span>;
 <span class="hljs-keyword">import</span> {MatFormFieldControl} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material'</span>;
 <span class="hljs-keyword">import</span> {Subject} <span class="hljs-keyword">from</span> <span class="hljs-string">'rxjs'</span>;
 
+<span class="hljs-comment">/** @title Form field with custom telephone number input control. */</span>
+<span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'form-field-custom-control-example'</span>,
+  templateUrl: <span class="hljs-string">'form-field-custom-control-example.html'</span>,
+  styleUrls: [<span class="hljs-string">'form-field-custom-control-example.css'</span>],
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> FormFieldCustomControlExample {}
+
 <span class="hljs-comment">/** Data structure for holding telephone number. */</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> MyTel {
   <span class="hljs-keyword">constructor</span>(<span class="hljs-params"><span class="hljs-keyword">public</span> area: <span class="hljs-built_in">string</span>, <span class="hljs-keyword">public</span> exchange: <span class="hljs-built_in">string</span>, <span class="hljs-keyword">public</span> subscriber: <span class="hljs-built_in">string</span></span>) {}
 }
 
-
 <span class="hljs-comment">/** Custom `MatFormFieldControl` for telephone number input. */</span>
 <span class="hljs-meta">@Component</span>({
-  selector: <span class="hljs-string">'my-tel-input'</span>,
-  templateUrl: <span class="hljs-string">'form-field-custom-control-example.html'</span>,
-  styleUrls: [<span class="hljs-string">'form-field-custom-control-example.css'</span>],
+  selector: <span class="hljs-string">'example-tel-input'</span>,
+  templateUrl: <span class="hljs-string">'example-tel-input-example.html'</span>,
+  styleUrls: [<span class="hljs-string">'example-tel-input-example.css'</span>],
   providers: [{provide: MatFormFieldControl, useExisting: MyTelInput}],
   host: {
-    <span class="hljs-string">'[class.floating]'</span>: <span class="hljs-string">'shouldLabelFloat'</span>,
+    <span class="hljs-string">'[class.example-floating]'</span>: <span class="hljs-string">'shouldLabelFloat'</span>,
     <span class="hljs-string">'[id]'</span>: <span class="hljs-string">'id'</span>,
     <span class="hljs-string">'[attr.aria-describedby]'</span>: <span class="hljs-string">'describedBy'</span>,
   }
@@ -31,8 +38,8 @@
   focused = <span class="hljs-literal">false</span>;
   ngControl = <span class="hljs-literal">null</span>;
   errorState = <span class="hljs-literal">false</span>;
-  controlType = <span class="hljs-string">'my-tel-input'</span>;
-  id = <span class="hljs-string">`my-tel-input-<span class="hljs-subst">${MyTelInput.nextId++}</span>`</span>;
+  controlType = <span class="hljs-string">'example-tel-input'</span>;
+  id = <span class="hljs-string">`example-tel-input-<span class="hljs-subst">${MyTelInput.nextId++}</span>`</span>;
   describedBy = <span class="hljs-string">''</span>;
 
   <span class="hljs-keyword">get</span> empty() {
@@ -88,7 +95,7 @@
       subscriber: <span class="hljs-string">''</span>,
     });
 
-    fm.monitor(elRef.nativeElement, <span class="hljs-literal">true</span>).subscribe(<span class="hljs-function"><span class="hljs-params">origin</span> =&gt;</span> {
+    fm.monitor(elRef, <span class="hljs-literal">true</span>).subscribe(<span class="hljs-function"><span class="hljs-params">origin</span> =&gt;</span> {
       <span class="hljs-keyword">this</span>.focused = !!origin;
       <span class="hljs-keyword">this</span>.stateChanges.next();
     });
@@ -96,7 +103,7 @@
 
   ngOnDestroy() {
     <span class="hljs-keyword">this</span>.stateChanges.complete();
-    <span class="hljs-keyword">this</span>.fm.stopMonitoring(<span class="hljs-keyword">this</span>.elRef.nativeElement);
+    <span class="hljs-keyword">this</span>.fm.stopMonitoring(<span class="hljs-keyword">this</span>.elRef);
   }
 
   setDescribedByIds(ids: <span class="hljs-built_in">string</span>[]) {
@@ -109,17 +116,4 @@
     }
   }
 }
-
-
-<span class="hljs-comment">/** @title Form field with custom telephone number input control. */</span>
-<span class="hljs-meta">@Component</span>({
-  selector: <span class="hljs-string">'form-field-custom-control-example'</span>,
-  template: <span class="hljs-string">`
-    &lt;mat-form-field&gt;
-      &lt;my-tel-input placeholder="Phone number" required&gt;&lt;/my-tel-input&gt;
-      &lt;mat-icon matSuffix&gt;phone&lt;/mat-icon&gt;
-      &lt;mat-hint&gt;Include area code&lt;/mat-hint&gt;
-    &lt;/mat-form-field&gt;
-  `</span>
-})
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> FormFieldCustomControlExample {}
+</body></html>

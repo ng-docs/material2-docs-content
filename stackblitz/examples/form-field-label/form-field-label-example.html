@@ -1,9 +1,9 @@
-<div class="example-container">
-  <form class="example-container" [formGroup]="options">
-    <mat-checkbox formControlName="hideRequired">Hide required marker</mat-checkbox>
+<html><head></head><body><div class="example-container">
+  <form class="example-container" [formgroup]="options">
+    <mat-checkbox formcontrolname="hideRequired">Hide required marker</mat-checkbox>
     <div>
       <label>Float label: </label>
-      <mat-radio-group formControlName="floatLabel">
+      <mat-radio-group formcontrolname="floatLabel">
         <mat-radio-button value="auto">Auto</mat-radio-button>
         <mat-radio-button value="always">Always</mat-radio-button>
         <mat-radio-button value="never">Never</mat-radio-button>
@@ -11,24 +11,21 @@
     </div>
   </form>
 
-  <mat-form-field
-      [hideRequiredMarker]="options.value.hideRequired"
-      [floatLabel]="options.value.floatLabel">
-    <input matInput placeholder="Simple placeholder" required>
+  <mat-form-field [hiderequiredmarker]="options.value.hideRequired" [floatlabel]="options.value.floatLabel">
+    <input matinput="" placeholder="Simple placeholder" required="">
   </mat-form-field>
 
-  <mat-form-field [floatLabel]="options.value.floatLabel">
+  <mat-form-field [floatlabel]="options.value.floatLabel">
     <mat-label>Both a label and a placeholder</mat-label>
-    <input matInput placeholder="Simple placeholder">
+    <input matinput="" placeholder="Simple placeholder">
   </mat-form-field>
 
-  <mat-form-field
-      [hideRequiredMarker]="options.value.hideRequired"
-      [floatLabel]="options.value.floatLabel">
-    <mat-select required>
+  <mat-form-field [hiderequiredmarker]="options.value.hideRequired" [floatlabel]="options.value.floatLabel">
+    <mat-select required="">
       <mat-option>-- None --</mat-option>
       <mat-option value="option">Option</mat-option>
     </mat-select>
     <mat-label><mat-icon>favorite</mat-icon> <b> Fancy</b> <i> label</i></mat-label>
   </mat-form-field>
 </div>
+</body></html>

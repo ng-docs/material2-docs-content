@@ -1,4 +1,4 @@
-<span class="hljs-keyword">import</span> {NestedTreeControl} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/tree'</span>;
+<html><head></head><body><span class="hljs-keyword">import</span> {NestedTreeControl} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/tree'</span>;
 <span class="hljs-keyword">import</span> {Component, Injectable} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
 <span class="hljs-keyword">import</span> {MatTreeNestedDataSource} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/tree'</span>;
 <span class="hljs-keyword">import</span> {BehaviorSubject, of <span class="hljs-keyword">as</span> observableOf} <span class="hljs-keyword">from</span> <span class="hljs-string">'rxjs'</span>;
@@ -84,7 +84,7 @@
    * Build the file structure tree. The `value` is the Json object, or a sub-tree of a Json object.
    * The return value is the list of `FileNode`.
    */</span>
-  buildFileTree(obj: object, level: <span class="hljs-built_in">number</span>): FileNode[] {
+  buildFileTree(obj: {[key: <span class="hljs-built_in">string</span>]: <span class="hljs-built_in">any</span>}, level: <span class="hljs-built_in">number</span>): FileNode[] {
     <span class="hljs-keyword">return</span> <span class="hljs-built_in">Object</span>.keys(obj).reduce&lt;FileNode[]&gt;<span class="hljs-function">(<span class="hljs-params">(<span class="hljs-params">accumulator, key</span>) =&gt; {
       <span class="hljs-keyword">const</span> value = obj[key];
       <span class="hljs-keyword">const</span> node = <span class="hljs-keyword">new</span> FileNode(<span class="hljs-params"></span>);
@@ -127,3 +127,4 @@
 
   <span class="hljs-keyword">private</span> _getChildren = <span class="hljs-function">(<span class="hljs-params">node: FileNode</span>) =&gt;</span> observableOf(node.children);
 }
+</body></html>

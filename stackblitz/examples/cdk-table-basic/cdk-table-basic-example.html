@@ -1,28 +1,29 @@
-<table cdk-table [dataSource]="dataSource">
+<html><head></head><body><ng-container cdkcolumndef="position">
+    </ng-container><ng-container cdkcolumndef="name">
+    </ng-container><ng-container cdkcolumndef="weight">
+    </ng-container><ng-container cdkcolumndef="symbol">
+    </ng-container><table cdk-table="" [datasource]="dataSource">
   <!-- Position Column -->
-  <ng-container cdkColumnDef="position">
-    <th cdk-header-cell *cdkHeaderCellDef> No. </th>
-    <td cdk-cell *cdkCellDef="let element"> {{element.position}} </td>
-  </ng-container>
+  <tbody><tr><th cdk-header-cell="" *cdkheadercelldef=""> No. </th>
+    <td cdk-cell="" *cdkcelldef="let element"> {{element.position}} </td>
+  
 
   <!-- Name Column -->
-  <ng-container cdkColumnDef="name">
-    <th cdk-header-cell *cdkHeaderCellDef> Name </th>
-    <td cdk-cell *cdkCellDef="let element"> {{element.name}} </td>
-  </ng-container>
+  <th cdk-header-cell="" *cdkheadercelldef=""> Name </th>
+    <td cdk-cell="" *cdkcelldef="let element"> {{element.name}} </td>
+  
 
   <!-- Weight Column -->
-  <ng-container cdkColumnDef="weight">
-    <th cdk-header-cell *cdkHeaderCellDef> Weight </th>
-    <td cdk-cell *cdkCellDef="let element"> {{element.weight}} </td>
-  </ng-container>
+  <th cdk-header-cell="" *cdkheadercelldef=""> Weight </th>
+    <td cdk-cell="" *cdkcelldef="let element"> {{element.weight}} </td>
+  
 
   <!-- Symbol Column -->
-  <ng-container cdkColumnDef="symbol">
-    <th cdk-header-cell *cdkHeaderCellDef> Symbol </th>
-    <td cdk-cell *cdkCellDef="let element"> {{element.symbol}} </td>
-  </ng-container>
+  <th cdk-header-cell="" *cdkheadercelldef=""> Symbol </th>
+    <td cdk-cell="" *cdkcelldef="let element"> {{element.symbol}} </td>
+  
 
-  <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
-  <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
-</table>
+  </tr><tr cdk-header-row="" *cdkheaderrowdef="displayedColumns"></tr>
+  <tr cdk-row="" *cdkrowdef="let row; columns: displayedColumns;"></tr>
+</tbody></table>
+</body></html>

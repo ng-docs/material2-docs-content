@@ -1,5 +1,7 @@
 import { AutocompleteOptgroupExample } from './autocomplete-optgroup/autocomplete-optgroup-example';
 import { BottomSheetOverviewExampleSheet, BottomSheetOverviewExample } from './bottom-sheet-overview/bottom-sheet-overview-example';
+import { CdkDragDropRootElementExample } from './cdk-drag-drop-root-element/cdk-drag-drop-root-element-example';
+import { CdkPlatformOverviewExample } from './cdk-platform-overview/cdk-platform-overview-example';
 import { CdkTreeFlatExample } from './cdk-tree-flat/cdk-tree-flat-example';
 import { CdkTreeNestedExample } from './cdk-tree-nested/cdk-tree-nested-example';
 import { ExampleHeader } from './datepicker-custom-header/datepicker-custom-header-example';
@@ -17,10 +19,14 @@ import { SidenavResponsiveExample } from './sidenav-responsive/sidenav-responsiv
 import { SlideToggleFormsExample } from './slide-toggle-forms/slide-toggle-forms-example';
 import { SnackBarOverviewExample } from './snack-bar-overview/snack-bar-overview-example';
 import { StepperEditableExample } from './stepper-editable/stepper-editable-example';
+import { StepperErrorsExample } from './stepper-errors/stepper-errors-example';
+import { StepperLabelPositionBottomExample } from './stepper-label-position-bottom/stepper-label-position-bottom-example';
 import { StepperOptionalExample } from './stepper-optional/stepper-optional-example';
 import { StepperOverviewExample } from './stepper-overview/stepper-overview-example';
+import { StepperStatesExample } from './stepper-states/stepper-states-example';
 import { StepperVerticalExample } from './stepper-vertical/stepper-vertical-example';
 import { TableHttpExample } from './table-http/table-http-example';
+import { SimpleColumn } from './table-simple-column/table-simple-column-example';
 import { TextFieldAutofillMonitorExample } from './text-field-autofill-monitor/text-field-autofill-monitor-example';
 import { TextFieldAutosizeTextareaExample } from './text-field-autosize-textarea/text-field-autosize-textarea-example';
 import { TreeChecklistExample } from './tree-checklist/tree-checklist-example';
@@ -37,6 +43,6 @@ export interface LiveExample {
 export declare const EXAMPLE_COMPONENTS: {
     [key: string]: LiveExample;
 };
-export declare const EXAMPLE_LIST: (typeof AutocompleteOptgroupExample | typeof BottomSheetOverviewExample | typeof BottomSheetOverviewExampleSheet | typeof CdkTreeFlatExample | typeof CdkTreeNestedExample | typeof ExampleHeader | typeof DatepickerLocaleExample | typeof DialogContentExample | typeof DialogDataExampleDialog | typeof DialogOverviewExampleDialog | typeof FocusMonitorDirectivesExample | typeof FocusMonitorFocusViaExample | typeof FocusMonitorOverviewExample | typeof MyTelInput | typeof FormFieldLabelExample | typeof IconSvgExample | typeof SidenavResponsiveExample | typeof SlideToggleFormsExample | typeof SnackBarOverviewExample | typeof StepperEditableExample | typeof StepperOptionalExample | typeof StepperOverviewExample | typeof StepperVerticalExample | typeof TableHttpExample | typeof TextFieldAutofillMonitorExample | typeof TextFieldAutosizeTextareaExample | typeof TreeChecklistExample | typeof TreeDynamicExample | typeof TreeFlatOverviewExample | typeof TreeLoadmoreExample | typeof TreeNestedOverviewExample)[];
+export declare const EXAMPLE_LIST: (typeof AutocompleteOptgroupExample | typeof BottomSheetOverviewExample | typeof BottomSheetOverviewExampleSheet | typeof CdkDragDropRootElementExample | typeof CdkPlatformOverviewExample | typeof CdkTreeFlatExample | typeof CdkTreeNestedExample | typeof ExampleHeader | typeof DatepickerLocaleExample | typeof DialogContentExample | typeof DialogDataExampleDialog | typeof DialogOverviewExampleDialog | typeof FocusMonitorDirectivesExample | typeof FocusMonitorFocusViaExample | typeof FocusMonitorOverviewExample | typeof MyTelInput | typeof FormFieldLabelExample | typeof IconSvgExample | typeof SidenavResponsiveExample | typeof SlideToggleFormsExample | typeof SnackBarOverviewExample | typeof StepperEditableExample | typeof StepperErrorsExample | typeof StepperLabelPositionBottomExample | typeof StepperOptionalExample | typeof StepperOverviewExample | typeof StepperStatesExample | typeof StepperVerticalExample | typeof TableHttpExample | typeof SimpleColumn | typeof TextFieldAutofillMonitorExample | typeof TextFieldAutosizeTextareaExample | typeof TreeChecklistExample | typeof TreeDynamicExample | typeof TreeFlatOverviewExample | typeof TreeLoadmoreExample | typeof TreeNestedOverviewExample)[];
 export declare class ExampleModule {
 }

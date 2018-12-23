@@ -1,4 +1,4 @@
-<span class="hljs-keyword">import</span> {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
+<html><head></head><body><span class="hljs-keyword">import</span> {Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
 <span class="hljs-keyword">import</span> {FormControl, FormGroupDirective, NgForm, Validators} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/forms'</span>;
 <span class="hljs-keyword">import</span> {ErrorStateMatcher} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/core'</span>;
 
@@ -22,5 +22,16 @@
     Validators.pattern(<span class="hljs-string">'valid'</span>),
   ]);
 
+  selectFormControl = <span class="hljs-keyword">new</span> FormControl(<span class="hljs-string">'valid'</span>, [
+    Validators.required,
+    Validators.pattern(<span class="hljs-string">'valid'</span>),
+  ]);
+
+  nativeSelectFormControl = <span class="hljs-keyword">new</span> FormControl(<span class="hljs-string">'valid'</span>, [
+    Validators.required,
+    Validators.pattern(<span class="hljs-string">'valid'</span>),
+  ]);
+
   matcher = <span class="hljs-keyword">new</span> MyErrorStateMatcher();
 }
+</body></html>

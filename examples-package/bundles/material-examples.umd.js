@@ -6,10 +6,10 @@
  * found in the LICENSE file at https://angular.io/license
  */
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/cdk/scrolling'), require('@angular/cdk/a11y'), require('@angular/cdk/table'), require('@angular/cdk/tree'), require('@angular/material'), require('@angular/forms'), require('rxjs/operators'), require('@angular/cdk/collections'), require('rxjs'), require('@angular/material/tree'), require('@angular/cdk/keycodes'), require('@angular/material/core'), require('@angular/material-moment-adapter'), require('moment'), require('@angular/cdk/coercion'), require('@angular/platform-browser'), require('@angular/material/sidenav'), require('@angular/cdk/layout'), require('@angular/animations'), require('@angular/common/http'), require('@angular/cdk/text-field'), require('@angular/common')) :
-	typeof define === 'function' && define.amd ? define('@angular/material-examples', ['exports', '@angular/core', '@angular/cdk/scrolling', '@angular/cdk/a11y', '@angular/cdk/table', '@angular/cdk/tree', '@angular/material', '@angular/forms', 'rxjs/operators', '@angular/cdk/collections', 'rxjs', '@angular/material/tree', '@angular/cdk/keycodes', '@angular/material/core', '@angular/material-moment-adapter', 'moment', '@angular/cdk/coercion', '@angular/platform-browser', '@angular/material/sidenav', '@angular/cdk/layout', '@angular/animations', '@angular/common/http', '@angular/cdk/text-field', '@angular/common'], factory) :
-	(factory((global.ng = global.ng || {}, global.ng['material-examples'] = {}),global.ng.core,global.ng.cdk.scrolling,global.ng.cdk.a11y,global.ng.cdk.table,global.ng.cdk.tree,global.ng.material,global.ng.forms,global.rxjs.operators,global.ng.cdk.collections,global.rxjs,global.ng.material.tree,global.ng.cdk.keycodes,global.ng.material.core,global.ng.materialMomentAdapter,global.moment,global.ng.cdk.coercion,global.ng.platformBrowser,global.ng.material.sidenav,global.ng.cdk.layout,global.ng.animations,global.ng.common.http,global.ng.cdk.textField,global.ng.common));
-}(this, (function (exports,core,scrolling,a11y,table,tree,material,forms,operators,collections,rxjs,tree$1,keycodes,core$1,materialMomentAdapter,_rollupMoment__default,coercion,platformBrowser,sidenav,layout,animations,http,textField,common) { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/cdk/scrolling'), require('@angular/cdk/a11y'), require('@angular/cdk/table'), require('@angular/cdk/tree'), require('@angular/cdk/drag-drop'), require('@angular/material'), require('@angular/forms'), require('rxjs/operators'), require('@angular/cdk/overlay'), require('@angular/cdk/portal'), require('@angular/cdk/platform'), require('@angular/cdk/collections'), require('rxjs'), require('@angular/material/tree'), require('@angular/cdk/keycodes'), require('@angular/material/core'), require('@angular/material-moment-adapter'), require('moment'), require('@angular/cdk/coercion'), require('@angular/platform-browser'), require('@angular/material/sidenav'), require('@angular/cdk/layout'), require('@angular/cdk/stepper'), require('@angular/animations'), require('@angular/common/http'), require('@angular/cdk/text-field'), require('@angular/common')) :
+	typeof define === 'function' && define.amd ? define('@angular/material-examples', ['exports', '@angular/core', '@angular/cdk/scrolling', '@angular/cdk/a11y', '@angular/cdk/table', '@angular/cdk/tree', '@angular/cdk/drag-drop', '@angular/material', '@angular/forms', 'rxjs/operators', '@angular/cdk/overlay', '@angular/cdk/portal', '@angular/cdk/platform', '@angular/cdk/collections', 'rxjs', '@angular/material/tree', '@angular/cdk/keycodes', '@angular/material/core', '@angular/material-moment-adapter', 'moment', '@angular/cdk/coercion', '@angular/platform-browser', '@angular/material/sidenav', '@angular/cdk/layout', '@angular/cdk/stepper', '@angular/animations', '@angular/common/http', '@angular/cdk/text-field', '@angular/common'], factory) :
+	(factory((global.ng = global.ng || {}, global.ng['material-examples'] = {}),global.ng.core,global.ng.cdk.scrolling,global.ng.cdk.a11y,global.ng.cdk.table,global.ng.cdk.tree,global.ng.cdk.dragDrop,global.ng.material,global.ng.forms,global.rxjs.operators,global.ng.cdk.overlay,global.ng.cdk.portal,global.ng.cdk.platform,global.ng.cdk.collections,global.rxjs,global.ng.material.tree,global.ng.cdk.keycodes,global.ng.material.core,global.ng.materialMomentAdapter,global.moment,global.ng.cdk.coercion,global.ng.platformBrowser,global.ng.material.sidenav,global.ng.cdk.layout,global.ng.cdk.stepper,global.ng.animations,global.ng.common.http,global.ng.cdk.textField,global.ng.common));
+}(this, (function (exports,core,scrolling,a11y,table,tree,dragDrop,material,forms,operators,overlay,portal,platform,collections,rxjs,tree$1,keycodes,core$1,materialMomentAdapter,_rollupMoment__default,coercion,platformBrowser,sidenav,layout,stepper,animations,http,textField,common) { 'use strict';
 
 var _rollupMoment__default__default = _rollupMoment__default['default'];
 
@@ -44,7 +44,7 @@ function __extends(d, b) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ExampleMaterialModule = /** @class */ (function () {
     function ExampleMaterialModule() {
@@ -55,6 +55,7 @@ var ExampleMaterialModule = /** @class */ (function () {
                         a11y.A11yModule,
                         table.CdkTableModule,
                         tree.CdkTreeModule,
+                        dragDrop.DragDropModule,
                         material.MatAutocompleteModule,
                         material.MatBadgeModule,
                         material.MatBottomSheetModule,
@@ -90,12 +91,13 @@ var ExampleMaterialModule = /** @class */ (function () {
                         material.MatToolbarModule,
                         material.MatTooltipModule,
                         material.MatTreeModule,
-                        scrolling.ScrollDispatchModule,
+                        scrolling.ScrollingModule,
                     ],
                     exports: [
                         a11y.A11yModule,
                         table.CdkTableModule,
                         tree.CdkTreeModule,
+                        dragDrop.DragDropModule,
                         material.MatAutocompleteModule,
                         material.MatBadgeModule,
                         material.MatBottomSheetModule,
@@ -131,7 +133,7 @@ var ExampleMaterialModule = /** @class */ (function () {
                         material.MatToolbarModule,
                         material.MatTooltipModule,
                         material.MatTreeModule,
-                        scrolling.ScrollDispatchModule,
+                        scrolling.ScrollingModule,
                     ]
                 },] },
     ];
@@ -140,7 +142,7 @@ var ExampleMaterialModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Highlight the first autocomplete option
@@ -161,15 +163,18 @@ var AutocompleteAutoActiveFirstOptionExample = /** @class */ (function () {
         this.filteredOptions = this.myControl.valueChanges.pipe(operators.startWith(''), operators.map(function (value) { return _this._filter(value); }));
     };
     /**
+     * @private
      * @param {?} value
      * @return {?}
      */
     AutocompleteAutoActiveFirstOptionExample.prototype._filter = /**
+     * @private
      * @param {?} value
      * @return {?}
      */
     function (value) {
-        var /** @type {?} */ filterValue = value.toLowerCase();
+        /** @type {?} */
+        var filterValue = value.toLowerCase();
         return this.options.filter(function (option) { return option.toLowerCase().indexOf(filterValue) === 0; });
     };
     AutocompleteAutoActiveFirstOptionExample.decorators = [
@@ -184,7 +189,7 @@ var AutocompleteAutoActiveFirstOptionExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Display value autocomplete
@@ -221,15 +226,18 @@ var AutocompleteDisplayExample = /** @class */ (function () {
         return user ? user.name : undefined;
     };
     /**
+     * @private
      * @param {?} name
      * @return {?}
      */
     AutocompleteDisplayExample.prototype._filter = /**
+     * @private
      * @param {?} name
      * @return {?}
      */
     function (name) {
-        var /** @type {?} */ filterValue = name.toLowerCase();
+        /** @type {?} */
+        var filterValue = name.toLowerCase();
         return this.options.filter(function (option) { return option.name.toLowerCase().indexOf(filterValue) === 0; });
     };
     AutocompleteDisplayExample.decorators = [
@@ -244,7 +252,7 @@ var AutocompleteDisplayExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Filter autocomplete
@@ -266,15 +274,18 @@ var AutocompleteFilterExample = /** @class */ (function () {
             .pipe(operators.startWith(''), operators.map(function (value) { return _this._filter(value); }));
     };
     /**
+     * @private
      * @param {?} value
      * @return {?}
      */
     AutocompleteFilterExample.prototype._filter = /**
+     * @private
      * @param {?} value
      * @return {?}
      */
     function (value) {
-        var /** @type {?} */ filterValue = value.toLowerCase();
+        /** @type {?} */
+        var filterValue = value.toLowerCase();
         return this.options.filter(function (option) { return option.toLowerCase().includes(filterValue); });
     };
     AutocompleteFilterExample.decorators = [
@@ -289,10 +300,12 @@ var AutocompleteFilterExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ _filter = function (opt, value) {
-    var /** @type {?} */ filterValue = value.toLowerCase();
+/** @type {?} */
+var _filter = function (opt, value) {
+    /** @type {?} */
+    var filterValue = value.toLowerCase();
     return opt.filter(function (item) { return item.toLowerCase().indexOf(filterValue) === 0; });
 };
 /**
@@ -373,13 +386,16 @@ var AutocompleteOptgroupExample = /** @class */ (function () {
      */
     function () {
         var _this = this;
-        this.stateGroupOptions = /** @type {?} */ ((this.stateForm.get('stateGroup'))).valueChanges.pipe(operators.startWith(''), operators.map(function (value) { return _this._filterGroup(value); }));
+        this.stateGroupOptions = (/** @type {?} */ (this.stateForm.get('stateGroup'))).valueChanges
+            .pipe(operators.startWith(''), operators.map(function (value) { return _this._filterGroup(value); }));
     };
     /**
+     * @private
      * @param {?} value
      * @return {?}
      */
     AutocompleteOptgroupExample.prototype._filterGroup = /**
+     * @private
      * @param {?} value
      * @return {?}
      */
@@ -393,20 +409,21 @@ var AutocompleteOptgroupExample = /** @class */ (function () {
     };
     AutocompleteOptgroupExample.decorators = [
         { type: core.Component, args: [{
+                    selector: 'autocomplete-optgroup-example',
                     template: "<form [formGroup]=\"stateForm\"><mat-form-field><input type=\"text\" matInput placeholder=\"States Group\" formControlName=\"stateGroup\" required [matAutocomplete]=\"autoGroup\"><mat-autocomplete #autoGroup=\"matAutocomplete\"><mat-optgroup *ngFor=\"let group of stateGroupOptions | async\" [label]=\"group.letter\"><mat-option *ngFor=\"let name of group.names\" [value]=\"name\">{{name}}</mat-option></mat-optgroup></mat-autocomplete></mat-form-field></form>",
                     styles: ["/** No CSS for this example */ "],
                 },] },
     ];
     /** @nocollapse */
     AutocompleteOptgroupExample.ctorParameters = function () { return [
-        { type: forms.FormBuilder, },
+        { type: forms.FormBuilder }
     ]; };
     return AutocompleteOptgroupExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Autocomplete overview
@@ -445,15 +462,18 @@ var AutocompleteOverviewExample = /** @class */ (function () {
             .pipe(operators.startWith(''), operators.map(function (state$$1) { return state$$1 ? _this._filterStates(state$$1) : _this.states.slice(); }));
     }
     /**
+     * @private
      * @param {?} value
      * @return {?}
      */
     AutocompleteOverviewExample.prototype._filterStates = /**
+     * @private
      * @param {?} value
      * @return {?}
      */
     function (value) {
-        var /** @type {?} */ filterValue = value.toLowerCase();
+        /** @type {?} */
+        var filterValue = value.toLowerCase();
         return this.states.filter(function (state$$1) { return state$$1.name.toLowerCase().indexOf(filterValue) === 0; });
     };
     AutocompleteOverviewExample.decorators = [
@@ -470,7 +490,7 @@ var AutocompleteOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Simple autocomplete
@@ -492,7 +512,7 @@ var AutocompleteSimpleExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Badge overview
@@ -512,7 +532,7 @@ var BadgeOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Bottom Sheet Overview
@@ -533,13 +553,13 @@ var BottomSheetOverviewExample = /** @class */ (function () {
     BottomSheetOverviewExample.decorators = [
         { type: core.Component, args: [{
                     selector: 'bottom-sheet-overview-example',
-                    template: "<p>You have receive a file called \"cat-picture.jpeg\".</p><button mat-raised-button (click)=\"openBottomSheet()\">Open file</button>",
+                    template: "<p>You have received a file called \"cat-picture.jpeg\".</p><button mat-raised-button (click)=\"openBottomSheet()\">Open file</button>",
                     styles: ["/** No CSS for this example */ "],
                 },] },
     ];
     /** @nocollapse */
     BottomSheetOverviewExample.ctorParameters = function () { return [
-        { type: material.MatBottomSheet, },
+        { type: material.MatBottomSheet }
     ]; };
     return BottomSheetOverviewExample;
 }());
@@ -567,14 +587,14 @@ var BottomSheetOverviewExampleSheet = /** @class */ (function () {
     ];
     /** @nocollapse */
     BottomSheetOverviewExampleSheet.ctorParameters = function () { return [
-        { type: material.MatBottomSheetRef, },
+        { type: material.MatBottomSheetRef }
     ]; };
     return BottomSheetOverviewExampleSheet;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic buttons
@@ -594,7 +614,27 @@ var ButtonOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Button toggle appearance
+ */
+var ButtonToggleAppearanceExample = /** @class */ (function () {
+    function ButtonToggleAppearanceExample() {
+    }
+    ButtonToggleAppearanceExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'button-toggle-appearance-example',
+                    template: "<p>Default appearance:<mat-button-toggle-group name=\"fontStyle\" aria-label=\"Font Style\"><mat-button-toggle value=\"bold\">Bold</mat-button-toggle><mat-button-toggle value=\"italic\">Italic</mat-button-toggle><mat-button-toggle value=\"underline\">Underline</mat-button-toggle></mat-button-toggle-group></p><p>Legacy appearance:<mat-button-toggle-group appearance=\"legacy\" name=\"fontStyle\" aria-label=\"Font Style\"><mat-button-toggle value=\"bold\">Bold</mat-button-toggle><mat-button-toggle value=\"italic\">Italic</mat-button-toggle><mat-button-toggle value=\"underline\">Underline</mat-button-toggle></mat-button-toggle-group></p>",
+                    styles: ["/** No CSS for this example */ "],
+                },] },
+    ];
+    return ButtonToggleAppearanceExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Exclusive selection
@@ -614,7 +654,7 @@ var ButtonToggleExclusiveExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic button-toggles
@@ -634,7 +674,7 @@ var ButtonToggleOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Button varieties
@@ -645,8 +685,8 @@ var ButtonTypesExample = /** @class */ (function () {
     ButtonTypesExample.decorators = [
         { type: core.Component, args: [{
                     selector: 'button-types-example',
-                    template: "<h3>Basic Buttons</h3><div class=\"button-row\"><button mat-button>Basic</button> <button mat-button color=\"primary\">Primary</button> <button mat-button color=\"accent\">Accent</button> <button mat-button color=\"warn\">Warn</button> <button mat-button disabled=\"disabled\">Disabled</button> <a mat-button routerLink=\".\">Link</a></div><h3>Raised Buttons</h3><div class=\"button-row\"><button mat-raised-button>Basic</button> <button mat-raised-button color=\"primary\">Primary</button> <button mat-raised-button color=\"accent\">Accent</button> <button mat-raised-button color=\"warn\">Warn</button> <button mat-raised-button disabled=\"disabled\">Disabled</button> <a mat-raised-button routerLink=\".\">Link</a></div><h3>Stroked Buttons</h3><div class=\"button-row\"><button mat-stroked-button>Basic</button> <button mat-stroked-button color=\"primary\">Primary</button> <button mat-stroked-button color=\"accent\">Accent</button> <button mat-stroked-button color=\"warn\">Warn</button> <button mat-stroked-button disabled=\"disabled\">Disabled</button> <a mat-stroked-button routerLink=\".\">Link</a></div><h3>Flat Buttons</h3><div class=\"button-row\"><button mat-flat-button>Basic</button> <button mat-flat-button color=\"primary\">Primary</button> <button mat-flat-button color=\"accent\">Accent</button> <button mat-flat-button color=\"warn\">Warn</button> <button mat-flat-button disabled=\"disabled\">Disabled</button> <a mat-flat-button routerLink=\".\">Link</a></div><h3>Icon Buttons</h3><div class=\"button-row\"><button mat-icon-button><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button> <button mat-icon-button color=\"primary\"><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button> <button mat-icon-button color=\"accent\"><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button> <button mat-icon-button color=\"warn\"><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button> <button mat-icon-button disabled=\"disabled\"><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button></div><h3>Fab Buttons</h3><div class=\"button-row\"><button mat-fab>Basic</button> <button mat-fab color=\"primary\">Primary</button> <button mat-fab color=\"accent\">Accent</button> <button mat-fab color=\"warn\">Warn</button> <button mat-fab disabled=\"disabled\">Disabled</button> <button mat-fab><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button> <a mat-fab routerLink=\".\">Link</a></div><h3>Mini Fab Buttons</h3><div class=\"button-row\"><button mat-mini-fab>Basic</button> <button mat-mini-fab color=\"primary\">Primary</button> <button mat-mini-fab color=\"accent\">Accent</button> <button mat-mini-fab color=\"warn\">Warn</button> <button mat-mini-fab disabled=\"disabled\">Disabled</button> <button mat-mini-fab><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button> <a mat-mini-fab routerLink=\".\">Link</a></div>",
-                    styles: [".button-row button, .button-row a { margin-right: 8px; } "],
+                    template: "<h3>Basic Buttons</h3><div class=\"example-button-row\"><button mat-button>Basic</button> <button mat-button color=\"primary\">Primary</button> <button mat-button color=\"accent\">Accent</button> <button mat-button color=\"warn\">Warn</button> <button mat-button disabled=\"disabled\">Disabled</button> <a mat-button routerLink=\".\">Link</a></div><h3>Raised Buttons</h3><div class=\"example-button-row\"><button mat-raised-button>Basic</button> <button mat-raised-button color=\"primary\">Primary</button> <button mat-raised-button color=\"accent\">Accent</button> <button mat-raised-button color=\"warn\">Warn</button> <button mat-raised-button disabled=\"disabled\">Disabled</button> <a mat-raised-button routerLink=\".\">Link</a></div><h3>Stroked Buttons</h3><div class=\"example-button-row\"><button mat-stroked-button>Basic</button> <button mat-stroked-button color=\"primary\">Primary</button> <button mat-stroked-button color=\"accent\">Accent</button> <button mat-stroked-button color=\"warn\">Warn</button> <button mat-stroked-button disabled=\"disabled\">Disabled</button> <a mat-stroked-button routerLink=\".\">Link</a></div><h3>Flat Buttons</h3><div class=\"example-button-row\"><button mat-flat-button>Basic</button> <button mat-flat-button color=\"primary\">Primary</button> <button mat-flat-button color=\"accent\">Accent</button> <button mat-flat-button color=\"warn\">Warn</button> <button mat-flat-button disabled=\"disabled\">Disabled</button> <a mat-flat-button routerLink=\".\">Link</a></div><h3>Icon Buttons</h3><div class=\"example-button-row\"><button mat-icon-button><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button> <button mat-icon-button color=\"primary\"><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button> <button mat-icon-button color=\"accent\"><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button> <button mat-icon-button color=\"warn\"><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button> <button mat-icon-button disabled=\"disabled\"><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button></div><h3>Fab Buttons</h3><div class=\"example-button-row\"><button mat-fab>Basic</button> <button mat-fab color=\"primary\">Primary</button> <button mat-fab color=\"accent\">Accent</button> <button mat-fab color=\"warn\">Warn</button> <button mat-fab disabled=\"disabled\">Disabled</button> <button mat-fab><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button> <a mat-fab routerLink=\".\">Link</a></div><h3>Mini Fab Buttons</h3><div class=\"example-button-row\"><button mat-mini-fab>Basic</button> <button mat-mini-fab color=\"primary\">Primary</button> <button mat-mini-fab color=\"accent\">Accent</button> <button mat-mini-fab color=\"warn\">Warn</button> <button mat-mini-fab disabled=\"disabled\">Disabled</button> <button mat-mini-fab><mat-icon aria-label=\"Example icon-button with a heart icon\">favorite</mat-icon></button> <a mat-mini-fab routerLink=\".\">Link</a></div>",
+                    styles: [".example-button-row button, .example-button-row a { margin-right: 8px; } "],
                 },] },
     ];
     return ButtonTypesExample;
@@ -654,7 +694,7 @@ var ButtonTypesExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Card with multiple sections
@@ -674,7 +714,7 @@ var CardFancyExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic cards
@@ -694,9 +734,569 @@ var CardOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ ELEMENT_DATA = [
+/**
+ * \@title Drag&Drop position locking
+ */
+var CdkDragDropAxisLockExample = /** @class */ (function () {
+    function CdkDragDropAxisLockExample() {
+    }
+    CdkDragDropAxisLockExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-axis-lock-example',
+                    template: "<div class=\"example-box\" cdkDragLockAxis=\"y\" cdkDrag>I can only be dragged up/down</div><div class=\"example-box\" cdkDragLockAxis=\"x\" cdkDrag>I can only be dragged left/right</div>",
+                    styles: [".example-box { width: 200px; height: 200px; border: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); cursor: move; display: inline-flex; justify-content: center; align-items: center; text-align: center; background: #fff; border-radius: 4px; margin-right: 25px; position: relative; z-index: 1; transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1); box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12); } .example-box:active { box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } "],
+                },] },
+    ];
+    return CdkDragDropAxisLockExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Drag&Drop boundary
+ */
+var CdkDragDropBoundaryExample = /** @class */ (function () {
+    function CdkDragDropBoundaryExample() {
+    }
+    CdkDragDropBoundaryExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-boundary-example',
+                    template: "<div class=\"example-boundary\"><div class=\"example-box\" cdkDragBoundary=\".example-boundary\" cdkDrag>I can only be dragged within the dotted container</div></div>",
+                    styles: [".example-box { width: 200px; height: 200px; border: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); cursor: move; display: inline-flex; justify-content: center; align-items: center; text-align: center; background: #fff; border-radius: 4px; margin-right: 25px; position: relative; z-index: 1; box-sizing: border-box; padding: 10px; transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1); box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12); } .example-box:active { box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } .example-boundary { width: 400px; height: 400px; max-width: 100%; border: dotted #ccc 2px; } "],
+                },] },
+    ];
+    return CdkDragDropBoundaryExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Drag&Drop connected sorting group
+ */
+var CdkDragDropConnectedSortingGroupExample = /** @class */ (function () {
+    function CdkDragDropConnectedSortingGroupExample() {
+        this.todo = [
+            'Get to work',
+            'Pick up groceries',
+            'Go home',
+            'Fall asleep'
+        ];
+        this.done = [
+            'Get up',
+            'Brush teeth',
+            'Take a shower',
+            'Check e-mail',
+            'Walk dog'
+        ];
+    }
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    CdkDragDropConnectedSortingGroupExample.prototype.drop = /**
+     * @param {?} event
+     * @return {?}
+     */
+    function (event) {
+        if (event.previousContainer === event.container) {
+            dragDrop.moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+        }
+        else {
+            dragDrop.transferArrayItem(event.previousContainer.data, event.container.data, event.previousIndex, event.currentIndex);
+        }
+    };
+    CdkDragDropConnectedSortingGroupExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-connected-sorting-group-example',
+                    template: "<div cdkDropListGroup><div class=\"example-container\"><h2>To do</h2><div cdkDropList [cdkDropListData]=\"todo\" class=\"example-list\" (cdkDropListDropped)=\"drop($event)\"><div class=\"example-box\" *ngFor=\"let item of todo\" cdkDrag>{{item}}</div></div></div><div class=\"example-container\"><h2>Done</h2><div cdkDropList [cdkDropListData]=\"done\" class=\"example-list\" (cdkDropListDropped)=\"drop($event)\"><div class=\"example-box\" *ngFor=\"let item of done\" cdkDrag>{{item}}</div></div></div></div>",
+                    styles: [".example-container { width: 400px; max-width: 100%; margin: 0 25px 25px 0; display: inline-block; vertical-align: top; } .example-list { border: solid 1px #ccc; min-height: 60px; background: white; border-radius: 4px; overflow: hidden; display: block; } .example-box { padding: 20px 10px; border-bottom: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); display: flex; flex-direction: row; align-items: center; justify-content: space-between; box-sizing: border-box; cursor: move; background: white; font-size: 14px; } .cdk-drag-preview { box-sizing: border-box; border-radius: 4px; box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } .cdk-drag-placeholder { opacity: 0; } .cdk-drag-animating { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } .example-box:last-child { border: none; } .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } "],
+                },] },
+    ];
+    return CdkDragDropConnectedSortingGroupExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Drag&Drop connected sorting
+ */
+var CdkDragDropConnectedSortingExample = /** @class */ (function () {
+    function CdkDragDropConnectedSortingExample() {
+        this.todo = [
+            'Get to work',
+            'Pick up groceries',
+            'Go home',
+            'Fall asleep'
+        ];
+        this.done = [
+            'Get up',
+            'Brush teeth',
+            'Take a shower',
+            'Check e-mail',
+            'Walk dog'
+        ];
+    }
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    CdkDragDropConnectedSortingExample.prototype.drop = /**
+     * @param {?} event
+     * @return {?}
+     */
+    function (event) {
+        if (event.previousContainer === event.container) {
+            dragDrop.moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+        }
+        else {
+            dragDrop.transferArrayItem(event.previousContainer.data, event.container.data, event.previousIndex, event.currentIndex);
+        }
+    };
+    CdkDragDropConnectedSortingExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-connected-sorting-example',
+                    template: "<div class=\"example-container\"><h2>To do</h2><div cdkDropList #todoList=\"cdkDropList\" [cdkDropListData]=\"todo\" [cdkDropListConnectedTo]=\"[doneList]\" class=\"example-list\" (cdkDropListDropped)=\"drop($event)\"><div class=\"example-box\" *ngFor=\"let item of todo\" cdkDrag>{{item}}</div></div></div><div class=\"example-container\"><h2>Done</h2><div cdkDropList #doneList=\"cdkDropList\" [cdkDropListData]=\"done\" [cdkDropListConnectedTo]=\"[todoList]\" class=\"example-list\" (cdkDropListDropped)=\"drop($event)\"><div class=\"example-box\" *ngFor=\"let item of done\" cdkDrag>{{item}}</div></div></div>",
+                    styles: [".example-container { width: 400px; max-width: 100%; margin: 0 25px 25px 0; display: inline-block; vertical-align: top; } .example-list { border: solid 1px #ccc; min-height: 60px; background: white; border-radius: 4px; overflow: hidden; display: block; } .example-box { padding: 20px 10px; border-bottom: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); display: flex; flex-direction: row; align-items: center; justify-content: space-between; box-sizing: border-box; cursor: move; background: white; font-size: 14px; } .cdk-drag-preview { box-sizing: border-box; border-radius: 4px; box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } .cdk-drag-placeholder { opacity: 0; } .cdk-drag-animating { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } .example-box:last-child { border: none; } .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } "],
+                },] },
+    ];
+    return CdkDragDropConnectedSortingExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Drag&Drop custom placeholer
+ */
+var CdkDragDropCustomPlaceholderExample = /** @class */ (function () {
+    function CdkDragDropCustomPlaceholderExample() {
+        this.movies = [
+            'Episode I - The Phantom Menace',
+            'Episode II - Attack of the Clones',
+            'Episode III - Revenge of the Sith',
+            'Episode IV - A New Hope',
+            'Episode V - The Empire Strikes Back',
+            'Episode VI - Return of the Jedi',
+            'Episode VII - The Force Awakens',
+            'Episode VIII - The Last Jedi'
+        ];
+    }
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    CdkDragDropCustomPlaceholderExample.prototype.drop = /**
+     * @param {?} event
+     * @return {?}
+     */
+    function (event) {
+        dragDrop.moveItemInArray(this.movies, event.previousIndex, event.currentIndex);
+    };
+    CdkDragDropCustomPlaceholderExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-custom-placeholder-example',
+                    template: "<div cdkDropList class=\"example-list\" (cdkDropListDropped)=\"drop($event)\"><div class=\"example-box\" *ngFor=\"let movie of movies\" cdkDrag><div class=\"example-custom-placeholder\" *cdkDragPlaceholder></div>{{movie}}</div></div>",
+                    styles: [".example-list { width: 500px; max-width: 100%; border: solid 1px #ccc; min-height: 60px; display: block; background: white; border-radius: 4px; overflow: hidden; } .example-box { padding: 20px 10px; border-bottom: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); display: flex; flex-direction: row; align-items: center; justify-content: space-between; box-sizing: border-box; cursor: move; background: white; font-size: 14px; } .cdk-drag-preview { box-sizing: border-box; border-radius: 4px; box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } .cdk-drag-animating { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } .example-box:last-child { border: none; } .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } .example-custom-placeholder { background: #ccc; border: dotted 3px #999; min-height: 60px; transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } "],
+                },] },
+    ];
+    return CdkDragDropCustomPlaceholderExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Drag&Drop custom preview
+ */
+var CdkDragDropCustomPreviewExample = /** @class */ (function () {
+    function CdkDragDropCustomPreviewExample() {
+        // tslint:disable:max-line-length
+        this.movies = [
+            {
+                title: 'Episode I - The Phantom Menace',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/4/40/Star_Wars_Phantom_Menace_poster.jpg'
+            },
+            {
+                title: 'Episode II - Attack of the Clones',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/3/32/Star_Wars_-_Episode_II_Attack_of_the_Clones_%28movie_poster%29.jpg'
+            },
+            {
+                title: 'Episode III - Revenge of the Sith',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/9/93/Star_Wars_Episode_III_Revenge_of_the_Sith_poster.jpg'
+            },
+            {
+                title: 'Episode IV - A New Hope',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg'
+            },
+            {
+                title: 'Episode V - The Empire Strikes Back',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/3/3c/SW_-_Empire_Strikes_Back.jpg'
+            },
+            {
+                title: 'Episode VI - Return of the Jedi',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/b/b2/ReturnOfTheJediPoster1983.jpg'
+            },
+            {
+                title: 'Episode VII - The Force Awakens',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg'
+            },
+            {
+                title: 'Episode VIII - The Last Jedi',
+                poster: 'https://upload.wikimedia.org/wikipedia/en/7/7f/Star_Wars_The_Last_Jedi.jpg'
+            }
+        ];
+    }
+    // tslint:enable:max-line-length
+    // tslint:enable:max-line-length
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    CdkDragDropCustomPreviewExample.prototype.drop = 
+    // tslint:enable:max-line-length
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    function (event) {
+        dragDrop.moveItemInArray(this.movies, event.previousIndex, event.currentIndex);
+    };
+    CdkDragDropCustomPreviewExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-custom-preview-example',
+                    template: "<div cdkDropList class=\"example-list\" (cdkDropListDropped)=\"drop($event)\"><div class=\"example-box\" *ngFor=\"let movie of movies\" cdkDrag>{{movie.title}} <img *cdkDragPreview [src]=\"movie.poster\" [alt]=\"movie.title\"></div></div>",
+                    styles: [".example-list { width: 500px; max-width: 100%; border: solid 1px #ccc; min-height: 60px; display: block; background: white; border-radius: 4px; overflow: hidden; } .example-box { padding: 20px 10px; border-bottom: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); display: flex; flex-direction: row; align-items: center; justify-content: space-between; box-sizing: border-box; cursor: move; background: white; font-size: 14px; } .cdk-drag-preview { box-sizing: border-box; border-radius: 4px; box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } .cdk-drag-placeholder { opacity: 0; } .cdk-drag-animating { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } .example-box:last-child { border: none; } .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } "],
+                },] },
+    ];
+    return CdkDragDropCustomPreviewExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Drag&Drop disabled
+ */
+var CdkDragDropDisabledExample = /** @class */ (function () {
+    function CdkDragDropDisabledExample() {
+        this.items = [
+            { value: 'I can be dragged', disabled: false },
+            { value: 'I cannot be dragged', disabled: true },
+            { value: 'I can also be dragged', disabled: false }
+        ];
+    }
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    CdkDragDropDisabledExample.prototype.drop = /**
+     * @param {?} event
+     * @return {?}
+     */
+    function (event) {
+        dragDrop.moveItemInArray(this.items, event.previousIndex, event.currentIndex);
+    };
+    CdkDragDropDisabledExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-disabled-example',
+                    template: "<div cdkDropList class=\"example-list\" (cdkDropListDropped)=\"drop($event)\"><div class=\"example-box\" *ngFor=\"let item of items\" cdkDrag [cdkDragDisabled]=\"item.disabled\">{{item.value}}</div></div>",
+                    styles: [".example-list { width: 500px; max-width: 100%; border: solid 1px #ccc; min-height: 60px; display: block; background: white; border-radius: 4px; overflow: hidden; } .example-box { padding: 20px 10px; border-bottom: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); display: flex; flex-direction: row; align-items: center; justify-content: space-between; box-sizing: border-box; cursor: move; background: white; font-size: 14px; } .cdk-drag-preview { box-sizing: border-box; border-radius: 4px; box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } .cdk-drag-placeholder { opacity: 0; } .cdk-drag-animating { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } .example-box:last-child { border: none; } .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } "],
+                },] },
+    ];
+    return CdkDragDropDisabledExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Drag&Drop enter predicate
+ */
+var CdkDragDropEnterPredicateExample = /** @class */ (function () {
+    function CdkDragDropEnterPredicateExample() {
+        this.all = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        this.even = [10];
+    }
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    CdkDragDropEnterPredicateExample.prototype.drop = /**
+     * @param {?} event
+     * @return {?}
+     */
+    function (event) {
+        if (event.previousContainer === event.container) {
+            dragDrop.moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+        }
+        else {
+            dragDrop.transferArrayItem(event.previousContainer.data, event.container.data, event.previousIndex, event.currentIndex);
+        }
+    };
+    /** Predicate function that only allows even numbers to be dropped into a list. */
+    /**
+     * Predicate function that only allows even numbers to be dropped into a list.
+     * @param {?} item
+     * @return {?}
+     */
+    CdkDragDropEnterPredicateExample.prototype.evenPredicate = /**
+     * Predicate function that only allows even numbers to be dropped into a list.
+     * @param {?} item
+     * @return {?}
+     */
+    function (item) {
+        return item.data % 2 === 0;
+    };
+    /** Predicate function that doesn't allow items to be dropped into a list. */
+    /**
+     * Predicate function that doesn't allow items to be dropped into a list.
+     * @return {?}
+     */
+    CdkDragDropEnterPredicateExample.prototype.noReturnPredicate = /**
+     * Predicate function that doesn't allow items to be dropped into a list.
+     * @return {?}
+     */
+    function () {
+        return false;
+    };
+    CdkDragDropEnterPredicateExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-enter-predicate-example',
+                    template: "<div class=\"example-container\"><h2>Available numbers</h2><div id=\"all\" cdkDropList [cdkDropListData]=\"all\" cdkDropListConnectedTo=\"even\" class=\"example-list\" (cdkDropListDropped)=\"drop($event)\" [cdkDropListEnterPredicate]=\"noReturnPredicate\"><div class=\"example-box\" *ngFor=\"let number of all\" [cdkDragData]=\"number\" cdkDrag>{{number}}</div></div></div><div class=\"example-container\"><h2>Even numbers</h2><div id=\"even\" cdkDropList [cdkDropListData]=\"even\" cdkDropListConnectedTo=\"all\" class=\"example-list\" (cdkDropListDropped)=\"drop($event)\" [cdkDropListEnterPredicate]=\"evenPredicate\"><div class=\"example-box\" *ngFor=\"let number of even\" cdkDrag [cdkDragData]=\"number\">{{number}}</div></div></div>",
+                    styles: [".example-container { width: 400px; max-width: 100%; margin: 0 25px 25px 0; display: inline-block; vertical-align: top; } .example-list { border: solid 1px #ccc; min-height: 60px; background: white; border-radius: 4px; overflow: hidden; display: block; } .example-box { padding: 20px 10px; border-bottom: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); display: flex; flex-direction: row; align-items: center; justify-content: space-between; box-sizing: border-box; cursor: move; background: white; font-size: 14px; } .cdk-drag-preview { box-sizing: border-box; border-radius: 4px; box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } .cdk-drag-placeholder { opacity: 0; } .cdk-drag-animating { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } .example-box:last-child { border: none; } .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } "],
+                },] },
+    ];
+    return CdkDragDropEnterPredicateExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Drag&Drop with a handle
+ */
+var CdkDragDropHandleExample = /** @class */ (function () {
+    function CdkDragDropHandleExample() {
+    }
+    CdkDragDropHandleExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-handle-example',
+                    template: "<div class=\"example-box\" cdkDrag>I can only be dragged using the handle<div class=\"example-handle\" cdkDragHandle><svg width=\"24px\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z\"></path><path d=\"M0 0h24v24H0z\" fill=\"none\"></path></svg></div></div>",
+                    styles: [".example-box { width: 200px; height: 200px; padding: 10px; box-sizing: border-box; border: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); display: flex; justify-content: center; align-items: center; text-align: center; background: #fff; border-radius: 4px; position: relative; z-index: 1; transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1); box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12); } .example-box:active { box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } .example-handle { position: absolute; top: 10px; right: 10px; color: #ccc; cursor: move; width: 24px; height: 24px; } "],
+                },] },
+    ];
+    return CdkDragDropHandleExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Drag&Drop horizontal sorting
+ */
+var CdkDragDropHorizontalSortingExample = /** @class */ (function () {
+    function CdkDragDropHorizontalSortingExample() {
+        this.timePeriods = [
+            'Bronze age',
+            'Iron age',
+            'Middle ages',
+            'Early modern period',
+            'Long nineteenth century'
+        ];
+    }
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    CdkDragDropHorizontalSortingExample.prototype.drop = /**
+     * @param {?} event
+     * @return {?}
+     */
+    function (event) {
+        dragDrop.moveItemInArray(this.timePeriods, event.previousIndex, event.currentIndex);
+    };
+    CdkDragDropHorizontalSortingExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-horizontal-sorting-example',
+                    template: "<div cdkDropList cdkDropListOrientation=\"horizontal\" class=\"example-list\" (cdkDropListDropped)=\"drop($event)\"><div class=\"example-box\" *ngFor=\"let timePeriod of timePeriods\" cdkDrag>{{timePeriod}}</div></div>",
+                    styles: [".example-list { width: 1000px; max-width: 100%; border: solid 1px #ccc; min-height: 60px; display: flex; flex-direction: row; background: white; border-radius: 4px; overflow: hidden; } .example-box { padding: 20px 10px; border-right: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); display: flex; flex-direction: row; align-items: center; justify-content: space-between; box-sizing: border-box; cursor: move; background: white; font-size: 14px; flex-grow: 1; flex-basis: 0; } .cdk-drag-preview { box-sizing: border-box; border-radius: 4px; box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } .cdk-drag-placeholder { opacity: 0; } .cdk-drag-animating { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } .example-box:last-child { border: none; } .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } "],
+                },] },
+    ];
+    return CdkDragDropHorizontalSortingExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Basic Drag&Drop
+ */
+var CdkDragDropOverviewExample = /** @class */ (function () {
+    function CdkDragDropOverviewExample() {
+    }
+    CdkDragDropOverviewExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-overview-example',
+                    template: "<div class=\"example-box\" cdkDrag>Drag me around</div>",
+                    styles: [".example-box { width: 200px; height: 200px; border: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); cursor: move; display: flex; justify-content: center; align-items: center; text-align: center; background: #fff; border-radius: 4px; position: relative; z-index: 1; transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1); box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12); } .example-box:active { box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } "],
+                },] },
+    ];
+    return CdkDragDropOverviewExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Drag&Drop with alternate root element
+ */
+var CdkDragDropRootElementExample = /** @class */ (function () {
+    function CdkDragDropRootElementExample(_overlay, _viewContainerRef) {
+        this._overlay = _overlay;
+        this._viewContainerRef = _viewContainerRef;
+    }
+    /**
+     * @return {?}
+     */
+    CdkDragDropRootElementExample.prototype.ngAfterViewInit = /**
+     * @return {?}
+     */
+    function () {
+        var _this = this;
+        this._portal = new portal.TemplatePortal(this._dialogTemplate, this._viewContainerRef);
+        this._overlayRef = this._overlay.create({
+            positionStrategy: this._overlay.position().global().centerHorizontally().centerVertically(),
+            hasBackdrop: true
+        });
+        this._overlayRef.backdropClick().subscribe(function () { return _this._overlayRef.detach(); });
+    };
+    /**
+     * @return {?}
+     */
+    CdkDragDropRootElementExample.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
+        this._overlayRef.dispose();
+    };
+    /**
+     * @return {?}
+     */
+    CdkDragDropRootElementExample.prototype.openDialog = /**
+     * @return {?}
+     */
+    function () {
+        this._overlayRef.attach(this._portal);
+    };
+    CdkDragDropRootElementExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-root-element-example',
+                    template: "<button (click)=\"openDialog()\">Open a draggable dialog</button><ng-template><div class=\"example-dialog-content\" cdkDrag cdkDragRootElement=\".cdk-overlay-pane\">Drag the dialog around!</div></ng-template>",
+                    styles: [".example-dialog-content { width: 200px; height: 200px; border: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); cursor: move; display: flex; justify-content: center; align-items: center; background: #fff; border-radius: 4px; transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1); box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12); } .example-dialog-content:active { box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } "],
+                },] },
+    ];
+    /** @nocollapse */
+    CdkDragDropRootElementExample.ctorParameters = function () { return [
+        { type: overlay.Overlay },
+        { type: core.ViewContainerRef }
+    ]; };
+    CdkDragDropRootElementExample.propDecorators = {
+        _dialogTemplate: [{ type: core.ViewChild, args: [core.TemplateRef,] }]
+    };
+    return CdkDragDropRootElementExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Drag&Drop sorting
+ */
+var CdkDragDropSortingExample = /** @class */ (function () {
+    function CdkDragDropSortingExample() {
+        this.movies = [
+            'Episode I - The Phantom Menace',
+            'Episode II - Attack of the Clones',
+            'Episode III - Revenge of the Sith',
+            'Episode IV - A New Hope',
+            'Episode V - The Empire Strikes Back',
+            'Episode VI - Return of the Jedi',
+            'Episode VII - The Force Awakens',
+            'Episode VIII - The Last Jedi'
+        ];
+    }
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    CdkDragDropSortingExample.prototype.drop = /**
+     * @param {?} event
+     * @return {?}
+     */
+    function (event) {
+        dragDrop.moveItemInArray(this.movies, event.previousIndex, event.currentIndex);
+    };
+    CdkDragDropSortingExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-drag-drop-sorting-example',
+                    template: "<div cdkDropList class=\"example-list\" (cdkDropListDropped)=\"drop($event)\"><div class=\"example-box\" *ngFor=\"let movie of movies\" cdkDrag>{{movie}}</div></div>",
+                    styles: [".example-list { width: 500px; max-width: 100%; border: solid 1px #ccc; min-height: 60px; display: block; background: white; border-radius: 4px; overflow: hidden; } .example-box { padding: 20px 10px; border-bottom: solid 1px #ccc; color: rgba(0, 0, 0, 0.87); display: flex; flex-direction: row; align-items: center; justify-content: space-between; box-sizing: border-box; cursor: move; background: white; font-size: 14px; } .cdk-drag-preview { box-sizing: border-box; border-radius: 4px; box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); } .cdk-drag-placeholder { opacity: 0; } .cdk-drag-animating { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } .example-box:last-child { border: none; } .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) { transition: transform 250ms cubic-bezier(0, 0, 0.2, 1); } "],
+                },] },
+    ];
+    return CdkDragDropSortingExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Platform overview
+ */
+var CdkPlatformOverviewExample = /** @class */ (function () {
+    function CdkPlatformOverviewExample(platform$$1) {
+        this.platform = platform$$1;
+        this.supportedInputTypes = Array.from(platform.getSupportedInputTypes()).join(', ');
+        this.supportsPassiveEventListeners = platform.supportsPassiveEventListeners();
+        this.supportsScrollBehavior = platform.supportsScrollBehavior();
+    }
+    CdkPlatformOverviewExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-platform-overview-example',
+                    template: "<h3>Platform information:</h3><p>Is Android: {{platform.ANDROID}}</p><p>Is iOS: {{platform.IOS}}</p><p>Is Firefox: {{platform.FIREFOX}}</p><p>Is Blink: {{platform.BLINK}}</p><p>Is Webkit: {{platform.WEBKIT}}</p><p>Is Trident: {{platform.TRIDENT}}</p><p>Is Edge: {{platform.EDGE}}</p><p>Supported input types: {{supportedInputTypes}}</p><p>Supports passive event listeners: {{supportsPassiveEventListeners}}</p><p>Supports scroll behavior: {{supportsScrollBehavior}}</p>",
+                    styles: ["/** No CSS for this example */ "],
+                },] },
+    ];
+    /** @nocollapse */
+    CdkPlatformOverviewExample.ctorParameters = function () { return [
+        { type: platform.Platform }
+    ]; };
+    return CdkPlatformOverviewExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+var ELEMENT_DATA = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -773,9 +1373,10 @@ ExampleDataSource = /** @class */ (function (_super) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ ELEMENT_DATA$1 = [
+/** @type {?} */
+var ELEMENT_DATA$1 = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -852,7 +1453,7 @@ ExampleDataSource$1 = /** @class */ (function (_super) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * File node data with nested structure.
@@ -884,8 +1485,9 @@ FileFlatNode = /** @class */ (function () {
 }());
 /**
  * The file structure tree data in string. The data could be parsed into a Json object
+ * @type {?}
  */
-var /** @type {?} */ TREE_DATA = JSON.stringify({
+var TREE_DATA = JSON.stringify({
     Applications: {
         Calendar: 'app',
         Chrome: 'app',
@@ -948,10 +1550,12 @@ var FileDatabase = /** @class */ (function () {
      */
     function () {
         // Parse the string to json object.
-        var /** @type {?} */ dataObject = JSON.parse(TREE_DATA);
+        /** @type {?} */
+        var dataObject = JSON.parse(TREE_DATA);
         // Build the tree nodes from Json object. The result is a list of `FileNode` with nested
         //     file node as children.
-        var /** @type {?} */ data = this.buildFileTree(dataObject, 0);
+        /** @type {?} */
+        var data = this.buildFileTree(dataObject, 0);
         // Notify the change.
         this.dataChange.next(data);
     };
@@ -976,8 +1580,10 @@ var FileDatabase = /** @class */ (function () {
     function (obj, level) {
         var _this = this;
         return Object.keys(obj).reduce(function (accumulator, key) {
-            var /** @type {?} */ value = obj[key];
-            var /** @type {?} */ node = new FileNode();
+            /** @type {?} */
+            var value = obj[key];
+            /** @type {?} */
+            var node = new FileNode();
             node.filename = key;
             if (value != null) {
                 if (typeof value === 'object') {
@@ -1027,14 +1633,14 @@ var CdkTreeFlatExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     CdkTreeFlatExample.ctorParameters = function () { return [
-        { type: FileDatabase, },
+        { type: FileDatabase }
     ]; };
     return CdkTreeFlatExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Json node data with nested structure. Each node has a filename and a value or a list of children
@@ -1049,8 +1655,9 @@ FileNode$1 = /** @class */ (function () {
 }());
 /**
  * The Json tree data in string. The data could be parsed into Json object
+ * @type {?}
  */
-var /** @type {?} */ TREE_DATA$1 = JSON.stringify({
+var TREE_DATA$1 = JSON.stringify({
     Applications: {
         Calendar: 'app',
         Chrome: 'app',
@@ -1113,10 +1720,12 @@ var FileDatabase$1 = /** @class */ (function () {
      */
     function () {
         // Parse the string to json object.
-        var /** @type {?} */ dataObject = JSON.parse(TREE_DATA$1);
+        /** @type {?} */
+        var dataObject = JSON.parse(TREE_DATA$1);
         // Build the tree nodes from Json object. The result is a list of `FileNode` with nested
         //     file node as children.
-        var /** @type {?} */ data = this.buildFileTree(dataObject, 0);
+        /** @type {?} */
+        var data = this.buildFileTree(dataObject, 0);
         // Notify the change.
         this.dataChange.next(data);
     };
@@ -1141,8 +1750,10 @@ var FileDatabase$1 = /** @class */ (function () {
     function (obj, level) {
         var _this = this;
         return Object.keys(obj).reduce(function (accumulator, key) {
-            var /** @type {?} */ value = obj[key];
-            var /** @type {?} */ node = new FileNode$1();
+            /** @type {?} */
+            var value = obj[key];
+            /** @type {?} */
+            var node = new FileNode$1();
             node.filename = key;
             if (value != null) {
                 if (typeof value === 'object') {
@@ -1184,14 +1795,331 @@ var CdkTreeNestedExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     CdkTreeNestedExample.ctorParameters = function () { return [
-        { type: FileDatabase$1, },
+        { type: FileDatabase$1 }
     ]; };
     return CdkTreeNestedExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Virtual scroll context variables
+ */
+var CdkVirtualScrollContextExample = /** @class */ (function () {
+    function CdkVirtualScrollContextExample() {
+        this.items = Array.from({ length: 100000 }).map(function (_, i) { return "Item #" + i; });
+    }
+    CdkVirtualScrollContextExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-virtual-scroll-context-example',
+                    styles: [".example-viewport { height: 200px; width: 200px; border: 1px solid black; } .example-item-detail { height: 18px; } .example-alternate { background: rgba(127, 127, 127, 0.3); } "],
+                    template: "<cdk-virtual-scroll-viewport [itemSize]=\"18 * 7\" class=\"example-viewport\"><div *cdkVirtualFor=\"let item of items; let index = index; let count = count; let first = first; let last = last; let even = even; let odd = odd;\" [class.example-alternate]=\"odd\"><div class=\"example-item-detail\">Item: {{item}}</div><div class=\"example-item-detail\">Index: {{index}}</div><div class=\"example-item-detail\">Count: {{count}}</div><div class=\"example-item-detail\">First: {{first ? 'Yes' : 'No'}}</div><div class=\"example-item-detail\">Last: {{last ? 'Yes' : 'No'}}</div><div class=\"example-item-detail\">Even: {{even ? 'Yes' : 'No'}}</div><div class=\"example-item-detail\">Odd: {{odd ? 'Yes' : 'No'}}</div></div></cdk-virtual-scroll-viewport>",
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                },] },
+    ];
+    return CdkVirtualScrollContextExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+var CustomVirtualScrollStrategy = /** @class */ (function (_super) {
+    __extends(CustomVirtualScrollStrategy, _super);
+    function CustomVirtualScrollStrategy() {
+        return _super.call(this, 50, 250, 500) || this;
+    }
+    return CustomVirtualScrollStrategy;
+}(scrolling.FixedSizeVirtualScrollStrategy));
+/**
+ * \@title Virtual scroll with a custom strategy
+ */
+var CdkVirtualScrollCustomStrategyExample = /** @class */ (function () {
+    function CdkVirtualScrollCustomStrategyExample() {
+        this.items = Array.from({ length: 100000 }).map(function (_, i) { return "Item #" + i; });
+    }
+    CdkVirtualScrollCustomStrategyExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-virtual-scroll-custom-strategy-example',
+                    styles: [".example-viewport { height: 200px; width: 200px; border: 1px solid black; } .example-item { height: 50px; } "],
+                    template: "<cdk-virtual-scroll-viewport class=\"example-viewport\"><div *cdkVirtualFor=\"let item of items\" class=\"example-item\">{{item}}</div></cdk-virtual-scroll-viewport>",
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                    providers: [{ provide: scrolling.VIRTUAL_SCROLL_STRATEGY, useClass: CustomVirtualScrollStrategy }]
+                },] },
+    ];
+    return CdkVirtualScrollCustomStrategyExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Virtual scroll with a custom data source
+ */
+var CdkVirtualScrollDataSourceExample = /** @class */ (function () {
+    function CdkVirtualScrollDataSourceExample() {
+        this.ds = new MyDataSource();
+    }
+    CdkVirtualScrollDataSourceExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-virtual-scroll-data-source-example',
+                    styles: [".example-viewport { height: 200px; width: 200px; border: 1px solid black; } .example-item { height: 50px; } "],
+                    template: "<cdk-virtual-scroll-viewport itemSize=\"50\" class=\"example-viewport\"><div *cdkVirtualFor=\"let item of ds\" class=\"example-item\">{{item || 'Loading...'}}</div></cdk-virtual-scroll-viewport>",
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                },] },
+    ];
+    return CdkVirtualScrollDataSourceExample;
+}());
+var MyDataSource = /** @class */ (function (_super) {
+    __extends(MyDataSource, _super);
+    function MyDataSource() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.length = 100000;
+        _this.pageSize = 100;
+        _this.cachedData = Array.from({ length: _this.length });
+        _this.fetchedPages = new Set();
+        _this.dataStream = new rxjs.BehaviorSubject(_this.cachedData);
+        _this.subscription = new rxjs.Subscription();
+        return _this;
+    }
+    /**
+     * @param {?} collectionViewer
+     * @return {?}
+     */
+    MyDataSource.prototype.connect = /**
+     * @param {?} collectionViewer
+     * @return {?}
+     */
+    function (collectionViewer) {
+        var _this = this;
+        this.subscription.add(collectionViewer.viewChange.subscribe(function (range) {
+            /** @type {?} */
+            var startPage = _this.getPageForIndex(range.start);
+            /** @type {?} */
+            var endPage = _this.getPageForIndex(range.end - 1);
+            for (var i = startPage; i <= endPage; i++) {
+                _this.fetchPage(i);
+            }
+        }));
+        return this.dataStream;
+    };
+    /**
+     * @return {?}
+     */
+    MyDataSource.prototype.disconnect = /**
+     * @return {?}
+     */
+    function () {
+        this.subscription.unsubscribe();
+    };
+    /**
+     * @private
+     * @param {?} index
+     * @return {?}
+     */
+    MyDataSource.prototype.getPageForIndex = /**
+     * @private
+     * @param {?} index
+     * @return {?}
+     */
+    function (index) {
+        return Math.floor(index / this.pageSize);
+    };
+    /**
+     * @private
+     * @param {?} page
+     * @return {?}
+     */
+    MyDataSource.prototype.fetchPage = /**
+     * @private
+     * @param {?} page
+     * @return {?}
+     */
+    function (page) {
+        var _this = this;
+        if (this.fetchedPages.has(page)) {
+            return;
+        }
+        this.fetchedPages.add(page);
+        // Use `setTimeout` to simulate fetching data from server.
+        setTimeout(function () {
+            var _a;
+            (_a = _this.cachedData).splice.apply(_a, [page * _this.pageSize, _this.pageSize].concat(Array.from({ length: _this.pageSize })
+                .map(function (_, i) { return "Item #" + (page * _this.pageSize + i); })));
+            _this.dataStream.next(_this.cachedData);
+        }, Math.random() * 1000 + 200);
+    };
+    return MyDataSource;
+}(collections.DataSource));
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Virtual scrolling `<dl>`
+ */
+var CdkVirtualScrollDlExample = /** @class */ (function () {
+    function CdkVirtualScrollDlExample() {
+        this.states = [
+            { name: 'Alabama', capital: 'Montgomery' },
+            { name: 'Alaska', capital: 'Juneau' },
+            { name: 'Arizona', capital: 'Phoenix' },
+            { name: 'Arkansas', capital: 'Little Rock' },
+            { name: 'California', capital: 'Sacramento' },
+            { name: 'Colorado', capital: 'Denver' },
+            { name: 'Connecticut', capital: 'Hartford' },
+            { name: 'Delaware', capital: 'Dover' },
+            { name: 'Florida', capital: 'Tallahassee' },
+            { name: 'Georgia', capital: 'Atlanta' },
+            { name: 'Hawaii', capital: 'Honolulu' },
+            { name: 'Idaho', capital: 'Boise' },
+            { name: 'Illinois', capital: 'Springfield' },
+            { name: 'Indiana', capital: 'Indianapolis' },
+            { name: 'Iowa', capital: 'Des Moines' },
+            { name: 'Kansas', capital: 'Topeka' },
+            { name: 'Kentucky', capital: 'Frankfort' },
+            { name: 'Louisiana', capital: 'Baton Rouge' },
+            { name: 'Maine', capital: 'Augusta' },
+            { name: 'Maryland', capital: 'Annapolis' },
+            { name: 'Massachusetts', capital: 'Boston' },
+            { name: 'Michigan', capital: 'Lansing' },
+            { name: 'Minnesota', capital: 'St. Paul' },
+            { name: 'Mississippi', capital: 'Jackson' },
+            { name: 'Missouri', capital: 'Jefferson City' },
+            { name: 'Montana', capital: 'Helena' },
+            { name: 'Nebraska', capital: 'Lincoln' },
+            { name: 'Nevada', capital: 'Carson City' },
+            { name: 'New Hampshire', capital: 'Concord' },
+            { name: 'New Jersey', capital: 'Trenton' },
+            { name: 'New Mexico', capital: 'Santa Fe' },
+            { name: 'New York', capital: 'Albany' },
+            { name: 'North Carolina', capital: 'Raleigh' },
+            { name: 'North Dakota', capital: 'Bismarck' },
+            { name: 'Ohio', capital: 'Columbus' },
+            { name: 'Oklahoma', capital: 'Oklahoma City' },
+            { name: 'Oregon', capital: 'Salem' },
+            { name: 'Pennsylvania', capital: 'Harrisburg' },
+            { name: 'Rhode Island', capital: 'Providence' },
+            { name: 'South Carolina', capital: 'Columbia' },
+            { name: 'South Dakota', capital: 'Pierre' },
+            { name: 'Tennessee', capital: 'Nashville' },
+            { name: 'Texas', capital: 'Austin' },
+            { name: 'Utah', capital: 'Salt Lake City' },
+            { name: 'Vermont', capital: 'Montpelier' },
+            { name: 'Virginia', capital: 'Richmond' },
+            { name: 'Washington', capital: 'Olympia' },
+            { name: 'West Virginia', capital: 'Charleston' },
+            { name: 'Wisconsin', capital: 'Madison' },
+            { name: 'Wyoming', capital: 'Cheyenne' },
+        ];
+    }
+    CdkVirtualScrollDlExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-virtual-scroll-dl-example',
+                    styles: [".example-viewport { height: 200px; width: 200px; border: 1px solid black; } .example-dt { height: 30px; font-weight: bold; } .example-dd { height: 30px; } "],
+                    template: "<cdk-virtual-scroll-viewport class=\"example-viewport\" itemSize=\"60\"><dl class=\"example-dl\"><ng-container *cdkVirtualFor=\"let state of states\"><dt class=\"example-dt\">{{state.name}}</dt><dd class=\"example-dd\">{{state.capital}}</dd></ng-container></dl></cdk-virtual-scroll-viewport>",
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                },] },
+    ];
+    return CdkVirtualScrollDlExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Fixed size virtual scroll with custom buffer parameters
+ */
+var CdkVirtualScrollFixedBufferExample = /** @class */ (function () {
+    function CdkVirtualScrollFixedBufferExample() {
+        this.items = Array.from({ length: 100000 }).map(function (_, i) { return "Item #" + i; });
+    }
+    CdkVirtualScrollFixedBufferExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-virtual-scroll-fixed-buffer-example',
+                    styles: [".example-viewport { height: 200px; width: 200px; border: 1px solid black; } .example-item { height: 50px; } "],
+                    template: "<cdk-virtual-scroll-viewport itemSize=\"50\" minBufferPx=\"200\" maxBufferPx=\"400\" class=\"example-viewport\"><div *cdkVirtualFor=\"let item of items\" class=\"example-item\">{{item}}</div></cdk-virtual-scroll-viewport>",
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                },] },
+    ];
+    return CdkVirtualScrollFixedBufferExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Horizontal virtual scroll
+ */
+var CdkVirtualScrollHorizontalExample = /** @class */ (function () {
+    function CdkVirtualScrollHorizontalExample() {
+        this.items = Array.from({ length: 100000 }).map(function (_, i) { return "Item #" + i; });
+    }
+    CdkVirtualScrollHorizontalExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-virtual-scroll-horizontal-example',
+                    styles: [".cdk-virtual-scroll-data-source-example .example-viewport { height: 200px; width: 200px; border: 1px solid black; } .cdk-virtual-scroll-data-source-example .example-viewport .cdk-virtual-scroll-content-wrapper { display: flex; flex-direction: row; } .cdk-virtual-scroll-data-source-example .example-item { width: 50px; height: 100%; writing-mode: vertical-lr; } "],
+                    template: "<div class=\"cdk-virtual-scroll-data-source-example\"><cdk-virtual-scroll-viewport orientation=\"horizontal\" itemSize=\"50\" class=\"example-viewport\"><div *cdkVirtualFor=\"let item of items\" class=\"example-item\">{{item}}</div></cdk-virtual-scroll-viewport></div>",
+                    encapsulation: core.ViewEncapsulation.None,
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                },] },
+    ];
+    return CdkVirtualScrollHorizontalExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Basic virtual scroll
+ */
+var CdkVirtualScrollOverviewExample = /** @class */ (function () {
+    function CdkVirtualScrollOverviewExample() {
+        this.items = Array.from({ length: 100000 }).map(function (_, i) { return "Item #" + i; });
+    }
+    CdkVirtualScrollOverviewExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-virtual-scroll-overview-example',
+                    styles: [".example-viewport { height: 200px; width: 200px; border: 1px solid black; } .example-item { height: 50px; } "],
+                    template: "<cdk-virtual-scroll-viewport itemSize=\"50\" class=\"example-viewport\"><div *cdkVirtualFor=\"let item of items\" class=\"example-item\">{{item}}</div></cdk-virtual-scroll-viewport>",
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                },] },
+    ];
+    return CdkVirtualScrollOverviewExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Virtual scroll with no template caching
+ */
+var CdkVirtualScrollTemplateCacheExample = /** @class */ (function () {
+    function CdkVirtualScrollTemplateCacheExample() {
+        this.items = Array.from({ length: 100000 }).map(function (_, i) { return "Item #" + i; });
+    }
+    CdkVirtualScrollTemplateCacheExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'cdk-virtual-scroll-template-cache-example',
+                    styles: [".example-viewport { height: 200px; width: 200px; border: 1px solid black; } .example-item { height: 50px; } "],
+                    template: "<cdk-virtual-scroll-viewport itemSize=\"50\" class=\"example-viewport\"><div *cdkVirtualFor=\"let item of items; templateCacheSize: 0\" class=\"example-item\">{{item}}</div></cdk-virtual-scroll-viewport>",
+                    changeDetection: core.ChangeDetectionStrategy.OnPush,
+                },] },
+    ];
+    return CdkVirtualScrollTemplateCacheExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Configurable checkbox
@@ -1215,7 +2143,7 @@ var CheckboxConfigurableExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic checkboxes
@@ -1235,7 +2163,7 @@ var CheckboxOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Chips Autocomplete
@@ -1246,7 +2174,7 @@ var ChipsAutocompleteExample = /** @class */ (function () {
         this.visible = true;
         this.selectable = true;
         this.removable = true;
-        this.addOnBlur = false;
+        this.addOnBlur = true;
         this.separatorKeysCodes = [keycodes.ENTER, keycodes.COMMA];
         this.fruitCtrl = new forms.FormControl();
         this.fruits = ['Lemon'];
@@ -1262,17 +2190,23 @@ var ChipsAutocompleteExample = /** @class */ (function () {
      * @return {?}
      */
     function (event) {
-        var /** @type {?} */ input = event.input;
-        var /** @type {?} */ value = event.value;
-        // Add our fruit
-        if ((value || '').trim()) {
-            this.fruits.push(value.trim());
+        // Add fruit only when MatAutocomplete is not open
+        // To make sure this does not conflict with OptionSelected Event
+        if (!this.matAutocomplete.isOpen) {
+            /** @type {?} */
+            var input = event.input;
+            /** @type {?} */
+            var value = event.value;
+            // Add our fruit
+            if ((value || '').trim()) {
+                this.fruits.push(value.trim());
+            }
+            // Reset the input value
+            if (input) {
+                input.value = '';
+            }
+            this.fruitCtrl.setValue(null);
         }
-        // Reset the input value
-        if (input) {
-            input.value = '';
-        }
-        this.fruitCtrl.setValue(null);
     };
     /**
      * @param {?} fruit
@@ -1283,7 +2217,8 @@ var ChipsAutocompleteExample = /** @class */ (function () {
      * @return {?}
      */
     function (fruit) {
-        var /** @type {?} */ index = this.fruits.indexOf(fruit);
+        /** @type {?} */
+        var index = this.fruits.indexOf(fruit);
         if (index >= 0) {
             this.fruits.splice(index, 1);
         }
@@ -1302,15 +2237,18 @@ var ChipsAutocompleteExample = /** @class */ (function () {
         this.fruitCtrl.setValue(null);
     };
     /**
+     * @private
      * @param {?} value
      * @return {?}
      */
     ChipsAutocompleteExample.prototype._filter = /**
+     * @private
      * @param {?} value
      * @return {?}
      */
     function (value) {
-        var /** @type {?} */ filterValue = value.toLowerCase();
+        /** @type {?} */
+        var filterValue = value.toLowerCase();
         return this.allFruits.filter(function (fruit) { return fruit.toLowerCase().indexOf(filterValue) === 0; });
     };
     ChipsAutocompleteExample.decorators = [
@@ -1323,14 +2261,15 @@ var ChipsAutocompleteExample = /** @class */ (function () {
     /** @nocollapse */
     ChipsAutocompleteExample.ctorParameters = function () { return []; };
     ChipsAutocompleteExample.propDecorators = {
-        "fruitInput": [{ type: core.ViewChild, args: ['fruitInput',] },],
+        fruitInput: [{ type: core.ViewChild, args: ['fruitInput',] }],
+        matAutocomplete: [{ type: core.ViewChild, args: ['auto',] }]
     };
     return ChipsAutocompleteExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Chips with input
@@ -1357,8 +2296,10 @@ var ChipsInputExample = /** @class */ (function () {
      * @return {?}
      */
     function (event) {
-        var /** @type {?} */ input = event.input;
-        var /** @type {?} */ value = event.value;
+        /** @type {?} */
+        var input = event.input;
+        /** @type {?} */
+        var value = event.value;
         // Add our fruit
         if ((value || '').trim()) {
             this.fruits.push({ name: value.trim() });
@@ -1377,7 +2318,8 @@ var ChipsInputExample = /** @class */ (function () {
      * @return {?}
      */
     function (fruit) {
-        var /** @type {?} */ index = this.fruits.indexOf(fruit);
+        /** @type {?} */
+        var index = this.fruits.indexOf(fruit);
         if (index >= 0) {
             this.fruits.splice(index, 1);
         }
@@ -1394,7 +2336,7 @@ var ChipsInputExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic chips
@@ -1414,7 +2356,7 @@ var ChipsOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Stacked chips
@@ -1440,7 +2382,7 @@ var ChipsStackedExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Datepicker open method
@@ -1460,7 +2402,7 @@ var DatepickerApiExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Datepicker palette colors
@@ -1480,7 +2422,7 @@ var DatepickerColorExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Datepicker with custom calendar header
@@ -1493,7 +2435,6 @@ var DatepickerCustomHeaderExample = /** @class */ (function () {
         { type: core.Component, args: [{
                     selector: 'datepicker-custom-header-example',
                     template: "<mat-form-field><mat-label>Custom calendar header</mat-label><input matInput [matDatepicker]=\"picker\"><mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle><mat-datepicker #picker [calendarHeaderComponent]=\"exampleHeader\"></mat-datepicker></mat-form-field>",
-                    styles: [".example-header { display: flex; align-items: center; padding: 0.5em; } .example-header-label { flex: 1; height: 1em; font-weight: bold; text-align: center; } .example-double-arrow .mat-icon { margin: -22%; } "],
                     changeDetection: core.ChangeDetectionStrategy.OnPush,
                 },] },
     ];
@@ -1564,23 +2505,24 @@ var ExampleHeader = /** @class */ (function () {
     ExampleHeader.decorators = [
         { type: core.Component, args: [{
                     selector: 'example-header',
+                    styles: ["\n    .example-header {\n      display: flex;\n      align-items: center;\n      padding: 0.5em;\n    }\n\n    .example-header-label {\n      flex: 1;\n      height: 1em;\n      font-weight: 500;\n      text-align: center;\n    }\n\n    .example-double-arrow .mat-icon {\n      margin: -22%;\n    }\n  "],
                     template: "\n    <div class=\"example-header\">\n      <button mat-icon-button class=\"example-double-arrow\" (click)=\"previousClicked('year')\">\n        <mat-icon>keyboard_arrow_left</mat-icon>\n        <mat-icon>keyboard_arrow_left</mat-icon>\n      </button>\n      <button mat-icon-button (click)=\"previousClicked('month')\">\n        <mat-icon>keyboard_arrow_left</mat-icon>\n      </button>\n      <span class=\"example-header-label\">{{periodLabel}}</span>\n      <button mat-icon-button (click)=\"nextClicked('month')\">\n        <mat-icon>keyboard_arrow_right</mat-icon>\n      </button>\n      <button mat-icon-button class=\"example-double-arrow\" (click)=\"nextClicked('year')\">\n        <mat-icon>keyboard_arrow_right</mat-icon>\n        <mat-icon>keyboard_arrow_right</mat-icon>\n      </button>\n    </div>\n  ",
                     changeDetection: core.ChangeDetectionStrategy.OnPush,
                 },] },
     ];
     /** @nocollapse */
     ExampleHeader.ctorParameters = function () { return [
-        { type: material.MatCalendar, decorators: [{ type: core.Host },] },
-        { type: core$1.DateAdapter, },
-        { type: undefined, decorators: [{ type: core.Inject, args: [core$1.MAT_DATE_FORMATS,] },] },
-        { type: core.ChangeDetectorRef, },
+        { type: material.MatCalendar, decorators: [{ type: core.Host }] },
+        { type: core$1.DateAdapter },
+        { type: undefined, decorators: [{ type: core.Inject, args: [core$1.MAT_DATE_FORMATS,] }] },
+        { type: core.ChangeDetectorRef }
     ]; };
     return ExampleHeader;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Datepicker with custom icon
@@ -1600,7 +2542,34 @@ var DatepickerCustomIconExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Datepicker with custom date classes
+ */
+var DatepickerDateClassExample = /** @class */ (function () {
+    function DatepickerDateClassExample() {
+        this.dateClass = function (d) {
+            /** @type {?} */
+            var date = d.getDate();
+            // Highlight the 1st and 20th day of each month.
+            return (date === 1 || date === 20) ? 'example-custom-date-class' : undefined;
+        };
+    }
+    DatepickerDateClassExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'datepicker-date-class-example',
+                    template: "<mat-form-field class=\"example-full-width\"><input matInput [matDatepicker]=\"picker\" placeholder=\"Choose a date\"><mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle><mat-datepicker [dateClass]=\"dateClass\" #picker></mat-datepicker></mat-form-field>",
+                    styles: [".example-custom-date-class { background: orange; border-radius: 100%; } "],
+                    encapsulation: core.ViewEncapsulation.None,
+                },] },
+    ];
+    return DatepickerDateClassExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Disabled datepicker
@@ -1620,7 +2589,7 @@ var DatepickerDisabledExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Datepicker input and change events
@@ -1654,7 +2623,7 @@ var DatepickerEventsExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Datepicker with filter validation
@@ -1662,7 +2631,8 @@ var DatepickerEventsExample = /** @class */ (function () {
 var DatepickerFilterExample = /** @class */ (function () {
     function DatepickerFilterExample() {
         this.myFilter = function (d) {
-            var /** @type {?} */ day = d.getDay();
+            /** @type {?} */
+            var day = d.getDay();
             // Prevent Saturday and Sunday from being selected.
             return day !== 0 && day !== 6;
         };
@@ -1679,12 +2649,14 @@ var DatepickerFilterExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ moment = _rollupMoment__default__default || _rollupMoment__default;
+/** @type {?} */
+var moment = _rollupMoment__default__default || _rollupMoment__default;
 // See the Moment.js docs for the meaning of these formats:
 // https://momentjs.com/docs/#/displaying/format/
-var /** @type {?} */ MY_FORMATS = {
+/** @type {?} */
+var MY_FORMATS = {
     parse: {
         dateInput: 'LL',
     },
@@ -1721,7 +2693,7 @@ var DatepickerFormatsExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ɵ0 = materialMomentAdapter.MAT_MOMENT_DATE_FORMATS;
 /**
@@ -1759,14 +2731,14 @@ var DatepickerLocaleExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     DatepickerLocaleExample.ctorParameters = function () { return [
-        { type: core$1.DateAdapter, },
+        { type: core$1.DateAdapter }
     ]; };
     return DatepickerLocaleExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Datepicker with min & max validation
@@ -1788,9 +2760,10 @@ var DatepickerMinMaxExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ moment$1 = _rollupMoment__default__default || _rollupMoment__default;
+/** @type {?} */
+var moment$1 = _rollupMoment__default__default || _rollupMoment__default;
 var ɵ0$1 = materialMomentAdapter.MAT_MOMENT_DATE_FORMATS;
 /**
  * \@title Datepicker that uses Moment.js dates
@@ -1819,7 +2792,7 @@ var DatepickerMomentExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic datepicker
@@ -1839,7 +2812,7 @@ var DatepickerOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Datepicker start date
@@ -1860,7 +2833,7 @@ var DatepickerStartViewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Datepicker touch UI
@@ -1880,7 +2853,7 @@ var DatepickerTouchExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Datepicker selected value
@@ -1902,12 +2875,14 @@ var DatepickerValueExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ moment$2 = _rollupMoment__default__default || _rollupMoment__default;
+/** @type {?} */
+var moment$2 = _rollupMoment__default__default || _rollupMoment__default;
 // See the Moment.js docs for the meaning of these formats:
 // https://momentjs.com/docs/#/displaying/format/
-var /** @type {?} */ MY_FORMATS$1 = {
+/** @type {?} */
+var MY_FORMATS$1 = {
     parse: {
         dateInput: 'MM/YYYY',
     },
@@ -1934,7 +2909,8 @@ var DatepickerViewsSelectionExample = /** @class */ (function () {
      * @return {?}
      */
     function (normalizedYear) {
-        var /** @type {?} */ ctrlValue = this.date.value;
+        /** @type {?} */
+        var ctrlValue = this.date.value;
         ctrlValue.year(normalizedYear.year());
         this.date.setValue(ctrlValue);
     };
@@ -1949,7 +2925,8 @@ var DatepickerViewsSelectionExample = /** @class */ (function () {
      * @return {?}
      */
     function (normlizedMonth, datepicker) {
-        var /** @type {?} */ ctrlValue = this.date.value;
+        /** @type {?} */
+        var ctrlValue = this.date.value;
         ctrlValue.month(normlizedMonth.month());
         this.date.setValue(ctrlValue);
         datepicker.close();
@@ -1973,7 +2950,7 @@ var DatepickerViewsSelectionExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Dialog with header, scrollable content and actions
@@ -1989,7 +2966,8 @@ var DialogContentExample = /** @class */ (function () {
      * @return {?}
      */
     function () {
-        var /** @type {?} */ dialogRef = this.dialog.open(DialogContentExampleDialog);
+        /** @type {?} */
+        var dialogRef = this.dialog.open(DialogContentExampleDialog);
         dialogRef.afterClosed().subscribe(function (result) {
             console.log("Dialog result: " + result);
         });
@@ -2003,7 +2981,7 @@ var DialogContentExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     DialogContentExample.ctorParameters = function () { return [
-        { type: material.MatDialog, },
+        { type: material.MatDialog }
     ]; };
     return DialogContentExample;
 }());
@@ -2021,7 +2999,7 @@ var DialogContentExampleDialog = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Injecting data when opening a dialog
@@ -2052,7 +3030,7 @@ var DialogDataExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     DialogDataExample.ctorParameters = function () { return [
-        { type: material.MatDialog, },
+        { type: material.MatDialog }
     ]; };
     return DialogDataExample;
 }());
@@ -2068,14 +3046,14 @@ var DialogDataExampleDialog = /** @class */ (function () {
     ];
     /** @nocollapse */
     DialogDataExampleDialog.ctorParameters = function () { return [
-        { type: undefined, decorators: [{ type: core.Inject, args: [material.MAT_DIALOG_DATA,] },] },
+        { type: undefined, decorators: [{ type: core.Inject, args: [material.MAT_DIALOG_DATA,] }] }
     ]; };
     return DialogDataExampleDialog;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Dialog elements
@@ -2102,7 +3080,7 @@ var DialogElementsExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     DialogElementsExample.ctorParameters = function () { return [
-        { type: material.MatDialog, },
+        { type: material.MatDialog }
     ]; };
     return DialogElementsExample;
 }());
@@ -2120,7 +3098,7 @@ var DialogElementsExampleDialog = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Dialog Overview
@@ -2137,7 +3115,8 @@ var DialogOverviewExample = /** @class */ (function () {
      */
     function () {
         var _this = this;
-        var /** @type {?} */ dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
+        /** @type {?} */
+        var dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
             width: '250px',
             data: { name: this.name, animal: this.animal }
         });
@@ -2155,7 +3134,7 @@ var DialogOverviewExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     DialogOverviewExample.ctorParameters = function () { return [
-        { type: material.MatDialog, },
+        { type: material.MatDialog }
     ]; };
     return DialogOverviewExample;
 }());
@@ -2181,15 +3160,15 @@ var DialogOverviewExampleDialog = /** @class */ (function () {
     ];
     /** @nocollapse */
     DialogOverviewExampleDialog.ctorParameters = function () { return [
-        { type: material.MatDialogRef, },
-        { type: undefined, decorators: [{ type: core.Inject, args: [material.MAT_DIALOG_DATA,] },] },
+        { type: material.MatDialogRef },
+        { type: undefined, decorators: [{ type: core.Inject, args: [material.MAT_DIALOG_DATA,] }] }
     ]; };
     return DialogOverviewExampleDialog;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic divider
@@ -2209,7 +3188,7 @@ var DividerOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Elevation CSS classes
@@ -2230,7 +3209,7 @@ var ElevationOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Accordion with expand/collapse all toggles
@@ -2245,16 +3224,15 @@ var ExpansionExpandCollapseAllExample = /** @class */ (function () {
                     styles: [".example-action-buttons { padding-bottom: 20px; } .example-headers-align .mat-expansion-panel-header-title, .example-headers-align .mat-expansion-panel-header-description { flex-basis: 0; } .example-headers-align .mat-expansion-panel-header-description { justify-content: space-between; align-items: center; } "],
                 },] },
     ];
-    /** @nocollapse */
     ExpansionExpandCollapseAllExample.propDecorators = {
-        "accordion": [{ type: core.ViewChild, args: [material.MatAccordion,] },],
+        accordion: [{ type: core.ViewChild, args: [material.MatAccordion,] }]
     };
     return ExpansionExpandCollapseAllExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic expansion panel
@@ -2275,7 +3253,7 @@ var ExpansionOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Expansion panel as accordion
@@ -2317,7 +3295,7 @@ var ExpansionStepsExample = /** @class */ (function () {
         { type: core.Component, args: [{
                     selector: 'expansion-steps-example',
                     template: "<mat-accordion class=\"example-headers-align\"><mat-expansion-panel [expanded]=\"step === 0\" (opened)=\"setStep(0)\" hideToggle><mat-expansion-panel-header><mat-panel-title>Personal data</mat-panel-title><mat-panel-description>Type your name and age<mat-icon>account_circle</mat-icon></mat-panel-description></mat-expansion-panel-header><mat-form-field><input matInput placeholder=\"First name\"></mat-form-field><mat-form-field><input matInput type=\"number\" min=\"1\" placeholder=\"Age\"></mat-form-field><mat-action-row><button mat-button color=\"primary\" (click)=\"nextStep()\">Next</button></mat-action-row></mat-expansion-panel><mat-expansion-panel [expanded]=\"step === 1\" (opened)=\"setStep(1)\" hideToggle><mat-expansion-panel-header><mat-panel-title>Destination</mat-panel-title><mat-panel-description>Type the country name<mat-icon>map</mat-icon></mat-panel-description></mat-expansion-panel-header><mat-form-field><input matInput placeholder=\"Country\"></mat-form-field><mat-action-row><button mat-button color=\"warn\" (click)=\"prevStep()\">Previous</button> <button mat-button color=\"primary\" (click)=\"nextStep()\">Next</button></mat-action-row></mat-expansion-panel><mat-expansion-panel [expanded]=\"step === 2\" (opened)=\"setStep(2)\" hideToggle><mat-expansion-panel-header><mat-panel-title>Day of the trip</mat-panel-title><mat-panel-description>Inform the date you wish to travel<mat-icon>date_range</mat-icon></mat-panel-description></mat-expansion-panel-header><mat-form-field><input matInput placeholder=\"Date\" [matDatepicker]=\"picker\" (focus)=\"picker.open()\" readonly=\"readonly\"></mat-form-field><mat-datepicker #picker></mat-datepicker><mat-action-row><button mat-button color=\"warn\" (click)=\"prevStep()\">Previous</button> <button mat-button color=\"primary\" (click)=\"nextStep()\">End</button></mat-action-row></mat-expansion-panel></mat-accordion>",
-                    styles: [".example-headers-align .mat-expansion-panel-header-title,  .example-headers-align .mat-expansion-panel-header-description { flex-basis: 0; } .example-headers-align .mat-expansion-panel-header-description { justify-content: space-between; align-items: center; } "],
+                    styles: [".example-headers-align .mat-expansion-panel-header-title, .example-headers-align .mat-expansion-panel-header-description { flex-basis: 0; } .example-headers-align .mat-expansion-panel-header-description { justify-content: space-between; align-items: center; } "],
                 },] },
     ];
     return ExpansionStepsExample;
@@ -2325,7 +3303,7 @@ var ExpansionStepsExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Monitoring focus with FocusMonitor
@@ -2349,10 +3327,13 @@ var FocusMonitorDirectivesExample = /** @class */ (function () {
         return origin ? origin + ' focused' : 'blurred';
     };
     // Workaround for the fact that (cdkFocusChange) emits outside NgZone.
+    // Workaround for the fact that (cdkFocusChange) emits outside NgZone.
     /**
      * @return {?}
      */
-    FocusMonitorDirectivesExample.prototype.markForCheck = /**
+    FocusMonitorDirectivesExample.prototype.markForCheck = 
+    // Workaround for the fact that (cdkFocusChange) emits outside NgZone.
+    /**
      * @return {?}
      */
     function () {
@@ -2368,15 +3349,15 @@ var FocusMonitorDirectivesExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     FocusMonitorDirectivesExample.ctorParameters = function () { return [
-        { type: core.NgZone, },
-        { type: core.ChangeDetectorRef, },
+        { type: core.NgZone },
+        { type: core.ChangeDetectorRef }
     ]; };
     return FocusMonitorDirectivesExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Focusing with a specific FocusOrigin
@@ -2396,13 +3377,11 @@ var FocusMonitorFocusViaExample = /** @class */ (function () {
      */
     function () {
         var _this = this;
-        this.focusMonitor.monitor(this.monitoredEl.nativeElement)
-            .subscribe(function (origin) {
-            return _this.ngZone.run(function () {
-                _this.origin = _this.formatOrigin(origin);
-                _this.cdr.markForCheck();
-            });
-        });
+        this.focusMonitor.monitor(this.monitoredEl)
+            .subscribe(function (origin) { return _this.ngZone.run(function () {
+            _this.origin = _this.formatOrigin(origin);
+            _this.cdr.markForCheck();
+        }); });
     };
     /**
      * @return {?}
@@ -2411,7 +3390,7 @@ var FocusMonitorFocusViaExample = /** @class */ (function () {
      * @return {?}
      */
     function () {
-        this.focusMonitor.stopMonitoring(this.monitoredEl.nativeElement);
+        this.focusMonitor.stopMonitoring(this.monitoredEl);
     };
     /**
      * @param {?} origin
@@ -2433,19 +3412,19 @@ var FocusMonitorFocusViaExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     FocusMonitorFocusViaExample.ctorParameters = function () { return [
-        { type: a11y.FocusMonitor, },
-        { type: core.ChangeDetectorRef, },
-        { type: core.NgZone, },
+        { type: a11y.FocusMonitor },
+        { type: core.ChangeDetectorRef },
+        { type: core.NgZone }
     ]; };
     FocusMonitorFocusViaExample.propDecorators = {
-        "monitoredEl": [{ type: core.ViewChild, args: ['monitored',] },],
+        monitoredEl: [{ type: core.ViewChild, args: ['monitored',] }]
     };
     return FocusMonitorFocusViaExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Monitoring focus with FocusMonitor
@@ -2466,20 +3445,16 @@ var FocusMonitorOverviewExample = /** @class */ (function () {
      */
     function () {
         var _this = this;
-        this.focusMonitor.monitor(this.element.nativeElement)
-            .subscribe(function (origin) {
-            return _this.ngZone.run(function () {
-                _this.elementOrigin = _this.formatOrigin(origin);
-                _this.cdr.markForCheck();
-            });
-        });
-        this.focusMonitor.monitor(this.subtree.nativeElement, true)
-            .subscribe(function (origin) {
-            return _this.ngZone.run(function () {
-                _this.subtreeOrigin = _this.formatOrigin(origin);
-                _this.cdr.markForCheck();
-            });
-        });
+        this.focusMonitor.monitor(this.element)
+            .subscribe(function (origin) { return _this.ngZone.run(function () {
+            _this.elementOrigin = _this.formatOrigin(origin);
+            _this.cdr.markForCheck();
+        }); });
+        this.focusMonitor.monitor(this.subtree, true)
+            .subscribe(function (origin) { return _this.ngZone.run(function () {
+            _this.subtreeOrigin = _this.formatOrigin(origin);
+            _this.cdr.markForCheck();
+        }); });
     };
     /**
      * @return {?}
@@ -2488,8 +3463,8 @@ var FocusMonitorOverviewExample = /** @class */ (function () {
      * @return {?}
      */
     function () {
-        this.focusMonitor.stopMonitoring(this.element.nativeElement);
-        this.focusMonitor.stopMonitoring(this.subtree.nativeElement);
+        this.focusMonitor.stopMonitoring(this.element);
+        this.focusMonitor.stopMonitoring(this.subtree);
     };
     /**
      * @param {?} origin
@@ -2511,20 +3486,20 @@ var FocusMonitorOverviewExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     FocusMonitorOverviewExample.ctorParameters = function () { return [
-        { type: a11y.FocusMonitor, },
-        { type: core.ChangeDetectorRef, },
-        { type: core.NgZone, },
+        { type: a11y.FocusMonitor },
+        { type: core.ChangeDetectorRef },
+        { type: core.NgZone }
     ]; };
     FocusMonitorOverviewExample.propDecorators = {
-        "element": [{ type: core.ViewChild, args: ['element',] },],
-        "subtree": [{ type: core.ViewChild, args: ['subtree',] },],
+        element: [{ type: core.ViewChild, args: ['element',] }],
+        subtree: [{ type: core.ViewChild, args: ['subtree',] }]
     };
     return FocusMonitorOverviewExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Form field appearance variants
@@ -2544,8 +3519,23 @@ var FormFieldAppearanceExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * \@title Form field with custom telephone number input control.
+ */
+var FormFieldCustomControlExample = /** @class */ (function () {
+    function FormFieldCustomControlExample() {
+    }
+    FormFieldCustomControlExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'form-field-custom-control-example',
+                    template: "<mat-form-field><example-tel-input placeholder=\"Phone number\" required></example-tel-input><mat-icon matSuffix>phone</mat-icon><mat-hint>Include area code</mat-hint></mat-form-field>",
+                    styles: ["/** No CSS for this example */ "],
+                },] },
+    ];
+    return FormFieldCustomControlExample;
+}());
 /**
  * Data structure for holding telephone number.
  */
@@ -2572,8 +3562,8 @@ var MyTelInput = /** @class */ (function () {
         this.focused = false;
         this.ngControl = null;
         this.errorState = false;
-        this.controlType = 'my-tel-input';
-        this.id = "my-tel-input-" + MyTelInput.nextId++;
+        this.controlType = 'example-tel-input';
+        this.id = "example-tel-input-" + MyTelInput.nextId++;
         this.describedBy = '';
         this._required = false;
         this._disabled = false;
@@ -2582,7 +3572,7 @@ var MyTelInput = /** @class */ (function () {
             exchange: '',
             subscriber: '',
         });
-        fm.monitor(elRef.nativeElement, true).subscribe(function (origin) {
+        fm.monitor(elRef, true).subscribe(function (origin) {
             _this.focused = !!origin;
             _this.stateChanges.next();
         });
@@ -2685,7 +3675,7 @@ var MyTelInput = /** @class */ (function () {
      */
     function () {
         this.stateChanges.complete();
-        this.fm.stopMonitoring(this.elRef.nativeElement);
+        this.fm.stopMonitoring(this.elRef);
     };
     /**
      * @param {?} ids
@@ -2707,19 +3697,19 @@ var MyTelInput = /** @class */ (function () {
      * @return {?}
      */
     function (event) {
-        if ((/** @type {?} */ (event.target)).tagName.toLowerCase() != 'input') {
-            /** @type {?} */ ((this.elRef.nativeElement.querySelector('input'))).focus();
+        if (((/** @type {?} */ (event.target))).tagName.toLowerCase() != 'input') {
+            (/** @type {?} */ (this.elRef.nativeElement.querySelector('input'))).focus();
         }
     };
     MyTelInput.nextId = 0;
     MyTelInput.decorators = [
         { type: core.Component, args: [{
-                    selector: 'my-tel-input',
-                    template: "<div [formGroup]=\"parts\"><input class=\"area\" formControlName=\"area\" size=\"3\"> <span>&ndash;</span> <input class=\"exchange\" formControlName=\"exchange\" size=\"3\"> <span>&ndash;</span> <input class=\"subscriber\" formControlName=\"subscriber\" size=\"4\"></div>",
-                    styles: ["div { display: flex; } input { border: none; background: none; padding: 0; outline: none; font: inherit; text-align: center; } span { opacity: 0; transition: opacity 200ms; } :host.floating span { opacity: 1; } "],
+                    selector: 'example-tel-input',
+                    template: "<div [formGroup]=\"parts\" class=\"example-tel-input-container\"><input class=\"example-tel-input-element\" formControlName=\"area\" size=\"3\"> <span class=\"example-tel-input-spacer\">&ndash;</span> <input class=\"example-tel-input-element\" formControlName=\"exchange\" size=\"3\"> <span class=\"example-tel-input-spacer\">&ndash;</span> <input class=\"example-tel-input-element\" formControlName=\"subscriber\" size=\"4\"></div>",
+                    styles: [".example-tel-input-container { display: flex; } .example-tel-input-element { border: none; background: none; padding: 0; outline: none; font: inherit; text-align: center; } .example-tel-input-spacer { opacity: 0; transition: opacity 200ms; } :host.example-floating .example-tel-input-spacer { opacity: 1; } "],
                     providers: [{ provide: material.MatFormFieldControl, useExisting: MyTelInput }],
                     host: {
-                        '[class.floating]': 'shouldLabelFloat',
+                        '[class.example-floating]': 'shouldLabelFloat',
                         '[id]': 'id',
                         '[attr.aria-describedby]': 'describedBy',
                     }
@@ -2727,36 +3717,22 @@ var MyTelInput = /** @class */ (function () {
     ];
     /** @nocollapse */
     MyTelInput.ctorParameters = function () { return [
-        { type: forms.FormBuilder, },
-        { type: a11y.FocusMonitor, },
-        { type: core.ElementRef, },
+        { type: forms.FormBuilder },
+        { type: a11y.FocusMonitor },
+        { type: core.ElementRef }
     ]; };
     MyTelInput.propDecorators = {
-        "placeholder": [{ type: core.Input },],
-        "required": [{ type: core.Input },],
-        "disabled": [{ type: core.Input },],
-        "value": [{ type: core.Input },],
+        placeholder: [{ type: core.Input }],
+        required: [{ type: core.Input }],
+        disabled: [{ type: core.Input }],
+        value: [{ type: core.Input }]
     };
     return MyTelInput;
-}());
-/**
- * \@title Form field with custom telephone number input control.
- */
-var FormFieldCustomControlExample = /** @class */ (function () {
-    function FormFieldCustomControlExample() {
-    }
-    FormFieldCustomControlExample.decorators = [
-        { type: core.Component, args: [{
-                    selector: 'form-field-custom-control-example',
-                    template: "\n    <mat-form-field>\n      <my-tel-input placeholder=\"Phone number\" required></my-tel-input>\n      <mat-icon matSuffix>phone</mat-icon>\n      <mat-hint>Include area code</mat-hint>\n    </mat-form-field>\n  "
-                },] },
-    ];
-    return FormFieldCustomControlExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Form field with error messages
@@ -2788,7 +3764,7 @@ var FormFieldErrorExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Form field with hints
@@ -2808,7 +3784,7 @@ var FormFieldHintExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Form field with label
@@ -2829,14 +3805,14 @@ var FormFieldLabelExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     FormFieldLabelExample.ctorParameters = function () { return [
-        { type: forms.FormBuilder, },
+        { type: forms.FormBuilder }
     ]; };
     return FormFieldLabelExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Simple form field
@@ -2856,7 +3832,7 @@ var FormFieldOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Form field with prefix & suffix
@@ -2868,7 +3844,7 @@ var FormFieldPrefixSuffixExample = /** @class */ (function () {
     FormFieldPrefixSuffixExample.decorators = [
         { type: core.Component, args: [{
                     selector: 'form-field-prefix-suffix-example',
-                    template: "<div class=\"example-container\"><mat-form-field><input matInput placeholder=\"Enter your password\" [type]=\"hide ? 'password' : 'text'\"><mat-icon matSuffix (click)=\"hide = !hide\">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon></mat-form-field><mat-form-field><input matInput placeholder=\"Amount\" type=\"number\" class=\"example-right-align\"> <span matPrefix>$&nbsp;</span> <span matSuffix>.00</span></mat-form-field></div>",
+                    template: "<div class=\"example-container\"><mat-form-field><input matInput placeholder=\"Enter your password\" [type]=\"hide ? 'password' : 'text'\"><mat-icon matSuffix (click)=\"hide = !hide\">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon></mat-form-field><mat-form-field><input matInput placeholder=\"Amount\" type=\"number\" class=\"example-right-align\"> <span matPrefix>$&nbsp;</span> <span matSuffix>.00</span></mat-form-field></div>",
                     styles: [".example-container { display: flex; flex-direction: column; } .example-container > * { width: 100%; } .example-right-align { text-align: right; } input.example-right-align::-webkit-outer-spin-button, input.example-right-align::-webkit-inner-spin-button { display: none; } input.example-right-align { -moz-appearance: textfield; } "],
                 },] },
     ];
@@ -2877,7 +3853,7 @@ var FormFieldPrefixSuffixExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Form field theming
@@ -2907,14 +3883,14 @@ var FormFieldThemingExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     FormFieldThemingExample.ctorParameters = function () { return [
-        { type: forms.FormBuilder, },
+        { type: forms.FormBuilder }
     ]; };
     return FormFieldThemingExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Dynamic grid-list
@@ -2940,7 +3916,7 @@ var GridListDynamicExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic grid-list
@@ -2960,7 +3936,7 @@ var GridListOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic icons
@@ -2980,7 +3956,7 @@ var IconOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title SVG icons
@@ -2998,15 +3974,15 @@ var IconSvgExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     IconSvgExample.ctorParameters = function () { return [
-        { type: material.MatIconRegistry, },
-        { type: platformBrowser.DomSanitizer, },
+        { type: material.MatIconRegistry },
+        { type: platformBrowser.DomSanitizer }
     ]; };
     return IconSvgExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Input with a clear button
@@ -3027,7 +4003,7 @@ var InputClearableExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Error when invalid control is dirty, touched, or submitted.
@@ -3049,7 +4025,8 @@ MyErrorStateMatcher = /** @class */ (function () {
      * @return {?}
      */
     function (control, form) {
-        var /** @type {?} */ isSubmitted = form && form.submitted;
+        /** @type {?} */
+        var isSubmitted = form && form.submitted;
         return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
     };
     return MyErrorStateMatcher;
@@ -3077,7 +4054,7 @@ var InputErrorStateMatcherExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Input with error messages
@@ -3101,7 +4078,7 @@ var InputErrorsExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Inputs in a form
@@ -3121,7 +4098,7 @@ var InputFormExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Input with hints
@@ -3141,7 +4118,7 @@ var InputHintExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic Inputs
@@ -3161,7 +4138,7 @@ var InputOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Inputs with prefixes and suffixes
@@ -3181,7 +4158,7 @@ var InputPrefixSuffixExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic list
@@ -3201,7 +4178,7 @@ var ListOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title List with sections
@@ -3245,7 +4222,7 @@ var ListSectionsExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title List with selection
@@ -3266,7 +4243,7 @@ var ListSelectionExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Menu with icons
@@ -3286,7 +4263,7 @@ var MenuIconsExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic menu
@@ -3306,7 +4283,7 @@ var MenuOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Nested menu
@@ -3326,7 +4303,7 @@ var NestedMenuExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Configurable paginator
@@ -3361,7 +4338,7 @@ var PaginatorConfigurableExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Paginator
@@ -3381,7 +4358,7 @@ var PaginatorOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Buffer progress-bar
@@ -3401,7 +4378,7 @@ var ProgressBarBufferExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Configurable progress-bar
@@ -3425,7 +4402,7 @@ var ProgressBarConfigurableExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Determinate progress-bar
@@ -3445,7 +4422,7 @@ var ProgressBarDeterminateExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Indeterminate progress-bar
@@ -3465,7 +4442,7 @@ var ProgressBarIndeterminateExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Query progress-bar
@@ -3485,7 +4462,7 @@ var ProgressBarQueryExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Configurable progress spinner
@@ -3508,7 +4485,7 @@ var ProgressSpinnerConfigurableExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic progress-spinner
@@ -3528,7 +4505,7 @@ var ProgressSpinnerOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Radios with ngModel
@@ -3549,7 +4526,7 @@ var RadioNgModelExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic radios
@@ -3569,7 +4546,7 @@ var RadioOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title MatRipple basic usage
@@ -3584,7 +4561,7 @@ var RippleOverviewExample = /** @class */ (function () {
         { type: core.Component, args: [{
                     selector: 'ripple-overview-example',
                     template: "<mat-checkbox [(ngModel)]=\"centered\" class=\"example-ripple-checkbox\">Centered</mat-checkbox><mat-checkbox [(ngModel)]=\"disabled\" class=\"example-ripple-checkbox\">Disabled</mat-checkbox><mat-checkbox [(ngModel)]=\"unbounded\" class=\"example-ripple-checkbox\">Unbounded</mat-checkbox><mat-form-field class=\"example-ripple-form-field\"><input matInput [(ngModel)]=\"radius\" type=\"number\" placeholder=\"Radius\"></mat-form-field><mat-form-field class=\"example-ripple-form-field\"><input matInput [(ngModel)]=\"color\" type=\"text\" placeholder=\"Color\"></mat-form-field><div class=\"example-ripple-container mat-elevation-z4\" matRipple [matRippleCentered]=\"centered\" [matRippleDisabled]=\"disabled\" [matRippleUnbounded]=\"unbounded\" [matRippleRadius]=\"radius\" [matRippleColor]=\"color\">Click me</div>",
-                    styles: [".example-ripple-container { /** Necessary until: https://github.com/angular/material2/pull/11913*/ position: relative; cursor: pointer; text-align: center; width: 300px; height: 300px; line-height: 300px; } /** Styles to make the demo look better. */ .example-ripple-checkbox { margin: 6px 12px 6px 0; } .example-ripple-form-field { margin: 0 12px 0 0; } "],
+                    styles: [".example-ripple-container { cursor: pointer; text-align: center; width: 300px; height: 300px; line-height: 300px; user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: transparent; } /** Styles to make the demo look better. */ .example-ripple-checkbox { margin: 6px 12px 6px 0; } .example-ripple-form-field { margin: 0 12px 0 0; } "],
                 },] },
     ];
     return RippleOverviewExample;
@@ -3592,7 +4569,7 @@ var RippleOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Select with custom trigger text
@@ -3614,7 +4591,7 @@ var SelectCustomTriggerExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Disabled select
@@ -3626,7 +4603,7 @@ var SelectDisabledExample = /** @class */ (function () {
     SelectDisabledExample.decorators = [
         { type: core.Component, args: [{
                     selector: 'select-disabled-example',
-                    template: "<p><mat-checkbox [formControl]=\"disableSelect\">Disable select</mat-checkbox></p><p><mat-form-field><mat-select placeholder=\"Choose an option\" [disabled]=\"disableSelect.value\"><mat-option value=\"option1\">Option 1</mat-option><mat-option value=\"option2\" disabled=\"disabled\">Option 2 (disabled)</mat-option><mat-option value=\"option3\">Option 3</mat-option></mat-select></mat-form-field></p>",
+                    template: "<p><mat-checkbox [formControl]=\"disableSelect\">Disable select</mat-checkbox></p><h4>mat-select</h4><mat-form-field><mat-select placeholder=\"Choose an option\" [disabled]=\"disableSelect.value\"><mat-option value=\"option1\">Option 1</mat-option><mat-option value=\"option2\" disabled=\"disabled\">Option 2 (disabled)</mat-option><mat-option value=\"option3\">Option 3</mat-option></mat-select></mat-form-field><h4>native html select</h4><mat-form-field><select matNativeControl placeholder=\"Choose an option\" [disabled]=\"disableSelect.value\"><option value=\"\" selected=\"selected\"></option><option value=\"volvo\">Volvo</option><option value=\"saab\" disabled=\"disabled\">Saab</option><option value=\"mercedes\">Mercedes</option><option value=\"audi\">Audi</option></select></mat-form-field>",
                     styles: ["/** No CSS for this example */ "],
                 },] },
     ];
@@ -3635,7 +4612,7 @@ var SelectDisabledExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Error when invalid control is dirty, touched, or submitted.
@@ -3657,7 +4634,8 @@ MyErrorStateMatcher$1 = /** @class */ (function () {
      * @return {?}
      */
     function (control, form) {
-        var /** @type {?} */ isSubmitted = form && form.submitted;
+        /** @type {?} */
+        var isSubmitted = form && form.submitted;
         return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
     };
     return MyErrorStateMatcher;
@@ -3671,12 +4649,20 @@ var SelectErrorStateMatcherExample = /** @class */ (function () {
             forms.Validators.required,
             forms.Validators.pattern('valid'),
         ]);
+        this.selectFormControl = new forms.FormControl('valid', [
+            forms.Validators.required,
+            forms.Validators.pattern('valid'),
+        ]);
+        this.nativeSelectFormControl = new forms.FormControl('valid', [
+            forms.Validators.required,
+            forms.Validators.pattern('valid'),
+        ]);
         this.matcher = new MyErrorStateMatcher$1();
     }
     SelectErrorStateMatcherExample.decorators = [
         { type: core.Component, args: [{
                     selector: 'select-error-state-matcher-example',
-                    template: "<mat-form-field><mat-select placeholder=\"Choose one\" [formControl]=\"selected\" [errorStateMatcher]=\"matcher\"><mat-option>Clear</mat-option><mat-option value=\"valid\">Valid option</mat-option><mat-option value=\"invalid\">Invalid option</mat-option></mat-select><mat-hint>Errors appear instantly!</mat-hint><mat-error *ngIf=\"selected.hasError('required')\">You must make a selection</mat-error><mat-error *ngIf=\"selected.hasError('pattern') && !selected.hasError('required')\">Your selection is invalid</mat-error></mat-form-field>",
+                    template: "<h4>mat-select</h4><mat-form-field><mat-select placeholder=\"Choose one\" [formControl]=\"selected\" [errorStateMatcher]=\"matcher\"><mat-option>Clear</mat-option><mat-option value=\"valid\">Valid option</mat-option><mat-option value=\"invalid\">Invalid option</mat-option></mat-select><mat-hint>Errors appear instantly!</mat-hint><mat-error *ngIf=\"selected.hasError('required')\">You must make a selection</mat-error><mat-error *ngIf=\"selected.hasError('pattern') && !selected.hasError('required')\">Your selection is invalid</mat-error></mat-form-field><h4>native html select</h4><mat-form-field class=\"demo-full-width\"><select matNativeControl placeholder=\"Choose one\" [formControl]=\"nativeSelectFormControl\" [errorStateMatcher]=\"matcher\"><option value=\"\"></option><option value=\"valid\" selected=\"selected\">Valid option</option><option value=\"invalid\">Invalid option</option></select><mat-error *ngIf=\"nativeSelectFormControl.hasError('required')\">You must make a selection</mat-error><mat-error *ngIf=\"nativeSelectFormControl.hasError('pattern') && !nativeSelectFormControl.hasError('required')\">Your selection is invalid</mat-error></mat-form-field>",
                     styles: ["/** No CSS for this example */ "],
                 },] },
     ];
@@ -3685,7 +4671,7 @@ var SelectErrorStateMatcherExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Select in a form
@@ -3697,11 +4683,16 @@ var SelectFormExample = /** @class */ (function () {
             { value: 'pizza-1', viewValue: 'Pizza' },
             { value: 'tacos-2', viewValue: 'Tacos' }
         ];
+        this.cars = [
+            { value: 'volvo', viewValue: 'Volvo' },
+            { value: 'saab', viewValue: 'Saab' },
+            { value: 'mercedes', viewValue: 'Mercedes' }
+        ];
     }
     SelectFormExample.decorators = [
         { type: core.Component, args: [{
                     selector: 'select-form-example',
-                    template: "<form><mat-form-field><mat-select placeholder=\"Favorite food\" [(ngModel)]=\"selectedValue\" name=\"food\"><mat-option *ngFor=\"let food of foods\" [value]=\"food.value\">{{food.viewValue}}</mat-option></mat-select></mat-form-field><p>Selected value: {{selectedValue}}</p></form>",
+                    template: "<form><h4>mat-select</h4><mat-form-field><mat-select placeholder=\"Favorite food\" [(ngModel)]=\"selectedValue\" name=\"food\"><mat-option *ngFor=\"let food of foods\" [value]=\"food.value\">{{food.viewValue}}</mat-option></mat-select></mat-form-field><p>Selected food: {{selectedValue}}</p><h4>native html select</h4><mat-form-field><select matNativeControl placeholder=\"Favorite car\" [(ngModel)]=\"selectedCar\" name=\"car\"><option value=\"\" selected=\"selected\"></option><option *ngFor=\"let car of cars\" [value]=\"car.value\">{{car.viewValue}}</option></select></mat-form-field><p>Selected car: {{selectedCar}}</p></form>",
                     styles: ["/** No CSS for this example */ "],
                 },] },
     ];
@@ -3710,7 +4701,7 @@ var SelectFormExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Select with form field features
@@ -3718,6 +4709,7 @@ var SelectFormExample = /** @class */ (function () {
 var SelectHintErrorExample = /** @class */ (function () {
     function SelectHintErrorExample() {
         this.animalControl = new forms.FormControl('', [forms.Validators.required]);
+        this.selectFormControl = new forms.FormControl('', forms.Validators.required);
         this.animals = [
             { name: 'Dog', sound: 'Woof!' },
             { name: 'Cat', sound: 'Meow!' },
@@ -3728,7 +4720,7 @@ var SelectHintErrorExample = /** @class */ (function () {
     SelectHintErrorExample.decorators = [
         { type: core.Component, args: [{
                     selector: 'select-hint-error-example',
-                    template: "<mat-form-field><mat-select placeholder=\"Favorite animal\" [formControl]=\"animalControl\" required><mat-option>--</mat-option><mat-option *ngFor=\"let animal of animals\" [value]=\"animal\">{{animal.name}}</mat-option></mat-select><mat-error *ngIf=\"animalControl.hasError('required')\">Please choose an animal</mat-error><mat-hint>{{animalControl.value?.sound}}</mat-hint></mat-form-field>",
+                    template: "<h4>mat select</h4><mat-form-field><mat-select placeholder=\"Favorite animal\" [formControl]=\"animalControl\" required><mat-option>--</mat-option><mat-option *ngFor=\"let animal of animals\" [value]=\"animal\">{{animal.name}}</mat-option></mat-select><mat-error *ngIf=\"animalControl.hasError('required')\">Please choose an animal</mat-error><mat-hint>{{animalControl.value?.sound}}</mat-hint></mat-form-field><h4>native html select</h4><mat-form-field><mat-label>Select your car (required)</mat-label><select matNativeControl required [formControl]=\"selectFormControl\"><option label=\"--select something --\"></option><option value=\"saab\">Saab</option><option value=\"mercedes\">Mercedes</option><option value=\"audi\">Audi</option></select><mat-error *ngIf=\"selectFormControl.hasError('required')\">This field is required</mat-error><mat-hint>You can pick up your favorite car here</mat-hint></mat-form-field>",
                     styles: ["/** No CSS for this example */ "],
                 },] },
     ];
@@ -3737,7 +4729,7 @@ var SelectHintErrorExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Select with multiple selection
@@ -3759,7 +4751,7 @@ var SelectMultipleExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Select with no option ripple
@@ -3779,7 +4771,7 @@ var SelectNoRippleExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Select with option groups
@@ -3825,7 +4817,7 @@ var SelectOptgroupExample = /** @class */ (function () {
     SelectOptgroupExample.decorators = [
         { type: core.Component, args: [{
                     selector: 'select-optgroup-example',
-                    template: "<mat-form-field><mat-select placeholder=\"Pokemon\" [formControl]=\"pokemonControl\"><mat-option>-- None --</mat-option><mat-optgroup *ngFor=\"let group of pokemonGroups\" [label]=\"group.name\" [disabled]=\"group.disabled\"><mat-option *ngFor=\"let pokemon of group.pokemon\" [value]=\"pokemon.value\">{{pokemon.viewValue}}</mat-option></mat-optgroup></mat-select></mat-form-field>",
+                    template: "<h4>mat-select</h4><mat-form-field><mat-select placeholder=\"Pokemon\" [formControl]=\"pokemonControl\"><mat-option>-- None --</mat-option><mat-optgroup *ngFor=\"let group of pokemonGroups\" [label]=\"group.name\" [disabled]=\"group.disabled\"><mat-option *ngFor=\"let pokemon of group.pokemon\" [value]=\"pokemon.value\">{{pokemon.viewValue}}</mat-option></mat-optgroup></mat-select></mat-form-field><h4>native html select</h4><mat-form-field><select matNativeControl><optgroup label=\"Swedish Cars\"><option value=\"volvo\">volvo</option><option value=\"saab\">Saab</option></optgroup><optgroup label=\"German Cars\"><option value=\"mercedes\">Mercedes</option><option value=\"audi\">Audi</option></optgroup></select></mat-form-field>",
                     styles: ["/** No CSS for this example */ "],
                 },] },
     ];
@@ -3834,7 +4826,7 @@ var SelectOptgroupExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic select
@@ -3850,7 +4842,7 @@ var SelectOverviewExample = /** @class */ (function () {
     SelectOverviewExample.decorators = [
         { type: core.Component, args: [{
                     selector: 'select-overview-example',
-                    template: "<mat-form-field><mat-select placeholder=\"Favorite food\"><mat-option *ngFor=\"let food of foods\" [value]=\"food.value\">{{food.viewValue}}</mat-option></mat-select></mat-form-field>",
+                    template: "<h4>Basic mat-select</h4><mat-form-field><mat-select placeholder=\"Favorite food\"><mat-option *ngFor=\"let food of foods\" [value]=\"food.value\">{{food.viewValue}}</mat-option></mat-select></mat-form-field><h4>Basic native select</h4><mat-form-field><select matNativeControl required><option value=\"volvo\">Volvo</option><option value=\"saab\">Saab</option><option value=\"mercedes\">Mercedes</option><option value=\"audi\">Audi</option></select></mat-form-field>",
                     styles: ["/** No CSS for this example */ "],
                 },] },
     ];
@@ -3859,7 +4851,7 @@ var SelectOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Select with custom panel styling
@@ -3872,7 +4864,7 @@ var SelectPanelClassExample = /** @class */ (function () {
         { type: core.Component, args: [{
                     selector: 'select-panel-class-example',
                     template: "<mat-form-field><mat-select placeholder=\"Panel color\" [formControl]=\"panelColor\" panelClass=\"example-panel-{{panelColor.value}}\"><mat-option value=\"red\">Red</mat-option><mat-option value=\"green\">Green</mat-option><mat-option value=\"blue\">Blue</mat-option></mat-select></mat-form-field>",
-                    styles: [".example-panel-red .mat-select-content { background: rgba(255, 0, 0, 0.5); } .example-panel-green .mat-select-content { background: rgba(0, 255, 0, 0.5); } .example-panel-blue .mat-select-content { background: rgba(0, 0, 255, 0.5); } "],
+                    styles: [".example-panel-red.mat-select-panel { background: rgba(255, 0, 0, 0.5); } .example-panel-green.mat-select-panel { background: rgba(0, 255, 0, 0.5); } .example-panel-blue.mat-select-panel { background: rgba(0, 0, 255, 0.5); } "],
                     // Encapsulation has to be disabled in order for the
                     // component style to apply to the select panel.
                     encapsulation: core.ViewEncapsulation.None,
@@ -3883,7 +4875,7 @@ var SelectPanelClassExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Select with reset option
@@ -3903,7 +4895,7 @@ var SelectResetExample = /** @class */ (function () {
     SelectResetExample.decorators = [
         { type: core.Component, args: [{
                     selector: 'select-reset-example',
-                    template: "<mat-form-field><mat-select placeholder=\"State\"><mat-option>None</mat-option><mat-option *ngFor=\"let state of states\" [value]=\"state\">{{state}}</mat-option></mat-select></mat-form-field>",
+                    template: "<h4>mat-select</h4><mat-form-field><mat-select placeholder=\"State\"><mat-option>None</mat-option><mat-option *ngFor=\"let state of states\" [value]=\"state\">{{state}}</mat-option></mat-select></mat-form-field><h4>native html select</h4><mat-form-field><mat-label>Select your car</mat-label><select matNativeControl id=\"mySelectId\"><option value=\"\" disabled=\"disabled\" selected=\"selected\"></option><option value=\"volvo\">Volvo</option><option value=\"saab\">Saab</option><option value=\"mercedes\">Mercedes</option><option value=\"audi\">Audi</option></select></mat-form-field>",
                     styles: ["/** No CSS for this example */ "],
                 },] },
     ];
@@ -3912,7 +4904,7 @@ var SelectResetExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Select with 2-way value binding
@@ -3933,7 +4925,7 @@ var SelectValueBindingExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Autosize sidenav
@@ -3954,7 +4946,7 @@ var SidenavAutosizeExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Drawer with explicit backdrop setting
@@ -3974,7 +4966,7 @@ var SidenavBackdropExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Sidenav with custom escape and backdrop click behavior
@@ -4003,16 +4995,15 @@ var SidenavDisableCloseExample = /** @class */ (function () {
                     styles: [".example-container { position: absolute; top: 0; bottom: 0; left: 0; right: 0; } "],
                 },] },
     ];
-    /** @nocollapse */
     SidenavDisableCloseExample.propDecorators = {
-        "sidenav": [{ type: core.ViewChild, args: ['sidenav',] },],
+        sidenav: [{ type: core.ViewChild, args: ['sidenav',] }]
     };
     return SidenavDisableCloseExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic drawer
@@ -4032,7 +5023,7 @@ var SidenavDrawerOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Fixed sidenav
@@ -4055,14 +5046,14 @@ var SidenavFixedExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     SidenavFixedExample.ctorParameters = function () { return [
-        { type: forms.FormBuilder, },
+        { type: forms.FormBuilder }
     ]; };
     return SidenavFixedExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Sidenav with configurable mode
@@ -4084,7 +5075,7 @@ var SidenavModeExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Sidenav open & close behavior
@@ -4106,7 +5097,7 @@ var SidenavOpenCloseExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic sidenav
@@ -4127,7 +5118,7 @@ var SidenavOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Implicit main content with two sidenavs
@@ -4148,7 +5139,7 @@ var SidenavPositionExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Responsive sidenav
@@ -4182,15 +5173,15 @@ var SidenavResponsiveExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     SidenavResponsiveExample.ctorParameters = function () { return [
-        { type: core.ChangeDetectorRef, },
-        { type: layout.MediaMatcher, },
+        { type: core.ChangeDetectorRef },
+        { type: layout.MediaMatcher }
     ]; };
     return SidenavResponsiveExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Configurable slide-toggle
@@ -4213,7 +5204,7 @@ var SlideToggleConfigurableExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Slide-toggle with forms
@@ -4244,14 +5235,14 @@ var SlideToggleFormsExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     SlideToggleFormsExample.ctorParameters = function () { return [
-        { type: forms.FormBuilder, },
+        { type: forms.FormBuilder }
     ]; };
     return SlideToggleFormsExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic slide-toggles
@@ -4271,7 +5262,7 @@ var SlideToggleOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Configurable slider
@@ -4319,7 +5310,7 @@ var SliderConfigurableExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Slider with custom thumb label formatting.
@@ -4356,7 +5347,7 @@ var SliderFormattingExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic slider
@@ -4376,7 +5367,7 @@ var SliderOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Snack-bar with a custom component
@@ -4404,7 +5395,7 @@ var SnackBarComponentExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     SnackBarComponentExample.ctorParameters = function () { return [
-        { type: material.MatSnackBar, },
+        { type: material.MatSnackBar }
     ]; };
     return SnackBarComponentExample;
 }());
@@ -4423,7 +5414,7 @@ var PizzaPartyComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic snack-bar
@@ -4456,14 +5447,14 @@ var SnackBarOverviewExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     SnackBarOverviewExample.ctorParameters = function () { return [
-        { type: material.MatSnackBar, },
+        { type: material.MatSnackBar }
     ]; };
     return SnackBarOverviewExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Snack-bar with configurable position
@@ -4495,14 +5486,14 @@ var SnackBarPositionExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     SnackBarPositionExample.ctorParameters = function () { return [
-        { type: material.MatSnackBar, },
+        { type: material.MatSnackBar }
     ]; };
     return SnackBarPositionExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Sorting overview
@@ -4527,13 +5518,15 @@ var SortOverviewExample = /** @class */ (function () {
      * @return {?}
      */
     function (sort) {
-        var /** @type {?} */ data = this.desserts.slice();
+        /** @type {?} */
+        var data = this.desserts.slice();
         if (!sort.active || sort.direction === '') {
             this.sortedData = data;
             return;
         }
         this.sortedData = data.sort(function (a, b) {
-            var /** @type {?} */ isAsc = sort.direction === 'asc';
+            /** @type {?} */
+            var isAsc = sort.direction === 'asc';
             switch (sort.active) {
                 case 'name': return compare(a.name, b.name, isAsc);
                 case 'calories': return compare(a.calories, b.calories, isAsc);
@@ -4567,7 +5560,7 @@ function compare(a, b, isAsc) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Stepper with editable steps
@@ -4600,14 +5593,96 @@ var StepperEditableExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     StepperEditableExample.ctorParameters = function () { return [
-        { type: forms.FormBuilder, },
+        { type: forms.FormBuilder }
     ]; };
     return StepperEditableExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+var ɵ0$2 = { showError: true };
+/**
+ * \@title Stepper that displays errors in the steps
+ */
+var StepperErrorsExample = /** @class */ (function () {
+    function StepperErrorsExample(_formBuilder) {
+        this._formBuilder = _formBuilder;
+    }
+    /**
+     * @return {?}
+     */
+    StepperErrorsExample.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
+        this.firstFormGroup = this._formBuilder.group({
+            firstCtrl: ['', forms.Validators.required]
+        });
+        this.secondFormGroup = this._formBuilder.group({
+            secondCtrl: ['', forms.Validators.required]
+        });
+    };
+    StepperErrorsExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'stepper-errors-example',
+                    template: "<mat-horizontal-stepper linear #stepper><mat-step [stepControl]=\"firstFormGroup\" errorMessage=\"Name is required.\"><form [formGroup]=\"firstFormGroup\"><ng-template matStepLabel>Fill out your name</ng-template><mat-form-field><input matInput placeholder=\"Last name, First name\" formControlName=\"firstCtrl\" required></mat-form-field><div><button mat-button matStepperNext>Next</button></div></form></mat-step><mat-step [stepControl]=\"secondFormGroup\" errorMessage=\"Address is required.\"><form [formGroup]=\"secondFormGroup\"><ng-template matStepLabel>Fill out your address</ng-template><mat-form-field><input matInput placeholder=\"Address\" formControlName=\"secondCtrl\" required></mat-form-field><div><button mat-button matStepperPrevious>Back</button> <button mat-button matStepperNext>Next</button></div></form></mat-step><mat-step><ng-template matStepLabel>Done</ng-template>You are now done.<div><button mat-button matStepperPrevious>Back</button> <button mat-button (click)=\"stepper.reset()\">Reset</button></div></mat-step></mat-horizontal-stepper>",
+                    styles: [""],
+                    providers: [{
+                            provide: stepper.STEPPER_GLOBAL_OPTIONS, useValue: ɵ0$2
+                        }]
+                },] },
+    ];
+    /** @nocollapse */
+    StepperErrorsExample.ctorParameters = function () { return [
+        { type: forms.FormBuilder }
+    ]; };
+    return StepperErrorsExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Stepper label bottom position
+ */
+var StepperLabelPositionBottomExample = /** @class */ (function () {
+    function StepperLabelPositionBottomExample(_formBuilder) {
+        this._formBuilder = _formBuilder;
+    }
+    /**
+     * @return {?}
+     */
+    StepperLabelPositionBottomExample.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
+        this.firstFormGroup = this._formBuilder.group({
+            firstCtrl: ['', forms.Validators.required]
+        });
+        this.secondFormGroup = this._formBuilder.group({
+            secondCtrl: ['', forms.Validators.required]
+        });
+    };
+    StepperLabelPositionBottomExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'stepper-label-position-bottom-example',
+                    template: "<mat-horizontal-stepper labelPosition=\"bottom\" #stepper><mat-step [stepControl]=\"firstFormGroup\"><form [formGroup]=\"firstFormGroup\"><ng-template matStepLabel>Fill out your name</ng-template><mat-form-field><input matInput placeholder=\"Last name, First name\" formControlName=\"firstCtrl\" required></mat-form-field><div><button mat-button matStepperNext>Next</button></div></form></mat-step><mat-step [stepControl]=\"secondFormGroup\" optional><form [formGroup]=\"secondFormGroup\"><ng-template matStepLabel>Fill out your address</ng-template><mat-form-field><input matInput placeholder=\"Address\" formControlName=\"secondCtrl\" required></mat-form-field><div><button mat-button matStepperPrevious>Back</button> <button mat-button matStepperNext>Next</button></div></form></mat-step><mat-step><ng-template matStepLabel>Done</ng-template>You are now done.<div><button mat-button matStepperPrevious>Back</button> <button mat-button (click)=\"stepper.reset()\">Reset</button></div></mat-step></mat-horizontal-stepper>",
+                    styles: ["/** No CSS for this example */ "],
+                },] },
+    ];
+    /** @nocollapse */
+    StepperLabelPositionBottomExample.ctorParameters = function () { return [
+        { type: forms.FormBuilder }
+    ]; };
+    return StepperLabelPositionBottomExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Stepper with optional steps
@@ -4640,14 +5715,14 @@ var StepperOptionalExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     StepperOptionalExample.ctorParameters = function () { return [
-        { type: forms.FormBuilder, },
+        { type: forms.FormBuilder }
     ]; };
     return StepperOptionalExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Stepper overview
@@ -4680,14 +5755,57 @@ var StepperOverviewExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     StepperOverviewExample.ctorParameters = function () { return [
-        { type: forms.FormBuilder, },
+        { type: forms.FormBuilder }
     ]; };
     return StepperOverviewExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+var ɵ0$3 = { displayDefaultIndicatorType: false };
+/**
+ * \@title Stepper with customized states
+ */
+var StepperStatesExample = /** @class */ (function () {
+    function StepperStatesExample(_formBuilder) {
+        this._formBuilder = _formBuilder;
+    }
+    /**
+     * @return {?}
+     */
+    StepperStatesExample.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
+        this.firstFormGroup = this._formBuilder.group({
+            firstCtrl: ['', forms.Validators.required]
+        });
+        this.secondFormGroup = this._formBuilder.group({
+            secondCtrl: ['', forms.Validators.required]
+        });
+    };
+    StepperStatesExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'stepper-states-example',
+                    template: "<mat-horizontal-stepper #stepper><mat-step [stepControl]=\"firstFormGroup\"><form [formGroup]=\"firstFormGroup\"><ng-template matStepLabel>Fill out your name</ng-template><mat-form-field><input matInput placeholder=\"Last name, First name\" formControlName=\"firstCtrl\" required></mat-form-field><div><button mat-button matStepperNext>Next</button></div></form></mat-step><mat-step [stepControl]=\"secondFormGroup\"><form [formGroup]=\"secondFormGroup\"><ng-template matStepLabel>Fill out your address</ng-template><mat-form-field><input matInput placeholder=\"Address\" formControlName=\"secondCtrl\" required></mat-form-field><div><button mat-button matStepperPrevious>Back</button> <button mat-button matStepperNext>Next</button></div></form></mat-step><mat-step><ng-template matStepLabel>Done</ng-template>You are now done.<div><button mat-button matStepperPrevious>Back</button> <button mat-button (click)=\"stepper.reset()\">Reset</button></div></mat-step></mat-horizontal-stepper><mat-horizontal-stepper><mat-step label=\"Step 1\" state=\"phone\"><p>Put down your phones.</p><div><button mat-button matStepperNext>Next</button></div></mat-step><mat-step label=\"Step 2\" state=\"chat\"><p>Socialize with each other.</p><div><button mat-button matStepperPrevious>Back</button> <button mat-button matStepperNext>Next</button></div></mat-step><mat-step label=\"Step 3\"><p>You're welcome.</p></mat-step><ng-template matStepperIcon=\"phone\"><mat-icon>call_end</mat-icon></ng-template><ng-template matStepperIcon=\"chat\"><mat-icon>forum</mat-icon></ng-template></mat-horizontal-stepper>",
+                    styles: [""],
+                    providers: [{
+                            provide: stepper.STEPPER_GLOBAL_OPTIONS, useValue: ɵ0$3
+                        }]
+                },] },
+    ];
+    /** @nocollapse */
+    StepperStatesExample.ctorParameters = function () { return [
+        { type: forms.FormBuilder }
+    ]; };
+    return StepperStatesExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Stepper vertical
@@ -4713,21 +5831,61 @@ var StepperVerticalExample = /** @class */ (function () {
     };
     StepperVerticalExample.decorators = [
         { type: core.Component, args: [{
-                    selector: 'stepper-vertical',
+                    selector: 'stepper-vertical-example',
                     template: "<button mat-raised-button (click)=\"isLinear = !isLinear\" id=\"toggle-linear\">{{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}</button><mat-vertical-stepper [linear]=\"isLinear\" #stepper><mat-step [stepControl]=\"firstFormGroup\"><form [formGroup]=\"firstFormGroup\"><ng-template matStepLabel>Fill out your name</ng-template><mat-form-field><input matInput placeholder=\"Last name, First name\" formControlName=\"firstCtrl\" required></mat-form-field><div><button mat-button matStepperNext>Next</button></div></form></mat-step><mat-step [stepControl]=\"secondFormGroup\"><form [formGroup]=\"secondFormGroup\"><ng-template matStepLabel>Fill out your address</ng-template><mat-form-field><input matInput placeholder=\"Address\" formControlName=\"secondCtrl\" required></mat-form-field><div><button mat-button matStepperPrevious>Back</button> <button mat-button matStepperNext>Next</button></div></form></mat-step><mat-step><ng-template matStepLabel>Done</ng-template>You are now done.<div><button mat-button matStepperPrevious>Back</button> <button mat-button (click)=\"stepper.reset()\">Reset</button></div></mat-step></mat-vertical-stepper>",
                     styles: ["/** No CSS for this example */ "]
                 },] },
     ];
     /** @nocollapse */
     StepperVerticalExample.ctorParameters = function () { return [
-        { type: forms.FormBuilder, },
+        { type: forms.FormBuilder }
     ]; };
     return StepperVerticalExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Tab group with aligned labels
+ */
+var TabGroupAlignExample = /** @class */ (function () {
+    function TabGroupAlignExample() {
+    }
+    TabGroupAlignExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'tab-group-align-example',
+                    template: "<mat-tab-group mat-align-tabs=\"start\"><mat-tab label=\"First\">Content 1</mat-tab><mat-tab label=\"Second\">Content 2</mat-tab><mat-tab label=\"Third\">Content 3</mat-tab></mat-tab-group><mat-tab-group mat-align-tabs=\"center\"><mat-tab label=\"First\">Content 1</mat-tab><mat-tab label=\"Second\">Content 2</mat-tab><mat-tab label=\"Third\">Content 3</mat-tab></mat-tab-group><mat-tab-group mat-align-tabs=\"end\"><mat-tab label=\"First\">Content 1</mat-tab><mat-tab label=\"Second\">Content 2</mat-tab><mat-tab label=\"Third\">Content 3</mat-tab></mat-tab-group>",
+                    styles: [".mat-tab-group { margin-bottom: 48px; } "],
+                },] },
+    ];
+    return TabGroupAlignExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * \@title Tab group animations
+ */
+var TabGroupAnimationsExample = /** @class */ (function () {
+    function TabGroupAnimationsExample() {
+    }
+    TabGroupAnimationsExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'tab-group-animations-example',
+                    template: "<h3>No animation</h3><mat-tab-group animationDuration=\"0ms\"><mat-tab label=\"First\">Content 1</mat-tab><mat-tab label=\"Second\">Content 2</mat-tab><mat-tab label=\"Third\">Content 3</mat-tab></mat-tab-group><h3>Very slow animation</h3><mat-tab-group animationDuration=\"2000ms\"><mat-tab label=\"First\">Content 1</mat-tab><mat-tab label=\"Second\">Content 2</mat-tab><mat-tab label=\"Third\">Content 3</mat-tab></mat-tab-group>",
+                    styles: [".mat-tab-group { margin-bottom: 48px; } "],
+                },] },
+    ];
+    return TabGroupAnimationsExample;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tab group with asynchronously loading tab contents
@@ -4758,7 +5916,7 @@ var TabGroupAsyncExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic use of the tab group
@@ -4778,7 +5936,7 @@ var TabGroupBasicExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Using tabs with a custom label template
@@ -4798,7 +5956,7 @@ var TabGroupCustomLabelExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tag group with dynamic height based on tab contents
@@ -4818,7 +5976,7 @@ var TabGroupDynamicHeightExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tab group with dynamically changing tabs
@@ -4865,7 +6023,7 @@ var TabGroupDynamicExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tab group with the headers on the bottom
@@ -4885,7 +6043,7 @@ var TabGroupHeaderBelowExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tab group where the tab content is loaded lazily (when activated)
@@ -4920,7 +6078,7 @@ var TabGroupLazyLoadedExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tab group with stretched labels
@@ -4940,7 +6098,7 @@ var TabGroupStretchedExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Customizing the theme options on the tab group
@@ -4960,7 +6118,7 @@ var TabGroupThemeExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic use of the tab nav bar
@@ -4992,9 +6150,10 @@ var TabNavBarBasicExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ ELEMENT_DATA$2 = [
+/** @type {?} */
+var ELEMENT_DATA$2 = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -5026,9 +6185,10 @@ var TableBasicFlexExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ ELEMENT_DATA$3 = [
+/** @type {?} */
+var ELEMENT_DATA$3 = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -5060,9 +6220,10 @@ var TableBasicExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ ELEMENT_DATA$4 = [
+/** @type {?} */
+var ELEMENT_DATA$4 = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -5090,7 +6251,8 @@ var TableDynamicColumnsExample = /** @class */ (function () {
      * @return {?}
      */
     function () {
-        var /** @type {?} */ randomColumn = Math.floor(Math.random() * this.displayedColumns.length);
+        /** @type {?} */
+        var randomColumn = Math.floor(Math.random() * this.displayedColumns.length);
         this.columnsToDisplay.push(this.displayedColumns[randomColumn]);
     };
     /**
@@ -5111,12 +6273,15 @@ var TableDynamicColumnsExample = /** @class */ (function () {
      * @return {?}
      */
     function () {
-        var /** @type {?} */ currentIndex = this.columnsToDisplay.length;
+        /** @type {?} */
+        var currentIndex = this.columnsToDisplay.length;
         while (0 !== currentIndex) {
-            var /** @type {?} */ randomIndex = Math.floor(Math.random() * currentIndex);
+            /** @type {?} */
+            var randomIndex = Math.floor(Math.random() * currentIndex);
             currentIndex -= 1;
             // Swap
-            var /** @type {?} */ temp = this.columnsToDisplay[currentIndex];
+            /** @type {?} */
+            var temp = this.columnsToDisplay[currentIndex];
             this.columnsToDisplay[currentIndex] = this.columnsToDisplay[randomIndex];
             this.columnsToDisplay[randomIndex] = temp;
         }
@@ -5133,7 +6298,7 @@ var TableDynamicColumnsExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Table with expandable rows
@@ -5147,7 +6312,7 @@ var TableExpandableRowsExample = /** @class */ (function () {
         { type: core.Component, args: [{
                     selector: 'table-expandable-rows-example',
                     styles: ["table { width: 100%; } tr.example-detail-row { height: 0; } tr.example-element-row:not(.example-expanded-row):hover { background: #f5f5f5; } tr.example-element-row:not(.example-expanded-row):active { background: #efefef; } .example-element-row td { border-bottom-width: 0; } .example-element-detail { overflow: hidden; display: flex; } .example-element-diagram { min-width: 80px; border: 2px solid black; padding: 8px; font-weight: lighter; margin: 8px 0; height: 104px; } .example-element-symbol { font-weight: bold; font-size: 40px; line-height: normal; } .example-element-description { padding: 16px; } .example-element-description-attribution { opacity: 0.5; } "],
-                    template: "<table mat-table [dataSource]=\"dataSource\" multiTemplateDataRows class=\"mat-elevation-z8\"><ng-container matColumnDef=\"{{column}}\" *ngFor=\"let column of columnsToDisplay\"><th mat-header-cell *matHeaderCellDef>{{column}}</th><td mat-cell *matCellDef=\"let element\">{{element[column]}}</td></ng-container><ng-container matColumnDef=\"expandedDetail\"><td mat-cell *matCellDef=\"let element\" [attr.colspan]=\"columnsToDisplay.length\"><div class=\"example-element-detail\" [@detailExpand]=\"element == expandedElement ? 'expanded' : 'collapsed'\"><div class=\"example-element-diagram\"><div class=\"example-element-position\">{{element.position}}</div><div class=\"example-element-symbol\">{{element.symbol}}</div><div class=\"example-element-name\">{{element.name}}</div><div class=\"example-element-weight\">{{element.weight}}</div></div><div class=\"example-element-description\">{{element.description}} <span class=\"example-element-description-attribution\">-- Wikipedia</span></div></div></td></ng-container><tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr><tr mat-row *matRowDef=\"let element; columns: columnsToDisplay;\" class=\"example-element-row\" [class.example-expanded-row]=\"expandedElement === element\" (click)=\"expandedElement = element\"></tr><tr mat-row *matRowDef=\"let row; columns: ['expandedDetail']\" class=\"example-detail-row\"></tr></table>",
+                    template: "<table mat-table [dataSource]=\"dataSource\" multiTemplateDataRows class=\"mat-elevation-z8\"><ng-container matColumnDef=\"{{column}}\" *ngFor=\"let column of columnsToDisplay\"><th mat-header-cell *matHeaderCellDef>{{column}}</th><td mat-cell *matCellDef=\"let element\">{{element[column]}}</td></ng-container><ng-container matColumnDef=\"expandedDetail\"><td mat-cell *matCellDef=\"let element\" [attr.colspan]=\"columnsToDisplay.length\"><div class=\"example-element-detail\" [@detailExpand]=\"element == expandedElement ? 'expanded' : 'collapsed'\"><div class=\"example-element-diagram\"><div class=\"example-element-position\">{{element.position}}</div><div class=\"example-element-symbol\">{{element.symbol}}</div><div class=\"example-element-name\">{{element.name}}</div><div class=\"example-element-weight\">{{element.weight}}</div></div><div class=\"example-element-description\">{{element.description}} <span class=\"example-element-description-attribution\">-- Wikipedia</span></div></div></td></ng-container><tr mat-header-row *matHeaderRowDef=\"columnsToDisplay\"></tr><tr mat-row *matRowDef=\"let element; columns: columnsToDisplay;\" class=\"example-element-row\" [class.example-expanded-row]=\"expandedElement === element\" (click)=\"expandedElement = expandedElement === element ? null : element\"></tr><tr mat-row *matRowDef=\"let row; columns: ['expandedDetail']\" class=\"example-detail-row\"></tr></table>",
                     animations: [
                         animations.trigger('detailExpand', [
                             animations.state('collapsed', animations.style({ height: '0px', minHeight: '0', display: 'none' })),
@@ -5159,7 +6324,8 @@ var TableExpandableRowsExample = /** @class */ (function () {
     ];
     return TableExpandableRowsExample;
 }());
-var /** @type {?} */ ELEMENT_DATA$5 = [
+/** @type {?} */
+var ELEMENT_DATA$5 = [
     {
         position: 1,
         name: 'Hydrogen',
@@ -5225,9 +6391,10 @@ var /** @type {?} */ ELEMENT_DATA$5 = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ ELEMENT_DATA$6 = [
+/** @type {?} */
+var ELEMENT_DATA$6 = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -5270,7 +6437,7 @@ var TableFilteringExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Footer row table
@@ -5311,7 +6478,7 @@ var TableFooterRowExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Table retrieving data through HTTP
@@ -5339,9 +6506,8 @@ var TableHttpExample = /** @class */ (function () {
         rxjs.merge(this.sort.sortChange, this.paginator.page)
             .pipe(operators.startWith({}), operators.switchMap(function () {
             _this.isLoadingResults = true;
-            return /** @type {?} */ ((_this.exampleDatabase)).getRepoIssues(_this.sort.active, _this.sort.direction, _this.paginator.pageIndex);
+            return (/** @type {?} */ (_this.exampleDatabase)).getRepoIssues(_this.sort.active, _this.sort.direction, _this.paginator.pageIndex);
         }), operators.map(function (data) {
-            // Flip flag to show that loading has finished.
             // Flip flag to show that loading has finished.
             _this.isLoadingResults = false;
             _this.isRateLimitReached = false;
@@ -5349,7 +6515,6 @@ var TableHttpExample = /** @class */ (function () {
             return data.items;
         }), operators.catchError(function () {
             _this.isLoadingResults = false;
-            // Catch if the GitHub API has reached its rate limit. Return empty data.
             // Catch if the GitHub API has reached its rate limit. Return empty data.
             _this.isRateLimitReached = true;
             return rxjs.of([]);
@@ -5364,11 +6529,11 @@ var TableHttpExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     TableHttpExample.ctorParameters = function () { return [
-        { type: http.HttpClient, },
+        { type: http.HttpClient }
     ]; };
     TableHttpExample.propDecorators = {
-        "paginator": [{ type: core.ViewChild, args: [material.MatPaginator,] },],
-        "sort": [{ type: core.ViewChild, args: [material.MatSort,] },],
+        paginator: [{ type: core.ViewChild, args: [material.MatPaginator,] }],
+        sort: [{ type: core.ViewChild, args: [material.MatSort,] }]
     };
     return TableHttpExample;
 }());
@@ -5395,8 +6560,10 @@ ExampleHttpDao = /** @class */ (function () {
      * @return {?}
      */
     function (sort, order, page) {
-        var /** @type {?} */ href = 'https://api.github.com/search/issues';
-        var /** @type {?} */ requestUrl = href + "?q=repo:angular/material2&sort=" + sort + "&order=" + order + "&page=" + (page + 1);
+        /** @type {?} */
+        var href = 'https://api.github.com/search/issues';
+        /** @type {?} */
+        var requestUrl = href + "?q=repo:angular/material2&sort=" + sort + "&order=" + order + "&page=" + (page + 1);
         return this.http.get(requestUrl);
     };
     return ExampleHttpDao;
@@ -5404,7 +6571,7 @@ ExampleHttpDao = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Table with multiple header and footer rows
@@ -5445,14 +6612,16 @@ var TableMultipleHeaderFooterExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Constants used to fill up our data base.
+ * @type {?}
  */
-var /** @type {?} */ COLORS = ['maroon', 'red', 'orange', 'yellow', 'olive', 'green', 'purple',
+var COLORS = ['maroon', 'red', 'orange', 'yellow', 'olive', 'green', 'purple',
     'fuchsia', 'lime', 'teal', 'aqua', 'blue', 'navy', 'black', 'gray'];
-var /** @type {?} */ NAMES = ['Maia', 'Asher', 'Olivia', 'Atticus', 'Amelia', 'Jack',
+/** @type {?} */
+var NAMES = ['Maia', 'Asher', 'Olivia', 'Atticus', 'Amelia', 'Jack',
     'Charlotte', 'Theodore', 'Isla', 'Oliver', 'Isabella', 'Jasper',
     'Cora', 'Levi', 'Violet', 'Arthur', 'Mia', 'Thomas', 'Elizabeth'];
 /**
@@ -5462,7 +6631,8 @@ var TableOverviewExample = /** @class */ (function () {
     function TableOverviewExample() {
         this.displayedColumns = ['id', 'name', 'progress', 'color'];
         // Create 100 users
-        var /** @type {?} */ users = Array.from({ length: 100 }, function (_, k) { return createNewUser(k + 1); });
+        /** @type {?} */
+        var users = Array.from({ length: 100 }, function (_, k) { return createNewUser(k + 1); });
         // Assign the data to the data source for the table to render
         this.dataSource = new material.MatTableDataSource(users);
     }
@@ -5500,8 +6670,8 @@ var TableOverviewExample = /** @class */ (function () {
     /** @nocollapse */
     TableOverviewExample.ctorParameters = function () { return []; };
     TableOverviewExample.propDecorators = {
-        "paginator": [{ type: core.ViewChild, args: [material.MatPaginator,] },],
-        "sort": [{ type: core.ViewChild, args: [material.MatSort,] },],
+        paginator: [{ type: core.ViewChild, args: [material.MatPaginator,] }],
+        sort: [{ type: core.ViewChild, args: [material.MatSort,] }]
     };
     return TableOverviewExample;
 }());
@@ -5511,7 +6681,8 @@ var TableOverviewExample = /** @class */ (function () {
  * @return {?}
  */
 function createNewUser(id) {
-    var /** @type {?} */ name = NAMES[Math.round(Math.random() * (NAMES.length - 1))] + ' ' +
+    /** @type {?} */
+    var name = NAMES[Math.round(Math.random() * (NAMES.length - 1))] + ' ' +
         NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) + '.';
     return {
         id: id.toString(),
@@ -5523,7 +6694,7 @@ function createNewUser(id) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Table with pagination
@@ -5549,13 +6720,13 @@ var TablePaginationExample = /** @class */ (function () {
                     template: "<div class=\"mat-elevation-z8\"><table mat-table [dataSource]=\"dataSource\"><ng-container matColumnDef=\"position\"><th mat-header-cell *matHeaderCellDef>No.</th><td mat-cell *matCellDef=\"let element\">{{element.position}}</td></ng-container><ng-container matColumnDef=\"name\"><th mat-header-cell *matHeaderCellDef>Name</th><td mat-cell *matCellDef=\"let element\">{{element.name}}</td></ng-container><ng-container matColumnDef=\"weight\"><th mat-header-cell *matHeaderCellDef>Weight</th><td mat-cell *matCellDef=\"let element\">{{element.weight}}</td></ng-container><ng-container matColumnDef=\"symbol\"><th mat-header-cell *matHeaderCellDef>Symbol</th><td mat-cell *matCellDef=\"let element\">{{element.symbol}}</td></ng-container><tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr><tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr></table><mat-paginator [pageSizeOptions]=\"[5, 10, 20]\" showFirstLastButtons></mat-paginator></div>",
                 },] },
     ];
-    /** @nocollapse */
     TablePaginationExample.propDecorators = {
-        "paginator": [{ type: core.ViewChild, args: [material.MatPaginator,] },],
+        paginator: [{ type: core.ViewChild, args: [material.MatPaginator,] }]
     };
     return TablePaginationExample;
 }());
-var /** @type {?} */ ELEMENT_DATA$7 = [
+/** @type {?} */
+var ELEMENT_DATA$7 = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -5580,7 +6751,7 @@ var /** @type {?} */ ELEMENT_DATA$7 = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Table showing each row context properties.
@@ -5602,9 +6773,10 @@ var TableRowContextExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ ELEMENT_DATA$8 = [
+/** @type {?} */
+var ELEMENT_DATA$8 = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -5635,8 +6807,10 @@ var TableSelectionExample = /** @class */ (function () {
      * @return {?}
      */
     function () {
-        var /** @type {?} */ numSelected = this.selection.selected.length;
-        var /** @type {?} */ numRows = this.dataSource.data.length;
+        /** @type {?} */
+        var numSelected = this.selection.selected.length;
+        /** @type {?} */
+        var numRows = this.dataSource.data.length;
         return numSelected === numRows;
     };
     /** Selects all rows if they are not all selected; otherwise clear selection. */
@@ -5666,9 +6840,171 @@ var TableSelectionExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ ELEMENT_DATA$9 = [
+/** @type {?} */
+var ELEMENT_DATA$9 = [
+    { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
+    { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
+    { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
+    { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
+    { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
+    { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
+    { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
+    { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
+    { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
+    { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+];
+/**
+ * \@title Table with a custom column component for easy column definition reuse.
+ */
+var TableSimpleColumnExample = /** @class */ (function () {
+    function TableSimpleColumnExample() {
+        this.displayedColumns = ['position', 'name', 'weight', 'symbol'];
+        this.dataSource = new material.MatTableDataSource(ELEMENT_DATA$9);
+        this.getWeight = function (data) { return '~' + data.weight; };
+    }
+    /**
+     * @return {?}
+     */
+    TableSimpleColumnExample.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
+        this.dataSource.sort = this.sort;
+    };
+    TableSimpleColumnExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'table-simple-column-example',
+                    styles: ["table { width: 100%; } "],
+                    template: "<table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\" matSort #sort=\"matSort\"><simple-column name=\"name\" sortable></simple-column><simple-column name=\"position\"></simple-column><simple-column name=\"weight\" [dataAccessor]=\"getWeight\"></simple-column><simple-column name=\"symbol\" label=\"SYMBOL!\"></simple-column><tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr><tr mat-row *matRowDef=\"let data; columns: displayedColumns;\"></tr></table>",
+                },] },
+    ];
+    TableSimpleColumnExample.propDecorators = {
+        sort: [{ type: core.ViewChild, args: ['sort',] }]
+    };
+    return TableSimpleColumnExample;
+}());
+/**
+ * Column that shows simply shows text content for the header and row
+ * cells. By default, the name of this column will be assumed to be both the header
+ * text and data property used to access the data value to show in cells. To override
+ * the header text, provide a label text. To override the data cell values,
+ * provide a dataAccessor function that provides the string to display for each row's cell.
+ *
+ * Note that this component sets itself as visually hidden since it will show up in the `mat-table`
+ * DOM because it is an empty element with an ng-container (nothing rendered). It should not
+ * interfere with screen readers.
+ * @template T
+ */
+var SimpleColumn = /** @class */ (function () {
+    function SimpleColumn(table$$1) {
+        this.table = table$$1;
+        /**
+         * Alignment of the cell values.
+         */
+        this.align = 'before';
+    }
+    Object.defineProperty(SimpleColumn.prototype, "name", {
+        /** Column name that should be used to reference this column. */
+        get: /**
+         * Column name that should be used to reference this column.
+         * @return {?}
+         */
+        function () { return this._name; },
+        set: /**
+         * @param {?} name
+         * @return {?}
+         */
+        function (name) {
+            this._name = name;
+            this.columnDef.name = name;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(SimpleColumn.prototype, "sortable", {
+        /** Whether the column is sortable */
+        get: /**
+         * Whether the column is sortable
+         * @return {?}
+         */
+        function () { return this._sortable; },
+        set: /**
+         * @param {?} sortable
+         * @return {?}
+         */
+        function (sortable) {
+            this._sortable = coercion.coerceBooleanProperty(sortable);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @return {?}
+     */
+    SimpleColumn.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
+        if (this.table) {
+            this.table.addColumnDef(this.columnDef);
+        }
+    };
+    /**
+     * @return {?}
+     */
+    SimpleColumn.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
+        if (this.table) {
+            this.table.removeColumnDef(this.columnDef);
+        }
+    };
+    /**
+     * @param {?} data
+     * @return {?}
+     */
+    SimpleColumn.prototype.getData = /**
+     * @param {?} data
+     * @return {?}
+     */
+    function (data) {
+        return this.dataAccessor ? this.dataAccessor(data, this.name) : ((/** @type {?} */ (data)))[this.name];
+    };
+    SimpleColumn.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'simple-column',
+                    template: "\n    <ng-container matColumnDef>\n      <th mat-header-cell *matHeaderCellDef mat-sort-header> {{label || name}} </th>\n      <td mat-cell *matCellDef=\"let data\"> {{getData(data)}}</td>\n    </ng-container>\n  ",
+                    host: {
+                        'class': 'simple-column cdk-visually-hidden',
+                        '[attr.ariaHidden]': 'true',
+                    }
+                },] },
+    ];
+    /** @nocollapse */
+    SimpleColumn.ctorParameters = function () { return [
+        { type: material.MatTable, decorators: [{ type: core.Optional }] }
+    ]; };
+    SimpleColumn.propDecorators = {
+        name: [{ type: core.Input }],
+        label: [{ type: core.Input }],
+        dataAccessor: [{ type: core.Input }],
+        align: [{ type: core.Input }],
+        sortable: [{ type: core.Input }],
+        columnDef: [{ type: core.ViewChild, args: [material.MatColumnDef,] }],
+        sortHeader: [{ type: core.ViewChild, args: [material.MatSortHeader,] }]
+    };
+    return SimpleColumn;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+var ELEMENT_DATA$10 = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -5686,7 +7022,7 @@ var /** @type {?} */ ELEMENT_DATA$9 = [
 var TableSortingExample = /** @class */ (function () {
     function TableSortingExample() {
         this.displayedColumns = ['position', 'name', 'weight', 'symbol'];
-        this.dataSource = new material.MatTableDataSource(ELEMENT_DATA$9);
+        this.dataSource = new material.MatTableDataSource(ELEMENT_DATA$10);
     }
     /**
      * @return {?}
@@ -5704,16 +7040,15 @@ var TableSortingExample = /** @class */ (function () {
                     template: "<table mat-table [dataSource]=\"dataSource\" matSort class=\"mat-elevation-z8\"><ng-container matColumnDef=\"position\"><th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th><td mat-cell *matCellDef=\"let element\">{{element.position}}</td></ng-container><ng-container matColumnDef=\"name\"><th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th><td mat-cell *matCellDef=\"let element\">{{element.name}}</td></ng-container><ng-container matColumnDef=\"weight\"><th mat-header-cell *matHeaderCellDef mat-sort-header>Weight</th><td mat-cell *matCellDef=\"let element\">{{element.weight}}</td></ng-container><ng-container matColumnDef=\"symbol\"><th mat-header-cell *matHeaderCellDef mat-sort-header>Symbol</th><td mat-cell *matCellDef=\"let element\">{{element.symbol}}</td></ng-container><tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr><tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr></table>",
                 },] },
     ];
-    /** @nocollapse */
     TableSortingExample.propDecorators = {
-        "sort": [{ type: core.ViewChild, args: [material.MatSort,] },],
+        sort: [{ type: core.ViewChild, args: [material.MatSort,] }]
     };
     return TableSortingExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Table with a sticky columns
@@ -5721,7 +7056,7 @@ var TableSortingExample = /** @class */ (function () {
 var TableStickyColumnsExample = /** @class */ (function () {
     function TableStickyColumnsExample() {
         this.displayedColumns = ['name', 'position', 'weight', 'symbol', 'position', 'weight', 'symbol', 'star'];
-        this.dataSource = ELEMENT_DATA$10;
+        this.dataSource = ELEMENT_DATA$11;
     }
     TableStickyColumnsExample.decorators = [
         { type: core.Component, args: [{
@@ -5732,7 +7067,8 @@ var TableStickyColumnsExample = /** @class */ (function () {
     ];
     return TableStickyColumnsExample;
 }());
-var /** @type {?} */ ELEMENT_DATA$10 = [
+/** @type {?} */
+var ELEMENT_DATA$11 = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -5747,7 +7083,7 @@ var /** @type {?} */ ELEMENT_DATA$10 = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Flex-layout tables with toggle-able sticky headers, footers, and columns
@@ -5755,7 +7091,7 @@ var /** @type {?} */ ELEMENT_DATA$10 = [
 var TableStickyComplexFlexExample = /** @class */ (function () {
     function TableStickyComplexFlexExample() {
         this.displayedColumns = [];
-        this.dataSource = ELEMENT_DATA$11;
+        this.dataSource = ELEMENT_DATA$12;
         this.tables = [0];
         this.displayedColumns.length = 24;
         this.displayedColumns.fill('filler');
@@ -5792,7 +7128,8 @@ var TableStickyComplexFlexExample = /** @class */ (function () {
     TableStickyComplexFlexExample.ctorParameters = function () { return []; };
     return TableStickyComplexFlexExample;
 }());
-var /** @type {?} */ ELEMENT_DATA$11 = [
+/** @type {?} */
+var ELEMENT_DATA$12 = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -5807,7 +7144,7 @@ var /** @type {?} */ ELEMENT_DATA$11 = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tables with toggle-able sticky headers, footers, and columns
@@ -5815,7 +7152,7 @@ var /** @type {?} */ ELEMENT_DATA$11 = [
 var TableStickyComplexExample = /** @class */ (function () {
     function TableStickyComplexExample() {
         this.displayedColumns = [];
-        this.dataSource = ELEMENT_DATA$12;
+        this.dataSource = ELEMENT_DATA$13;
         this.tables = [0];
         this.displayedColumns.length = 24;
         this.displayedColumns.fill('filler');
@@ -5852,7 +7189,8 @@ var TableStickyComplexExample = /** @class */ (function () {
     TableStickyComplexExample.ctorParameters = function () { return []; };
     return TableStickyComplexExample;
 }());
-var /** @type {?} */ ELEMENT_DATA$12 = [
+/** @type {?} */
+var ELEMENT_DATA$13 = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -5867,7 +7205,7 @@ var /** @type {?} */ ELEMENT_DATA$12 = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Table with a sticky footer
@@ -5908,7 +7246,7 @@ var TableStickyFooterExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Table with sticky header
@@ -5916,7 +7254,7 @@ var TableStickyFooterExample = /** @class */ (function () {
 var TableStickyHeaderExample = /** @class */ (function () {
     function TableStickyHeaderExample() {
         this.displayedColumns = ['position', 'name', 'weight', 'symbol'];
-        this.dataSource = ELEMENT_DATA$13;
+        this.dataSource = ELEMENT_DATA$14;
     }
     TableStickyHeaderExample.decorators = [
         { type: core.Component, args: [{
@@ -5927,7 +7265,8 @@ var TableStickyHeaderExample = /** @class */ (function () {
     ];
     return TableStickyHeaderExample;
 }());
-var /** @type {?} */ ELEMENT_DATA$13 = [
+/** @type {?} */
+var ELEMENT_DATA$14 = [
     { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
     { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
@@ -5942,7 +7281,91 @@ var /** @type {?} */ ELEMENT_DATA$13 = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+var ELEMENT_DATA$15 = [
+    { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
+    { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
+    { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
+    { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
+    { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
+    { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
+    { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
+    { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
+    { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
+    { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+];
+/**
+ * \@title Table example that shows how to wrap a table component for definition and behavior reuse.
+ */
+var TableWrappedExample = /** @class */ (function () {
+    function TableWrappedExample() {
+        this.displayedColumns = ['position', 'name', 'weight', 'symbol'];
+        this.dataSource = new material.MatTableDataSource(ELEMENT_DATA$15);
+    }
+    /**
+     * @return {?}
+     */
+    TableWrappedExample.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
+        this.dataSource.sort = this.sort;
+    };
+    TableWrappedExample.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'table-wrapped-example',
+                    styles: ["table { width: 100%; } "],
+                    template: "<wrapper-table [dataSource]=\"dataSource\" [columns]=\"displayedColumns\" matSort #sort=\"matSort\"><ng-container matColumnDef=\"name\"><th mat-header-cell *matHeaderCellDef>Name</th><td mat-cell *matCellDef=\"let element\">{{element.name}}</td></ng-container><tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr><tr mat-row *matRowDef=\"let row; columns: displayedColumns; \"></tr></wrapper-table>",
+                },] },
+    ];
+    TableWrappedExample.propDecorators = {
+        sort: [{ type: core.ViewChild, args: ['sort',] }]
+    };
+    return TableWrappedExample;
+}());
+/**
+ * Table component that accepts column and row definitions in its content to be registered to the
+ * table.
+ * @template T
+ */
+var WrapperTable = /** @class */ (function () {
+    function WrapperTable() {
+    }
+    /**
+     * @return {?}
+     */
+    WrapperTable.prototype.ngAfterContentInit = /**
+     * @return {?}
+     */
+    function () {
+        var _this = this;
+        this.columnDefs.forEach(function (columnDef) { return _this.table.addColumnDef(columnDef); });
+        this.rowDefs.forEach(function (rowDef) { return _this.table.addRowDef(rowDef); });
+        this.headerRowDefs.forEach(function (headerRowDef) { return _this.table.addHeaderRowDef(headerRowDef); });
+    };
+    WrapperTable.decorators = [
+        { type: core.Component, args: [{
+                    selector: 'wrapper-table',
+                    template: "<table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\"><ng-content></ng-content><ng-container matColumnDef=\"position\"><th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th><td mat-cell *matCellDef=\"let element\">{{element.position}}</td></ng-container><ng-container matColumnDef=\"weight\"><th mat-header-cell *matHeaderCellDef mat-sort-header>Weight</th><td mat-cell *matCellDef=\"let element\">{{element.weight}}</td></ng-container><ng-container matColumnDef=\"symbol\"><th mat-header-cell *matHeaderCellDef>Symbol</th><td mat-cell *matCellDef=\"let element\">{{element.symbol}}</td></ng-container></table>",
+                    styles: ["\n    table {\n      width: 100%;\n    }\n  "]
+                },] },
+    ];
+    WrapperTable.propDecorators = {
+        headerRowDefs: [{ type: core.ContentChildren, args: [material.MatHeaderRowDef,] }],
+        rowDefs: [{ type: core.ContentChildren, args: [material.MatRowDef,] }],
+        columnDefs: [{ type: core.ContentChildren, args: [material.MatColumnDef,] }],
+        table: [{ type: core.ViewChild, args: [material.MatTable,] }],
+        columns: [{ type: core.Input }],
+        dataSource: [{ type: core.Input }]
+    };
+    return WrapperTable;
+}());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Monitoring autofill state with cdkAutofill
@@ -5962,7 +7385,7 @@ var TextFieldAutofillDirectiveExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Monitoring autofill state with AutofillMonitor
@@ -6003,18 +7426,18 @@ var TextFieldAutofillMonitorExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     TextFieldAutofillMonitorExample.ctorParameters = function () { return [
-        { type: textField.AutofillMonitor, },
+        { type: textField.AutofillMonitor }
     ]; };
     TextFieldAutofillMonitorExample.propDecorators = {
-        "firstName": [{ type: core.ViewChild, args: ['first', { read: core.ElementRef },] },],
-        "lastName": [{ type: core.ViewChild, args: ['last', { read: core.ElementRef },] },],
+        firstName: [{ type: core.ViewChild, args: ['first', { read: core.ElementRef },] }],
+        lastName: [{ type: core.ViewChild, args: ['last', { read: core.ElementRef },] }]
     };
     return TextFieldAutofillMonitorExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Auto-resizing textarea
@@ -6044,17 +7467,17 @@ var TextFieldAutosizeTextareaExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     TextFieldAutosizeTextareaExample.ctorParameters = function () { return [
-        { type: core.NgZone, },
+        { type: core.NgZone }
     ]; };
     TextFieldAutosizeTextareaExample.propDecorators = {
-        "autosize": [{ type: core.ViewChild, args: ['autosize',] },],
+        autosize: [{ type: core.ViewChild, args: ['autosize',] }]
     };
     return TextFieldAutosizeTextareaExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Multi-row toolbar
@@ -6074,7 +7497,7 @@ var ToolbarMultirowExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic toolbar
@@ -6094,7 +7517,7 @@ var ToolbarOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tooltip that demonstrates auto-hiding when it clips out of its scrolling container.
@@ -6108,7 +7531,7 @@ var TooltipAutoHideExample = /** @class */ (function () {
         { type: core.Component, args: [{
                     selector: 'tooltip-auto-hide-example',
                     template: "<mat-form-field><mat-select placeholder=\"Tooltip position\" [formControl]=\"position\"><mat-option *ngFor=\"let positionOption of positionOptions\" [value]=\"positionOption\">{{positionOption}}</mat-option></mat-select></mat-form-field><div class=\"example-container\" cdk-scrollable><button mat-raised-button #tooltip=\"matTooltip\" matTooltip=\"Info about the action\" [matTooltipPosition]=\"position.value\" matTooltipHideDelay=\"100000\" aria-label=\"Button that displays a tooltip that hides when scrolled out of the container\" class=\"example-button\">Action</button></div>",
-                    styles: [".example-button { display: block; width: 48px; margin: 80px auto 400px; } .example-container { height: 200px; overflow: auto; border: 1px solid #ccc; } "],
+                    styles: [".example-button { display: block; margin: 80px auto 400px; } .example-container { height: 200px; overflow: auto; border: 1px solid #ccc; } "],
                 },] },
     ];
     return TooltipAutoHideExample;
@@ -6116,7 +7539,7 @@ var TooltipAutoHideExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tooltip that can have a custom class applied.
@@ -6139,7 +7562,7 @@ var TooltipCustomClassExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tooltip with a show and hide delay
@@ -6161,7 +7584,7 @@ var TooltipDelayExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tooltip that can be disabled
@@ -6182,7 +7605,7 @@ var TooltipDisabledExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tooltip that can be manually shown/hidden.
@@ -6202,7 +7625,7 @@ var TooltipManualExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tooltip with a changing message
@@ -6223,12 +7646,13 @@ var TooltipMessageExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Custom options the configure the tooltip's default show/hide delays.
+ * @type {?}
  */
-var /** @type {?} */ myCustomTooltipDefaults = {
+var myCustomTooltipDefaults = {
     showDelay: 1000,
     hideDelay: 1000,
     touchendHideDelay: 1000,
@@ -6254,7 +7678,7 @@ var TooltipModifiedDefaultsExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Basic tooltip
@@ -6274,7 +7698,7 @@ var TooltipOverviewExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@title Tooltip with a custom position
@@ -6296,7 +7720,7 @@ var TooltipPositionExample = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Node for to-do item
@@ -6322,8 +7746,9 @@ TodoItemFlatNode = /** @class */ (function () {
 }());
 /**
  * The Json object for to-do list data.
+ * @type {?}
  */
-var /** @type {?} */ TREE_DATA$2 = {
+var TREE_DATA$2 = {
     Groceries: {
         'Almond Meal flour': null,
         'Organic eggs': null,
@@ -6367,7 +7792,8 @@ var ChecklistDatabase = /** @class */ (function () {
     function () {
         // Build the tree nodes from Json object. The result is a list of `TodoItemNode` with nested
         //     file node as children.
-        var /** @type {?} */ data = this.buildFileTree(TREE_DATA$2, 0);
+        /** @type {?} */
+        var data = this.buildFileTree(TREE_DATA$2, 0);
         // Notify the change.
         this.dataChange.next(data);
     };
@@ -6392,8 +7818,10 @@ var ChecklistDatabase = /** @class */ (function () {
     function (obj, level) {
         var _this = this;
         return Object.keys(obj).reduce(function (accumulator, key) {
-            var /** @type {?} */ value = obj[key];
-            var /** @type {?} */ node = new TodoItemNode();
+            /** @type {?} */
+            var value = obj[key];
+            /** @type {?} */
+            var node = new TodoItemNode();
             node.item = key;
             if (value != null) {
                 if (typeof value === 'object') {
@@ -6421,7 +7849,7 @@ var ChecklistDatabase = /** @class */ (function () {
      */
     function (parent, name) {
         if (parent.children) {
-            parent.children.push(/** @type {?} */ ({ item: name }));
+            parent.children.push((/** @type {?} */ ({ item: name })));
             this.dataChange.next(this.data);
         }
     };
@@ -6482,8 +7910,10 @@ var TreeChecklistExample = /** @class */ (function () {
          * Transformer to convert nested node to flat node. Record the nodes in maps for later use.
          */
         this.transformer = function (node, level) {
-            var /** @type {?} */ existingNode = _this.nestedNodeMap.get(node);
-            var /** @type {?} */ flatNode = existingNode && existingNode.item === node.item
+            /** @type {?} */
+            var existingNode = _this.nestedNodeMap.get(node);
+            /** @type {?} */
+            var flatNode = existingNode && existingNode.item === node.item
                 ? existingNode
                 : new TodoItemFlatNode();
             flatNode.item = node.item;
@@ -6500,21 +7930,26 @@ var TreeChecklistExample = /** @class */ (function () {
             _this.dataSource.data = data;
         });
     }
-    /** Whether all the descendants of the node are selected */
+    /** Whether all the descendants of the node are selected. */
     /**
-     * Whether all the descendants of the node are selected
+     * Whether all the descendants of the node are selected.
      * @param {?} node
      * @return {?}
      */
     TreeChecklistExample.prototype.descendantsAllSelected = /**
-     * Whether all the descendants of the node are selected
+     * Whether all the descendants of the node are selected.
      * @param {?} node
      * @return {?}
      */
     function (node) {
         var _this = this;
-        var /** @type {?} */ descendants = this.treeControl.getDescendants(node);
-        return descendants.every(function (child) { return _this.checklistSelection.isSelected(child); });
+        /** @type {?} */
+        var descendants = this.treeControl.getDescendants(node);
+        /** @type {?} */
+        var descAllSelected = descendants.every(function (child) {
+            return _this.checklistSelection.isSelected(child);
+        });
+        return descAllSelected;
     };
     /** Whether part of the descendants are selected */
     /**
@@ -6529,8 +7964,10 @@ var TreeChecklistExample = /** @class */ (function () {
      */
     function (node) {
         var _this = this;
-        var /** @type {?} */ descendants = this.treeControl.getDescendants(node);
-        var /** @type {?} */ result = descendants.some(function (child) { return _this.checklistSelection.isSelected(child); });
+        /** @type {?} */
+        var descendants = this.treeControl.getDescendants(node);
+        /** @type {?} */
+        var result = descendants.some(function (child) { return _this.checklistSelection.isSelected(child); });
         return result && !this.descendantsAllSelected(node);
     };
     /** Toggle the to-do item selection. Select/deselect all the descendants node */
@@ -6545,11 +7982,108 @@ var TreeChecklistExample = /** @class */ (function () {
      * @return {?}
      */
     function (node) {
+        var _this = this;
+        var _a, _b;
         this.checklistSelection.toggle(node);
-        var /** @type {?} */ descendants = this.treeControl.getDescendants(node);
+        /** @type {?} */
+        var descendants = this.treeControl.getDescendants(node);
         this.checklistSelection.isSelected(node)
             ? (_a = this.checklistSelection).select.apply(_a, descendants) : (_b = this.checklistSelection).deselect.apply(_b, descendants);
-        var _a, _b;
+        // Force update for the parent
+        descendants.every(function (child) {
+            return _this.checklistSelection.isSelected(child);
+        });
+        this.checkAllParentsSelection(node);
+    };
+    /** Toggle a leaf to-do item selection. Check all the parents to see if they changed */
+    /**
+     * Toggle a leaf to-do item selection. Check all the parents to see if they changed
+     * @param {?} node
+     * @return {?}
+     */
+    TreeChecklistExample.prototype.todoLeafItemSelectionToggle = /**
+     * Toggle a leaf to-do item selection. Check all the parents to see if they changed
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
+        this.checklistSelection.toggle(node);
+        this.checkAllParentsSelection(node);
+    };
+    /* Checks all the parents when a leaf node is selected/unselected */
+    /* Checks all the parents when a leaf node is selected/unselected */
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    TreeChecklistExample.prototype.checkAllParentsSelection = /* Checks all the parents when a leaf node is selected/unselected */
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
+        /** @type {?} */
+        var parent = this.getParentNode(node);
+        while (parent) {
+            this.checkRootNodeSelection(parent);
+            parent = this.getParentNode(parent);
+        }
+    };
+    /** Check root node checked state and change it accordingly */
+    /**
+     * Check root node checked state and change it accordingly
+     * @param {?} node
+     * @return {?}
+     */
+    TreeChecklistExample.prototype.checkRootNodeSelection = /**
+     * Check root node checked state and change it accordingly
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
+        var _this = this;
+        /** @type {?} */
+        var nodeSelected = this.checklistSelection.isSelected(node);
+        /** @type {?} */
+        var descendants = this.treeControl.getDescendants(node);
+        /** @type {?} */
+        var descAllSelected = descendants.every(function (child) {
+            return _this.checklistSelection.isSelected(child);
+        });
+        if (nodeSelected && !descAllSelected) {
+            this.checklistSelection.deselect(node);
+        }
+        else if (!nodeSelected && descAllSelected) {
+            this.checklistSelection.select(node);
+        }
+    };
+    /* Get the parent node of a node */
+    /* Get the parent node of a node */
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    TreeChecklistExample.prototype.getParentNode = /* Get the parent node of a node */
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
+        /** @type {?} */
+        var currentLevel = this.getLevel(node);
+        if (currentLevel < 1) {
+            return null;
+        }
+        /** @type {?} */
+        var startIndex = this.treeControl.dataNodes.indexOf(node) - 1;
+        for (var i = startIndex; i >= 0; i--) {
+            /** @type {?} */
+            var currentNode = this.treeControl.dataNodes[i];
+            if (this.getLevel(currentNode) < currentLevel) {
+                return currentNode;
+            }
+        }
+        return null;
     };
     /** Select the category so we can insert the new item. */
     /**
@@ -6563,8 +8097,9 @@ var TreeChecklistExample = /** @class */ (function () {
      * @return {?}
      */
     function (node) {
-        var /** @type {?} */ parentNode = this.flatNodeMap.get(node);
-        this.database.insertItem(/** @type {?} */ ((parentNode)), '');
+        /** @type {?} */
+        var parentNode = this.flatNodeMap.get(node);
+        this.database.insertItem((/** @type {?} */ (parentNode)), '');
         this.treeControl.expand(node);
     };
     /** Save the node to database */
@@ -6581,27 +8116,28 @@ var TreeChecklistExample = /** @class */ (function () {
      * @return {?}
      */
     function (node, itemValue) {
-        var /** @type {?} */ nestedNode = this.flatNodeMap.get(node);
-        this.database.updateItem(/** @type {?} */ ((nestedNode)), itemValue);
+        /** @type {?} */
+        var nestedNode = this.flatNodeMap.get(node);
+        this.database.updateItem((/** @type {?} */ (nestedNode)), itemValue);
     };
     TreeChecklistExample.decorators = [
         { type: core.Component, args: [{
                     selector: 'tree-checklist-example',
-                    template: "<mat-tree [dataSource]=\"dataSource\" [treeControl]=\"treeControl\"><mat-tree-node *matTreeNodeDef=\"let node\" matTreeNodeToggle matTreeNodePadding><button mat-icon-button disabled=\"disabled\"></button><mat-checkbox class=\"checklist-leaf-node\" [checked]=\"checklistSelection.isSelected(node)\" (change)=\"checklistSelection.toggle(node);\">{{node.item}}</mat-checkbox></mat-tree-node><mat-tree-node *matTreeNodeDef=\"let node; when: hasNoContent\" matTreeNodePadding><button mat-icon-button disabled=\"disabled\"></button><mat-form-field><input matInput #itemValue placeholder=\"New item...\"></mat-form-field><button mat-button (click)=\"saveNode(node, itemValue.value)\">Save</button></mat-tree-node><mat-tree-node *matTreeNodeDef=\"let node; when: hasChild\" matTreeNodePadding><button mat-icon-button matTreeNodeToggle [attr.aria-label]=\"'toggle ' + node.filename\"><mat-icon class=\"mat-icon-rtl-mirror\">{{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}</mat-icon></button><mat-checkbox [checked]=\"descendantsAllSelected(node)\" [indeterminate]=\"descendantsPartiallySelected(node)\" (change)=\"todoItemSelectionToggle(node)\">{{node.item}}</mat-checkbox><button mat-icon-button (click)=\"addNewItem(node)\"><mat-icon>add</mat-icon></button></mat-tree-node></mat-tree>",
+                    template: "<mat-tree [dataSource]=\"dataSource\" [treeControl]=\"treeControl\"><mat-tree-node *matTreeNodeDef=\"let node\" matTreeNodeToggle matTreeNodePadding><button mat-icon-button disabled=\"disabled\"></button><mat-checkbox class=\"checklist-leaf-node\" [checked]=\"checklistSelection.isSelected(node)\" (change)=\"todoLeafItemSelectionToggle(node)\">{{node.item}}</mat-checkbox></mat-tree-node><mat-tree-node *matTreeNodeDef=\"let node; when: hasNoContent\" matTreeNodePadding><button mat-icon-button disabled=\"disabled\"></button><mat-form-field><input matInput #itemValue placeholder=\"New item...\"></mat-form-field><button mat-button (click)=\"saveNode(node, itemValue.value)\">Save</button></mat-tree-node><mat-tree-node *matTreeNodeDef=\"let node; when: hasChild\" matTreeNodePadding><button mat-icon-button matTreeNodeToggle [attr.aria-label]=\"'toggle ' + node.filename\"><mat-icon class=\"mat-icon-rtl-mirror\">{{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}</mat-icon></button><mat-checkbox [checked]=\"descendantsAllSelected(node)\" [indeterminate]=\"descendantsPartiallySelected(node)\" (change)=\"todoItemSelectionToggle(node)\">{{node.item}}</mat-checkbox><button mat-icon-button (click)=\"addNewItem(node)\"><mat-icon>add</mat-icon></button></mat-tree-node></mat-tree>",
                     styles: [""],
                     providers: [ChecklistDatabase]
                 },] },
     ];
     /** @nocollapse */
     TreeChecklistExample.ctorParameters = function () { return [
-        { type: ChecklistDatabase, },
+        { type: ChecklistDatabase }
     ]; };
     return TreeChecklistExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Flat node with expandable and level information
@@ -6714,10 +8250,10 @@ var DynamicDataSource = /** @class */ (function () {
      */
     function (collectionViewer) {
         var _this = this;
-        /** @type {?} */ ((this.treeControl.expansionModel.onChange)).subscribe(function (change) {
-            if ((/** @type {?} */ (change)).added ||
-                (/** @type {?} */ (change)).removed) {
-                _this.handleTreeControl(/** @type {?} */ (change));
+        this.treeControl.expansionModel.onChange.subscribe(function (change) {
+            if (((/** @type {?} */ (change))).added ||
+                ((/** @type {?} */ (change))).removed) {
+                _this.handleTreeControl((/** @type {?} */ (change)));
             }
         });
         return rxjs.merge(collectionViewer.viewChange, this.dataChange).pipe(operators.map(function () { return _this.data; }));
@@ -6759,31 +8295,33 @@ var DynamicDataSource = /** @class */ (function () {
      */
     function (node, expand) {
         var _this = this;
-        var /** @type {?} */ children = this.database.getChildren(node.item);
-        var /** @type {?} */ index = this.data.indexOf(node);
-        if (!children || index < 0) {
-            // If no children, or cannot find the node, no op
+        /** @type {?} */
+        var children = this.database.getChildren(node.item);
+        /** @type {?} */
+        var index = this.data.indexOf(node);
+        if (!children || index < 0) { // If no children, or cannot find the node, no op
             return;
         }
         node.isLoading = true;
         setTimeout(function () {
+            var _a;
             if (expand) {
-                var /** @type {?} */ nodes = children.map(function (name) {
+                /** @type {?} */
+                var nodes = children.map(function (name) {
                     return new DynamicFlatNode(name, node.level + 1, _this.database.isExpandable(name));
                 });
                 (_a = _this.data).splice.apply(_a, [index + 1, 0].concat(nodes));
             }
             else {
-                var /** @type {?} */ count = 0;
-                for (var /** @type {?} */ i = index + 1; i < _this.data.length
+                /** @type {?} */
+                var count = 0;
+                for (var i = index + 1; i < _this.data.length
                     && _this.data[i].level > node.level; i++, count++) { }
                 _this.data.splice(index + 1, count);
             }
             // notify the change
-            // notify the change
             _this.dataChange.next(_this.data);
             node.isLoading = false;
-            var _a;
         }, 1000);
     };
     DynamicDataSource.decorators = [
@@ -6791,8 +8329,8 @@ var DynamicDataSource = /** @class */ (function () {
     ];
     /** @nocollapse */
     DynamicDataSource.ctorParameters = function () { return [
-        { type: tree.FlatTreeControl, },
-        { type: DynamicDatabase, },
+        { type: tree.FlatTreeControl },
+        { type: DynamicDatabase }
     ]; };
     return DynamicDataSource;
 }());
@@ -6818,14 +8356,14 @@ var TreeDynamicExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     TreeDynamicExample.ctorParameters = function () { return [
-        { type: DynamicDatabase, },
+        { type: DynamicDatabase }
     ]; };
     return TreeDynamicExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * File node data with nested structure.
@@ -6857,8 +8395,9 @@ FileFlatNode$1 = /** @class */ (function () {
 }());
 /**
  * The file structure tree data in string. The data could be parsed into a Json object
+ * @type {?}
  */
-var /** @type {?} */ TREE_DATA$3 = JSON.stringify({
+var TREE_DATA$3 = JSON.stringify({
     Applications: {
         Calendar: 'app',
         Chrome: 'app',
@@ -6921,10 +8460,12 @@ var FileDatabase$2 = /** @class */ (function () {
      */
     function () {
         // Parse the string to json object.
-        var /** @type {?} */ dataObject = JSON.parse(TREE_DATA$3);
+        /** @type {?} */
+        var dataObject = JSON.parse(TREE_DATA$3);
         // Build the tree nodes from Json object. The result is a list of `FileNode` with nested
         //     file node as children.
-        var /** @type {?} */ data = this.buildFileTree(dataObject, 0);
+        /** @type {?} */
+        var data = this.buildFileTree(dataObject, 0);
         // Notify the change.
         this.dataChange.next(data);
     };
@@ -6949,8 +8490,10 @@ var FileDatabase$2 = /** @class */ (function () {
     function (obj, level) {
         var _this = this;
         return Object.keys(obj).reduce(function (accumulator, key) {
-            var /** @type {?} */ value = obj[key];
-            var /** @type {?} */ node = new FileNode$2();
+            /** @type {?} */
+            var value = obj[key];
+            /** @type {?} */
+            var node = new FileNode$2();
             node.filename = key;
             if (value != null) {
                 if (typeof value === 'object') {
@@ -6998,16 +8541,17 @@ var TreeFlatOverviewExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     TreeFlatOverviewExample.ctorParameters = function () { return [
-        { type: FileDatabase$2, },
+        { type: FileDatabase$2 }
     ]; };
     return TreeFlatOverviewExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ LOAD_MORE = 'LOAD_MORE';
+/** @type {?} */
+var LOAD_MORE = 'LOAD_MORE';
 /**
  * Nested node
  */
@@ -7081,7 +8625,8 @@ var LoadmoreDatabase = /** @class */ (function () {
      */
     function () {
         var _this = this;
-        var /** @type {?} */ data = this.rootLevelNodes.map(function (name) { return _this._generateNode(name); });
+        /** @type {?} */
+        var data = this.rootLevelNodes.map(function (name) { return _this._generateNode(name); });
         this.dataChange.next(data);
     };
     /** Expand a node whose children are not loaded */
@@ -7103,13 +8648,17 @@ var LoadmoreDatabase = /** @class */ (function () {
         if (!this.nodeMap.has(item) || !this.dataMap.has(item)) {
             return;
         }
-        var /** @type {?} */ parent = /** @type {?} */ ((this.nodeMap.get(item)));
-        var /** @type {?} */ children = /** @type {?} */ ((this.dataMap.get(item)));
-        if (onlyFirstTime && /** @type {?} */ ((parent.children)).length > 0) {
+        /** @type {?} */
+        var parent = (/** @type {?} */ (this.nodeMap.get(item)));
+        /** @type {?} */
+        var children = (/** @type {?} */ (this.dataMap.get(item)));
+        if (onlyFirstTime && (/** @type {?} */ (parent.children)).length > 0) {
             return;
         }
-        var /** @type {?} */ newChildrenNumber = /** @type {?} */ ((parent.children)).length + this.batchNumber;
-        var /** @type {?} */ nodes = children.slice(0, newChildrenNumber)
+        /** @type {?} */
+        var newChildrenNumber = (/** @type {?} */ (parent.children)).length + this.batchNumber;
+        /** @type {?} */
+        var nodes = children.slice(0, newChildrenNumber)
             .map(function (name) { return _this._generateNode(name); });
         if (newChildrenNumber < children.length) {
             // Need a new load more node
@@ -7119,18 +8668,21 @@ var LoadmoreDatabase = /** @class */ (function () {
         this.dataChange.next(this.dataChange.value);
     };
     /**
+     * @private
      * @param {?} item
      * @return {?}
      */
     LoadmoreDatabase.prototype._generateNode = /**
+     * @private
      * @param {?} item
      * @return {?}
      */
     function (item) {
         if (this.nodeMap.has(item)) {
-            return /** @type {?} */ ((this.nodeMap.get(item)));
+            return (/** @type {?} */ (this.nodeMap.get(item)));
         }
-        var /** @type {?} */ result = new LoadmoreNode(item, this.dataMap.has(item));
+        /** @type {?} */
+        var result = new LoadmoreNode(item, this.dataMap.has(item));
         this.nodeMap.set(item, result);
         return result;
     };
@@ -7149,11 +8701,13 @@ var TreeLoadmoreExample = /** @class */ (function () {
         this.nodeMap = new Map();
         this.getChildren = function (node) { return node.childrenChange; };
         this.transformer = function (node, level) {
-            var /** @type {?} */ existingNode = _this.nodeMap.get(node.item);
+            /** @type {?} */
+            var existingNode = _this.nodeMap.get(node.item);
             if (existingNode) {
                 return existingNode;
             }
-            var /** @type {?} */ newNode = new LoadmoreFlatNode(node.item, level, node.hasChildren, node.loadMoreParentItem);
+            /** @type {?} */
+            var newNode = new LoadmoreFlatNode(node.item, level, node.hasChildren, node.loadMoreParentItem);
             _this.nodeMap.set(node.item, newNode);
             return newNode;
         };
@@ -7204,14 +8758,14 @@ var TreeLoadmoreExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     TreeLoadmoreExample.ctorParameters = function () { return [
-        { type: LoadmoreDatabase, },
+        { type: LoadmoreDatabase }
     ]; };
     return TreeLoadmoreExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Json node data with nested structure. Each node has a filename and a value or a list of children
@@ -7226,8 +8780,9 @@ FileNode$3 = /** @class */ (function () {
 }());
 /**
  * The Json tree data in string. The data could be parsed into Json object
+ * @type {?}
  */
-var /** @type {?} */ TREE_DATA$4 = JSON.stringify({
+var TREE_DATA$4 = JSON.stringify({
     Applications: {
         Calendar: 'app',
         Chrome: 'app',
@@ -7290,10 +8845,12 @@ var FileDatabase$3 = /** @class */ (function () {
      */
     function () {
         // Parse the string to json object.
-        var /** @type {?} */ dataObject = JSON.parse(TREE_DATA$4);
+        /** @type {?} */
+        var dataObject = JSON.parse(TREE_DATA$4);
         // Build the tree nodes from Json object. The result is a list of `FileNode` with nested
         //     file node as children.
-        var /** @type {?} */ data = this.buildFileTree(dataObject, 0);
+        /** @type {?} */
+        var data = this.buildFileTree(dataObject, 0);
         // Notify the change.
         this.dataChange.next(data);
     };
@@ -7318,8 +8875,10 @@ var FileDatabase$3 = /** @class */ (function () {
     function (obj, level) {
         var _this = this;
         return Object.keys(obj).reduce(function (accumulator, key) {
-            var /** @type {?} */ value = obj[key];
-            var /** @type {?} */ node = new FileNode$3();
+            /** @type {?} */
+            var value = obj[key];
+            /** @type {?} */
+            var node = new FileNode$3();
             node.filename = key;
             if (value != null) {
                 if (typeof value === 'object') {
@@ -7361,721 +8920,1255 @@ var TreeNestedOverviewExample = /** @class */ (function () {
     ];
     /** @nocollapse */
     TreeNestedOverviewExample.ctorParameters = function () { return [
-        { type: FileDatabase$3, },
+        { type: FileDatabase$3 }
     ]; };
     return TreeNestedOverviewExample;
 }());
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var /** @type {?} */ EXAMPLE_COMPONENTS = {
-    'autocomplete-auto-active-first-option': {
-        title: 'Highlight the first autocomplete option',
-        component: AutocompleteAutoActiveFirstOptionExample
-    },
-    'autocomplete-display': {
-        title: 'Display value autocomplete',
-        component: AutocompleteDisplayExample
-    },
-    'autocomplete-filter': {
-        title: 'Filter autocomplete',
-        component: AutocompleteFilterExample
-    },
-    'autocomplete-optgroup': {
-        title: 'Option groups autocomplete',
-        component: AutocompleteOptgroupExample
-    },
-    'autocomplete-overview': {
-        title: 'Autocomplete overview',
-        component: AutocompleteOverviewExample
-    },
-    'autocomplete-simple': {
-        title: 'Simple autocomplete',
-        component: AutocompleteSimpleExample
-    },
-    'badge-overview': {
-        title: 'Badge overview',
-        component: BadgeOverviewExample
-    },
-    'bottom-sheet-overview': {
-        title: 'Bottom Sheet Overview',
-        component: BottomSheetOverviewExample,
-        additionalFiles: ["bottom-sheet-overview-example-sheet.html"],
-        selectorName: 'BottomSheetOverviewExample, BottomSheetOverviewExampleSheet'
-    },
-    'button-overview': {
-        title: 'Basic buttons',
-        component: ButtonOverviewExample
-    },
-    'button-toggle-exclusive': {
-        title: 'Exclusive selection',
-        component: ButtonToggleExclusiveExample
-    },
-    'button-toggle-overview': {
-        title: 'Basic button-toggles',
-        component: ButtonToggleOverviewExample
-    },
-    'button-types': {
-        title: 'Button varieties',
-        component: ButtonTypesExample
-    },
-    'card-fancy': {
-        title: 'Card with multiple sections',
-        component: CardFancyExample
-    },
-    'card-overview': {
-        title: 'Basic cards',
-        component: CardOverviewExample
-    },
-    'cdk-table-basic-flex': {
-        title: 'Basic use of `<cdk-table>` (uses display flex)',
-        component: CdkTableBasicFlexExample
-    },
-    'cdk-table-basic': {
-        title: 'Basic CDK data-table',
-        component: CdkTableBasicExample
-    },
-    'cdk-tree-flat': {
-        title: 'Tree with flat nodes',
-        component: CdkTreeFlatExample
-    },
-    'cdk-tree-nested': {
-        title: 'Tree with nested nodes',
-        component: CdkTreeNestedExample
-    },
-    'checkbox-configurable': {
-        title: 'Configurable checkbox',
-        component: CheckboxConfigurableExample
-    },
-    'checkbox-overview': {
-        title: 'Basic checkboxes',
-        component: CheckboxOverviewExample
-    },
-    'chips-autocomplete': {
-        title: 'Chips Autocomplete',
-        component: ChipsAutocompleteExample
-    },
-    'chips-input': {
-        title: 'Chips with input',
-        component: ChipsInputExample
-    },
-    'chips-overview': {
-        title: 'Basic chips',
-        component: ChipsOverviewExample
-    },
-    'chips-stacked': {
-        title: 'Stacked chips',
-        component: ChipsStackedExample
-    },
-    'datepicker-api': {
-        title: 'Datepicker open method',
-        component: DatepickerApiExample
-    },
-    'datepicker-color': {
-        title: 'Datepicker palette colors',
-        component: DatepickerColorExample
-    },
-    'datepicker-custom-header': {
-        title: 'Datepicker with custom calendar header',
-        component: DatepickerCustomHeaderExample,
-        selectorName: 'DatepickerCustomHeaderExample, ExampleHeader'
-    },
-    'datepicker-custom-icon': {
-        title: 'Datepicker with custom icon',
-        component: DatepickerCustomIconExample
-    },
-    'datepicker-disabled': {
-        title: 'Disabled datepicker',
-        component: DatepickerDisabledExample
-    },
-    'datepicker-events': {
-        title: 'Datepicker input and change events',
-        component: DatepickerEventsExample
-    },
-    'datepicker-filter': {
-        title: 'Datepicker with filter validation',
-        component: DatepickerFilterExample
-    },
-    'datepicker-formats': {
-        title: 'Datepicker with custom formats',
-        component: DatepickerFormatsExample
-    },
-    'datepicker-locale': {
-        title: 'Datepicker with different locale',
-        component: DatepickerLocaleExample
-    },
-    'datepicker-min-max': {
-        title: 'Datepicker with min & max validation',
-        component: DatepickerMinMaxExample
-    },
-    'datepicker-moment': {
-        title: 'Datepicker that uses Moment.js dates',
-        component: DatepickerMomentExample
-    },
-    'datepicker-overview': {
-        title: 'Basic datepicker',
-        component: DatepickerOverviewExample
-    },
-    'datepicker-start-view': {
-        title: 'Datepicker start date',
-        component: DatepickerStartViewExample
-    },
-    'datepicker-touch': {
-        title: 'Datepicker touch UI',
-        component: DatepickerTouchExample
-    },
-    'datepicker-value': {
-        title: 'Datepicker selected value',
-        component: DatepickerValueExample
-    },
-    'datepicker-views-selection': {
-        title: 'Datepicker emulating a Year and month picker',
-        component: DatepickerViewsSelectionExample
-    },
-    'dialog-content': {
-        title: 'Dialog with header, scrollable content and actions',
-        component: DialogContentExample,
-        additionalFiles: ["dialog-content-example-dialog.html"],
-        selectorName: 'DialogContentExample, DialogContentExampleDialog'
-    },
-    'dialog-data': {
-        title: 'Injecting data when opening a dialog',
-        component: DialogDataExample,
-        additionalFiles: ["dialog-data-example-dialog.html"],
-        selectorName: 'DialogDataExample, DialogDataExampleDialog'
-    },
-    'dialog-elements': {
-        title: 'Dialog elements',
-        component: DialogElementsExample,
-        additionalFiles: ["dialog-elements-example-dialog.html"],
-        selectorName: 'DialogElementsExample, DialogElementsExampleDialog'
-    },
-    'dialog-overview': {
-        title: 'Dialog Overview',
-        component: DialogOverviewExample,
-        additionalFiles: ["dialog-overview-example-dialog.html"],
-        selectorName: 'DialogOverviewExample, DialogOverviewExampleDialog'
-    },
-    'divider-overview': {
-        title: 'Basic divider',
-        component: DividerOverviewExample
-    },
-    'elevation-overview': {
-        title: 'Elevation CSS classes',
-        component: ElevationOverviewExample
-    },
-    'expansion-expand-collapse-all': {
-        title: 'Accordion with expand/collapse all toggles',
-        component: ExpansionExpandCollapseAllExample
-    },
-    'expansion-overview': {
-        title: 'Basic expansion panel',
-        component: ExpansionOverviewExample
-    },
-    'expansion-steps': {
-        title: 'Expansion panel as accordion',
-        component: ExpansionStepsExample
-    },
-    'focus-monitor-directives': {
-        title: 'Monitoring focus with FocusMonitor',
-        component: FocusMonitorDirectivesExample
-    },
-    'focus-monitor-focus-via': {
-        title: 'Focusing with a specific FocusOrigin',
-        component: FocusMonitorFocusViaExample
-    },
-    'focus-monitor-overview': {
-        title: 'Monitoring focus with FocusMonitor',
-        component: FocusMonitorOverviewExample
-    },
-    'form-field-appearance': {
-        title: 'Form field appearance variants',
-        component: FormFieldAppearanceExample
-    },
-    'form-field-custom-control': {
-        title: 'Form field with custom telephone number input control.',
-        component: FormFieldCustomControlExample,
-        additionalFiles: ["form-field-custom-control-example.html"],
-        selectorName: 'FormFieldCustomControlExample, MyTelInput'
-    },
-    'form-field-error': {
-        title: 'Form field with error messages',
-        component: FormFieldErrorExample
-    },
-    'form-field-hint': {
-        title: 'Form field with hints',
-        component: FormFieldHintExample
-    },
-    'form-field-label': {
-        title: 'Form field with label',
-        component: FormFieldLabelExample
-    },
-    'form-field-overview': {
-        title: 'Simple form field',
-        component: FormFieldOverviewExample
-    },
-    'form-field-prefix-suffix': {
-        title: 'Form field with prefix & suffix',
-        component: FormFieldPrefixSuffixExample
-    },
-    'form-field-theming': {
-        title: 'Form field theming',
-        component: FormFieldThemingExample
-    },
-    'grid-list-dynamic': {
-        title: 'Dynamic grid-list',
-        component: GridListDynamicExample
-    },
-    'grid-list-overview': {
-        title: 'Basic grid-list',
-        component: GridListOverviewExample
-    },
-    'icon-overview': {
-        title: 'Basic icons',
-        component: IconOverviewExample
-    },
-    'icon-svg': {
-        title: 'SVG icons',
-        component: IconSvgExample
-    },
-    'input-clearable': {
-        title: 'Input with a clear button',
-        component: InputClearableExample
-    },
-    'input-error-state-matcher': {
-        title: 'Input with a custom ErrorStateMatcher',
-        component: InputErrorStateMatcherExample
-    },
-    'input-errors': {
-        title: 'Input with error messages',
-        component: InputErrorsExample
-    },
-    'input-form': {
-        title: 'Inputs in a form',
-        component: InputFormExample
-    },
-    'input-hint': {
-        title: 'Input with hints',
-        component: InputHintExample
-    },
-    'input-overview': {
-        title: 'Basic Inputs',
-        component: InputOverviewExample
-    },
-    'input-prefix-suffix': {
-        title: 'Inputs with prefixes and suffixes',
-        component: InputPrefixSuffixExample
-    },
-    'list-overview': {
-        title: 'Basic list',
-        component: ListOverviewExample
-    },
-    'list-sections': {
-        title: 'List with sections',
-        component: ListSectionsExample
-    },
-    'list-selection': {
-        title: 'List with selection',
-        component: ListSelectionExample
-    },
-    'menu-icons': {
-        title: 'Menu with icons',
-        component: MenuIconsExample
-    },
-    'menu-overview': {
-        title: 'Basic menu',
-        component: MenuOverviewExample
-    },
-    'nested-menu': {
-        title: 'Nested menu',
-        component: NestedMenuExample
-    },
-    'paginator-configurable': {
-        title: 'Configurable paginator',
-        component: PaginatorConfigurableExample
-    },
-    'paginator-overview': {
-        title: 'Paginator',
-        component: PaginatorOverviewExample
-    },
-    'progress-bar-buffer': {
-        title: 'Buffer progress-bar',
-        component: ProgressBarBufferExample
-    },
-    'progress-bar-configurable': {
-        title: 'Configurable progress-bar',
-        component: ProgressBarConfigurableExample
-    },
-    'progress-bar-determinate': {
-        title: 'Determinate progress-bar',
-        component: ProgressBarDeterminateExample
-    },
-    'progress-bar-indeterminate': {
-        title: 'Indeterminate progress-bar',
-        component: ProgressBarIndeterminateExample
-    },
-    'progress-bar-query': {
-        title: 'Query progress-bar',
-        component: ProgressBarQueryExample
-    },
-    'progress-spinner-configurable': {
-        title: 'Configurable progress spinner',
-        component: ProgressSpinnerConfigurableExample
-    },
-    'progress-spinner-overview': {
-        title: 'Basic progress-spinner',
-        component: ProgressSpinnerOverviewExample
-    },
-    'radio-ng-model': {
-        title: 'Radios with ngModel',
-        component: RadioNgModelExample
-    },
-    'radio-overview': {
-        title: 'Basic radios',
-        component: RadioOverviewExample
-    },
-    'ripple-overview': {
-        title: 'MatRipple basic usage',
-        component: RippleOverviewExample
-    },
-    'select-custom-trigger': {
-        title: 'Select with custom trigger text',
-        component: SelectCustomTriggerExample
-    },
-    'select-disabled': {
-        title: 'Disabled select',
-        component: SelectDisabledExample
-    },
-    'select-error-state-matcher': {
-        title: 'Select with a custom ErrorStateMatcher',
-        component: SelectErrorStateMatcherExample
-    },
-    'select-form': {
-        title: 'Select in a form',
-        component: SelectFormExample
-    },
-    'select-hint-error': {
-        title: 'Select with form field features',
-        component: SelectHintErrorExample
-    },
-    'select-multiple': {
-        title: 'Select with multiple selection',
-        component: SelectMultipleExample
-    },
-    'select-no-ripple': {
-        title: 'Select with no option ripple',
-        component: SelectNoRippleExample
-    },
-    'select-optgroup': {
-        title: 'Select with option groups',
-        component: SelectOptgroupExample
-    },
-    'select-overview': {
-        title: 'Basic select',
-        component: SelectOverviewExample
-    },
-    'select-panel-class': {
-        title: 'Select with custom panel styling',
-        component: SelectPanelClassExample
-    },
-    'select-reset': {
-        title: 'Select with reset option',
-        component: SelectResetExample
-    },
-    'select-value-binding': {
-        title: 'Select with 2-way value binding',
-        component: SelectValueBindingExample
-    },
-    'sidenav-autosize': {
-        title: 'Autosize sidenav',
-        component: SidenavAutosizeExample
-    },
-    'sidenav-backdrop': {
-        title: 'Drawer with explicit backdrop setting',
-        component: SidenavBackdropExample
-    },
-    'sidenav-disable-close': {
-        title: 'Sidenav with custom escape and backdrop click behavior',
-        component: SidenavDisableCloseExample
-    },
-    'sidenav-drawer-overview': {
-        title: 'Basic drawer',
-        component: SidenavDrawerOverviewExample
-    },
-    'sidenav-fixed': {
-        title: 'Fixed sidenav',
-        component: SidenavFixedExample
-    },
-    'sidenav-mode': {
-        title: 'Sidenav with configurable mode',
-        component: SidenavModeExample
-    },
-    'sidenav-open-close': {
-        title: 'Sidenav open & close behavior',
-        component: SidenavOpenCloseExample
-    },
-    'sidenav-overview': {
-        title: 'Basic sidenav',
-        component: SidenavOverviewExample
-    },
-    'sidenav-position': {
-        title: 'Implicit main content with two sidenavs',
-        component: SidenavPositionExample
-    },
-    'sidenav-responsive': {
-        title: 'Responsive sidenav',
-        component: SidenavResponsiveExample
-    },
-    'slide-toggle-configurable': {
-        title: 'Configurable slide-toggle',
-        component: SlideToggleConfigurableExample
-    },
-    'slide-toggle-forms': {
-        title: 'Slide-toggle with forms',
-        component: SlideToggleFormsExample
-    },
-    'slide-toggle-overview': {
-        title: 'Basic slide-toggles',
-        component: SlideToggleOverviewExample
-    },
-    'slider-configurable': {
-        title: 'Configurable slider',
-        component: SliderConfigurableExample
-    },
-    'slider-formatting': {
-        title: 'Slider with custom thumb label formatting.',
-        component: SliderFormattingExample
-    },
-    'slider-overview': {
-        title: 'Basic slider',
-        component: SliderOverviewExample
-    },
-    'snack-bar-component': {
-        title: 'Snack-bar with a custom component',
-        component: SnackBarComponentExample,
-        additionalFiles: ["snack-bar-component-example-snack.html"],
-        selectorName: 'SnackBarComponentExample, PizzaPartyComponent'
-    },
-    'snack-bar-overview': {
-        title: 'Basic snack-bar',
-        component: SnackBarOverviewExample
-    },
-    'snack-bar-position': {
-        title: 'Snack-bar with configurable position',
-        component: SnackBarPositionExample
-    },
-    'sort-overview': {
-        title: 'Sorting overview',
-        component: SortOverviewExample
-    },
-    'stepper-editable': {
-        title: 'Stepper with editable steps',
-        component: StepperEditableExample
-    },
-    'stepper-optional': {
-        title: 'Stepper with optional steps',
-        component: StepperOptionalExample
-    },
-    'stepper-overview': {
-        title: 'Stepper overview',
-        component: StepperOverviewExample
-    },
-    'stepper-vertical': {
-        title: 'Stepper vertical',
-        component: StepperVerticalExample
-    },
-    'tab-group-async': {
-        title: 'Tab group with asynchronously loading tab contents',
-        component: TabGroupAsyncExample
-    },
-    'tab-group-basic': {
-        title: 'Basic use of the tab group',
-        component: TabGroupBasicExample
-    },
-    'tab-group-custom-label': {
-        title: 'Using tabs with a custom label template',
-        component: TabGroupCustomLabelExample
-    },
-    'tab-group-dynamic-height': {
-        title: 'Tag group with dynamic height based on tab contents',
-        component: TabGroupDynamicHeightExample
-    },
-    'tab-group-dynamic': {
-        title: 'Tab group with dynamically changing tabs',
-        component: TabGroupDynamicExample
-    },
-    'tab-group-header-below': {
-        title: 'Tab group with the headers on the bottom',
-        component: TabGroupHeaderBelowExample
-    },
-    'tab-group-lazy-loaded': {
-        title: 'Tab group where the tab content is loaded lazily (when activated)',
-        component: TabGroupLazyLoadedExample
-    },
-    'tab-group-stretched': {
-        title: 'Tab group with stretched labels',
-        component: TabGroupStretchedExample
-    },
-    'tab-group-theme': {
-        title: 'Customizing the theme options on the tab group',
-        component: TabGroupThemeExample
-    },
-    'tab-nav-bar-basic': {
-        title: 'Basic use of the tab nav bar',
-        component: TabNavBarBasicExample
-    },
-    'table-basic-flex': {
-        title: 'Basic use of `<mat-table>` (uses display flex)',
-        component: TableBasicFlexExample
-    },
-    'table-basic': {
-        title: 'Basic use of `<table mat-table>`',
-        component: TableBasicExample
-    },
-    'table-dynamic-columns': {
-        title: 'Table dynamically changing the columns displayed',
-        component: TableDynamicColumnsExample
-    },
-    'table-expandable-rows': {
-        title: 'Table with expandable rows',
-        component: TableExpandableRowsExample
-    },
-    'table-filtering': {
-        title: 'Table with filtering',
-        component: TableFilteringExample
-    },
-    'table-footer-row': {
-        title: 'Footer row table',
-        component: TableFooterRowExample
-    },
-    'table-http': {
-        title: 'Table retrieving data through HTTP',
-        component: TableHttpExample
-    },
-    'table-multiple-header-footer': {
-        title: 'Table with multiple header and footer rows',
-        component: TableMultipleHeaderFooterExample
-    },
-    'table-overview': {
-        title: 'Data table with sorting, pagination, and filtering.',
-        component: TableOverviewExample
-    },
-    'table-pagination': {
-        title: 'Table with pagination',
-        component: TablePaginationExample
-    },
-    'table-row-context': {
-        title: 'Table showing each row context properties.',
-        component: TableRowContextExample
-    },
-    'table-selection': {
-        title: 'Table with selection',
-        component: TableSelectionExample
-    },
-    'table-sorting': {
-        title: 'Table with sorting',
-        component: TableSortingExample
-    },
-    'table-sticky-columns': {
-        title: 'Table with a sticky columns',
-        component: TableStickyColumnsExample
-    },
-    'table-sticky-complex-flex': {
-        title: 'Flex-layout tables with toggle-able sticky headers, footers, and columns',
-        component: TableStickyComplexFlexExample
-    },
-    'table-sticky-complex': {
-        title: 'Tables with toggle-able sticky headers, footers, and columns',
-        component: TableStickyComplexExample
-    },
-    'table-sticky-footer': {
-        title: 'Table with a sticky footer',
-        component: TableStickyFooterExample
-    },
-    'table-sticky-header': {
-        title: 'Table with sticky header',
-        component: TableStickyHeaderExample
-    },
-    'text-field-autofill-directive': {
-        title: 'Monitoring autofill state with cdkAutofill',
-        component: TextFieldAutofillDirectiveExample
-    },
-    'text-field-autofill-monitor': {
-        title: 'Monitoring autofill state with AutofillMonitor',
-        component: TextFieldAutofillMonitorExample
-    },
-    'text-field-autosize-textarea': {
-        title: 'Auto-resizing textarea',
-        component: TextFieldAutosizeTextareaExample
-    },
-    'toolbar-multirow': {
-        title: 'Multi-row toolbar',
-        component: ToolbarMultirowExample
-    },
-    'toolbar-overview': {
-        title: 'Basic toolbar',
-        component: ToolbarOverviewExample
-    },
-    'tooltip-auto-hide': {
-        title: 'Tooltip that demonstrates auto-hiding when it clips out of its scrolling container.',
-        component: TooltipAutoHideExample
-    },
-    'tooltip-custom-class': {
-        title: 'Tooltip that can have a custom class applied.',
-        component: TooltipCustomClassExample
-    },
-    'tooltip-delay': {
-        title: 'Tooltip with a show and hide delay',
-        component: TooltipDelayExample
-    },
-    'tooltip-disabled': {
-        title: 'Tooltip that can be disabled',
-        component: TooltipDisabledExample
-    },
-    'tooltip-manual': {
-        title: 'Tooltip that can be manually shown/hidden.',
-        component: TooltipManualExample
-    },
-    'tooltip-message': {
-        title: 'Tooltip with a changing message',
-        component: TooltipMessageExample
-    },
-    'tooltip-modified-defaults': {
-        title: 'Tooltip with a show and hide delay',
-        component: TooltipModifiedDefaultsExample
-    },
-    'tooltip-overview': {
-        title: 'Basic tooltip',
-        component: TooltipOverviewExample
-    },
-    'tooltip-position': {
-        title: 'Tooltip with a custom position',
-        component: TooltipPositionExample
-    },
-    'tree-checklist': {
-        title: 'Tree with checkboxes',
-        component: TreeChecklistExample
-    },
-    'tree-dynamic': {
-        title: 'Tree with dynamic data',
-        component: TreeDynamicExample
-    },
-    'tree-flat-overview': {
-        title: 'Tree with flat nodes',
-        component: TreeFlatOverviewExample
-    },
-    'tree-loadmore': {
-        title: 'Tree with partially loaded data',
-        component: TreeLoadmoreExample
-    },
-    'tree-nested-overview': {
-        title: 'Tree with nested nodes',
-        component: TreeNestedOverviewExample
-    },
+/** @type {?} */
+var EXAMPLE_COMPONENTS = {
+    "autocomplete-auto-active-first-option": {
+        "title": "Highlight the first autocomplete option",
+        "component": AutocompleteAutoActiveFirstOptionExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "autocomplete-display": {
+        "title": "Display value autocomplete",
+        "component": AutocompleteDisplayExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "autocomplete-filter": {
+        "title": "Filter autocomplete",
+        "component": AutocompleteFilterExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "autocomplete-optgroup": {
+        "title": "Option groups autocomplete",
+        "component": AutocompleteOptgroupExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "autocomplete-overview": {
+        "title": "Autocomplete overview",
+        "component": AutocompleteOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "autocomplete-simple": {
+        "title": "Simple autocomplete",
+        "component": AutocompleteSimpleExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "badge-overview": {
+        "title": "Badge overview",
+        "component": BadgeOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "bottom-sheet-overview": {
+        "title": "Bottom Sheet Overview",
+        "component": BottomSheetOverviewExample,
+        "additionalFiles": [
+            "bottom-sheet-overview-example-sheet.html"
+        ],
+        "selectorName": "BottomSheetOverviewExample, BottomSheetOverviewExampleSheet"
+    },
+    "button-overview": {
+        "title": "Basic buttons",
+        "component": ButtonOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "button-toggle-appearance": {
+        "title": "Button toggle appearance",
+        "component": ButtonToggleAppearanceExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "button-toggle-exclusive": {
+        "title": "Exclusive selection",
+        "component": ButtonToggleExclusiveExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "button-toggle-overview": {
+        "title": "Basic button-toggles",
+        "component": ButtonToggleOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "button-types": {
+        "title": "Button varieties",
+        "component": ButtonTypesExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "card-fancy": {
+        "title": "Card with multiple sections",
+        "component": CardFancyExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "card-overview": {
+        "title": "Basic cards",
+        "component": CardOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-axis-lock": {
+        "title": "Drag&Drop position locking",
+        "component": CdkDragDropAxisLockExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-boundary": {
+        "title": "Drag&Drop boundary",
+        "component": CdkDragDropBoundaryExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-connected-sorting-group": {
+        "title": "Drag&Drop connected sorting group",
+        "component": CdkDragDropConnectedSortingGroupExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-connected-sorting": {
+        "title": "Drag&Drop connected sorting",
+        "component": CdkDragDropConnectedSortingExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-custom-placeholder": {
+        "title": "Drag&Drop custom placeholer",
+        "component": CdkDragDropCustomPlaceholderExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-custom-preview": {
+        "title": "Drag&Drop custom preview",
+        "component": CdkDragDropCustomPreviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-disabled": {
+        "title": "Drag&Drop disabled",
+        "component": CdkDragDropDisabledExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-enter-predicate": {
+        "title": "Drag&Drop enter predicate",
+        "component": CdkDragDropEnterPredicateExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-handle": {
+        "title": "Drag&Drop with a handle",
+        "component": CdkDragDropHandleExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-horizontal-sorting": {
+        "title": "Drag&Drop horizontal sorting",
+        "component": CdkDragDropHorizontalSortingExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-overview": {
+        "title": "Basic Drag&Drop",
+        "component": CdkDragDropOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-root-element": {
+        "title": "Drag&Drop with alternate root element",
+        "component": CdkDragDropRootElementExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-drag-drop-sorting": {
+        "title": "Drag&Drop sorting",
+        "component": CdkDragDropSortingExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-platform-overview": {
+        "title": "Platform overview",
+        "component": CdkPlatformOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-table-basic-flex": {
+        "title": "Basic use of `<cdk-table>` (uses display flex)",
+        "component": CdkTableBasicFlexExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-table-basic": {
+        "title": "Basic CDK data-table",
+        "component": CdkTableBasicExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-tree-flat": {
+        "title": "Tree with flat nodes",
+        "component": CdkTreeFlatExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-tree-nested": {
+        "title": "Tree with nested nodes",
+        "component": CdkTreeNestedExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-virtual-scroll-context": {
+        "title": "Virtual scroll context variables",
+        "component": CdkVirtualScrollContextExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-virtual-scroll-custom-strategy": {
+        "title": "Virtual scroll with a custom strategy",
+        "component": CdkVirtualScrollCustomStrategyExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-virtual-scroll-data-source": {
+        "title": "Virtual scroll with a custom data source",
+        "component": CdkVirtualScrollDataSourceExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-virtual-scroll-dl": {
+        "title": "Virtual scrolling `<dl>`",
+        "component": CdkVirtualScrollDlExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-virtual-scroll-fixed-buffer": {
+        "title": "Fixed size virtual scroll with custom buffer parameters",
+        "component": CdkVirtualScrollFixedBufferExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-virtual-scroll-horizontal": {
+        "title": "Horizontal virtual scroll",
+        "component": CdkVirtualScrollHorizontalExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-virtual-scroll-overview": {
+        "title": "Basic virtual scroll",
+        "component": CdkVirtualScrollOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "cdk-virtual-scroll-template-cache": {
+        "title": "Virtual scroll with no template caching",
+        "component": CdkVirtualScrollTemplateCacheExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "checkbox-configurable": {
+        "title": "Configurable checkbox",
+        "component": CheckboxConfigurableExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "checkbox-overview": {
+        "title": "Basic checkboxes",
+        "component": CheckboxOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "chips-autocomplete": {
+        "title": "Chips Autocomplete",
+        "component": ChipsAutocompleteExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "chips-input": {
+        "title": "Chips with input",
+        "component": ChipsInputExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "chips-overview": {
+        "title": "Basic chips",
+        "component": ChipsOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "chips-stacked": {
+        "title": "Stacked chips",
+        "component": ChipsStackedExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-api": {
+        "title": "Datepicker open method",
+        "component": DatepickerApiExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-color": {
+        "title": "Datepicker palette colors",
+        "component": DatepickerColorExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-custom-header": {
+        "title": "Datepicker with custom calendar header",
+        "component": DatepickerCustomHeaderExample,
+        "additionalFiles": [],
+        "selectorName": "DatepickerCustomHeaderExample, ExampleHeader"
+    },
+    "datepicker-custom-icon": {
+        "title": "Datepicker with custom icon",
+        "component": DatepickerCustomIconExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-date-class": {
+        "title": "Datepicker with custom date classes",
+        "component": DatepickerDateClassExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-disabled": {
+        "title": "Disabled datepicker",
+        "component": DatepickerDisabledExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-events": {
+        "title": "Datepicker input and change events",
+        "component": DatepickerEventsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-filter": {
+        "title": "Datepicker with filter validation",
+        "component": DatepickerFilterExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-formats": {
+        "title": "Datepicker with custom formats",
+        "component": DatepickerFormatsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-locale": {
+        "title": "Datepicker with different locale",
+        "component": DatepickerLocaleExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-min-max": {
+        "title": "Datepicker with min & max validation",
+        "component": DatepickerMinMaxExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-moment": {
+        "title": "Datepicker that uses Moment.js dates",
+        "component": DatepickerMomentExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-overview": {
+        "title": "Basic datepicker",
+        "component": DatepickerOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-start-view": {
+        "title": "Datepicker start date",
+        "component": DatepickerStartViewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-touch": {
+        "title": "Datepicker touch UI",
+        "component": DatepickerTouchExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-value": {
+        "title": "Datepicker selected value",
+        "component": DatepickerValueExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "datepicker-views-selection": {
+        "title": "Datepicker emulating a Year and month picker",
+        "component": DatepickerViewsSelectionExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "dialog-content": {
+        "title": "Dialog with header, scrollable content and actions",
+        "component": DialogContentExample,
+        "additionalFiles": [
+            "dialog-content-example-dialog.html"
+        ],
+        "selectorName": "DialogContentExample, DialogContentExampleDialog"
+    },
+    "dialog-data": {
+        "title": "Injecting data when opening a dialog",
+        "component": DialogDataExample,
+        "additionalFiles": [
+            "dialog-data-example-dialog.html"
+        ],
+        "selectorName": "DialogDataExample, DialogDataExampleDialog"
+    },
+    "dialog-elements": {
+        "title": "Dialog elements",
+        "component": DialogElementsExample,
+        "additionalFiles": [
+            "dialog-elements-example-dialog.html"
+        ],
+        "selectorName": "DialogElementsExample, DialogElementsExampleDialog"
+    },
+    "dialog-overview": {
+        "title": "Dialog Overview",
+        "component": DialogOverviewExample,
+        "additionalFiles": [
+            "dialog-overview-example-dialog.html"
+        ],
+        "selectorName": "DialogOverviewExample, DialogOverviewExampleDialog"
+    },
+    "divider-overview": {
+        "title": "Basic divider",
+        "component": DividerOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "elevation-overview": {
+        "title": "Elevation CSS classes",
+        "component": ElevationOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "expansion-expand-collapse-all": {
+        "title": "Accordion with expand/collapse all toggles",
+        "component": ExpansionExpandCollapseAllExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "expansion-overview": {
+        "title": "Basic expansion panel",
+        "component": ExpansionOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "expansion-steps": {
+        "title": "Expansion panel as accordion",
+        "component": ExpansionStepsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "focus-monitor-directives": {
+        "title": "Monitoring focus with FocusMonitor",
+        "component": FocusMonitorDirectivesExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "focus-monitor-focus-via": {
+        "title": "Focusing with a specific FocusOrigin",
+        "component": FocusMonitorFocusViaExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "focus-monitor-overview": {
+        "title": "Monitoring focus with FocusMonitor",
+        "component": FocusMonitorOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "form-field-appearance": {
+        "title": "Form field appearance variants",
+        "component": FormFieldAppearanceExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "form-field-custom-control": {
+        "title": "Form field with custom telephone number input control.",
+        "component": FormFieldCustomControlExample,
+        "additionalFiles": [
+            "example-tel-input-example.html",
+            "example-tel-input-example.css"
+        ],
+        "selectorName": "FormFieldCustomControlExample, MyTelInput"
+    },
+    "form-field-error": {
+        "title": "Form field with error messages",
+        "component": FormFieldErrorExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "form-field-hint": {
+        "title": "Form field with hints",
+        "component": FormFieldHintExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "form-field-label": {
+        "title": "Form field with label",
+        "component": FormFieldLabelExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "form-field-overview": {
+        "title": "Simple form field",
+        "component": FormFieldOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "form-field-prefix-suffix": {
+        "title": "Form field with prefix & suffix",
+        "component": FormFieldPrefixSuffixExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "form-field-theming": {
+        "title": "Form field theming",
+        "component": FormFieldThemingExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "grid-list-dynamic": {
+        "title": "Dynamic grid-list",
+        "component": GridListDynamicExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "grid-list-overview": {
+        "title": "Basic grid-list",
+        "component": GridListOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "icon-overview": {
+        "title": "Basic icons",
+        "component": IconOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "icon-svg": {
+        "title": "SVG icons",
+        "component": IconSvgExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "input-clearable": {
+        "title": "Input with a clear button",
+        "component": InputClearableExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "input-error-state-matcher": {
+        "title": "Input with a custom ErrorStateMatcher",
+        "component": InputErrorStateMatcherExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "input-errors": {
+        "title": "Input with error messages",
+        "component": InputErrorsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "input-form": {
+        "title": "Inputs in a form",
+        "component": InputFormExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "input-hint": {
+        "title": "Input with hints",
+        "component": InputHintExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "input-overview": {
+        "title": "Basic Inputs",
+        "component": InputOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "input-prefix-suffix": {
+        "title": "Inputs with prefixes and suffixes",
+        "component": InputPrefixSuffixExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "list-overview": {
+        "title": "Basic list",
+        "component": ListOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "list-sections": {
+        "title": "List with sections",
+        "component": ListSectionsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "list-selection": {
+        "title": "List with selection",
+        "component": ListSelectionExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "menu-icons": {
+        "title": "Menu with icons",
+        "component": MenuIconsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "menu-overview": {
+        "title": "Basic menu",
+        "component": MenuOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "nested-menu": {
+        "title": "Nested menu",
+        "component": NestedMenuExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "paginator-configurable": {
+        "title": "Configurable paginator",
+        "component": PaginatorConfigurableExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "paginator-overview": {
+        "title": "Paginator",
+        "component": PaginatorOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "progress-bar-buffer": {
+        "title": "Buffer progress-bar",
+        "component": ProgressBarBufferExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "progress-bar-configurable": {
+        "title": "Configurable progress-bar",
+        "component": ProgressBarConfigurableExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "progress-bar-determinate": {
+        "title": "Determinate progress-bar",
+        "component": ProgressBarDeterminateExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "progress-bar-indeterminate": {
+        "title": "Indeterminate progress-bar",
+        "component": ProgressBarIndeterminateExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "progress-bar-query": {
+        "title": "Query progress-bar",
+        "component": ProgressBarQueryExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "progress-spinner-configurable": {
+        "title": "Configurable progress spinner",
+        "component": ProgressSpinnerConfigurableExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "progress-spinner-overview": {
+        "title": "Basic progress-spinner",
+        "component": ProgressSpinnerOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "radio-ng-model": {
+        "title": "Radios with ngModel",
+        "component": RadioNgModelExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "radio-overview": {
+        "title": "Basic radios",
+        "component": RadioOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "ripple-overview": {
+        "title": "MatRipple basic usage",
+        "component": RippleOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "select-custom-trigger": {
+        "title": "Select with custom trigger text",
+        "component": SelectCustomTriggerExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "select-disabled": {
+        "title": "Disabled select",
+        "component": SelectDisabledExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "select-error-state-matcher": {
+        "title": "Select with a custom ErrorStateMatcher",
+        "component": SelectErrorStateMatcherExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "select-form": {
+        "title": "Select in a form",
+        "component": SelectFormExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "select-hint-error": {
+        "title": "Select with form field features",
+        "component": SelectHintErrorExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "select-multiple": {
+        "title": "Select with multiple selection",
+        "component": SelectMultipleExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "select-no-ripple": {
+        "title": "Select with no option ripple",
+        "component": SelectNoRippleExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "select-optgroup": {
+        "title": "Select with option groups",
+        "component": SelectOptgroupExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "select-overview": {
+        "title": "Basic select",
+        "component": SelectOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "select-panel-class": {
+        "title": "Select with custom panel styling",
+        "component": SelectPanelClassExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "select-reset": {
+        "title": "Select with reset option",
+        "component": SelectResetExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "select-value-binding": {
+        "title": "Select with 2-way value binding",
+        "component": SelectValueBindingExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "sidenav-autosize": {
+        "title": "Autosize sidenav",
+        "component": SidenavAutosizeExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "sidenav-backdrop": {
+        "title": "Drawer with explicit backdrop setting",
+        "component": SidenavBackdropExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "sidenav-disable-close": {
+        "title": "Sidenav with custom escape and backdrop click behavior",
+        "component": SidenavDisableCloseExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "sidenav-drawer-overview": {
+        "title": "Basic drawer",
+        "component": SidenavDrawerOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "sidenav-fixed": {
+        "title": "Fixed sidenav",
+        "component": SidenavFixedExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "sidenav-mode": {
+        "title": "Sidenav with configurable mode",
+        "component": SidenavModeExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "sidenav-open-close": {
+        "title": "Sidenav open & close behavior",
+        "component": SidenavOpenCloseExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "sidenav-overview": {
+        "title": "Basic sidenav",
+        "component": SidenavOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "sidenav-position": {
+        "title": "Implicit main content with two sidenavs",
+        "component": SidenavPositionExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "sidenav-responsive": {
+        "title": "Responsive sidenav",
+        "component": SidenavResponsiveExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "slide-toggle-configurable": {
+        "title": "Configurable slide-toggle",
+        "component": SlideToggleConfigurableExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "slide-toggle-forms": {
+        "title": "Slide-toggle with forms",
+        "component": SlideToggleFormsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "slide-toggle-overview": {
+        "title": "Basic slide-toggles",
+        "component": SlideToggleOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "slider-configurable": {
+        "title": "Configurable slider",
+        "component": SliderConfigurableExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "slider-formatting": {
+        "title": "Slider with custom thumb label formatting.",
+        "component": SliderFormattingExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "slider-overview": {
+        "title": "Basic slider",
+        "component": SliderOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "snack-bar-component": {
+        "title": "Snack-bar with a custom component",
+        "component": SnackBarComponentExample,
+        "additionalFiles": [
+            "snack-bar-component-example-snack.html"
+        ],
+        "selectorName": "SnackBarComponentExample, PizzaPartyComponent"
+    },
+    "snack-bar-overview": {
+        "title": "Basic snack-bar",
+        "component": SnackBarOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "snack-bar-position": {
+        "title": "Snack-bar with configurable position",
+        "component": SnackBarPositionExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "sort-overview": {
+        "title": "Sorting overview",
+        "component": SortOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "stepper-editable": {
+        "title": "Stepper with editable steps",
+        "component": StepperEditableExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "stepper-errors": {
+        "title": "Stepper that displays errors in the steps",
+        "component": StepperErrorsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "stepper-label-position-bottom": {
+        "title": "Stepper label bottom position",
+        "component": StepperLabelPositionBottomExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "stepper-optional": {
+        "title": "Stepper with optional steps",
+        "component": StepperOptionalExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "stepper-overview": {
+        "title": "Stepper overview",
+        "component": StepperOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "stepper-states": {
+        "title": "Stepper with customized states",
+        "component": StepperStatesExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "stepper-vertical": {
+        "title": "Stepper vertical",
+        "component": StepperVerticalExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tab-group-align": {
+        "title": "Tab group with aligned labels",
+        "component": TabGroupAlignExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tab-group-animations": {
+        "title": "Tab group animations",
+        "component": TabGroupAnimationsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tab-group-async": {
+        "title": "Tab group with asynchronously loading tab contents",
+        "component": TabGroupAsyncExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tab-group-basic": {
+        "title": "Basic use of the tab group",
+        "component": TabGroupBasicExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tab-group-custom-label": {
+        "title": "Using tabs with a custom label template",
+        "component": TabGroupCustomLabelExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tab-group-dynamic-height": {
+        "title": "Tag group with dynamic height based on tab contents",
+        "component": TabGroupDynamicHeightExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tab-group-dynamic": {
+        "title": "Tab group with dynamically changing tabs",
+        "component": TabGroupDynamicExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tab-group-header-below": {
+        "title": "Tab group with the headers on the bottom",
+        "component": TabGroupHeaderBelowExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tab-group-lazy-loaded": {
+        "title": "Tab group where the tab content is loaded lazily (when activated)",
+        "component": TabGroupLazyLoadedExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tab-group-stretched": {
+        "title": "Tab group with stretched labels",
+        "component": TabGroupStretchedExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tab-group-theme": {
+        "title": "Customizing the theme options on the tab group",
+        "component": TabGroupThemeExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tab-nav-bar-basic": {
+        "title": "Basic use of the tab nav bar",
+        "component": TabNavBarBasicExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-basic-flex": {
+        "title": "Basic use of `<mat-table>` (uses display flex)",
+        "component": TableBasicFlexExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-basic": {
+        "title": "Basic use of `<table mat-table>`",
+        "component": TableBasicExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-dynamic-columns": {
+        "title": "Table dynamically changing the columns displayed",
+        "component": TableDynamicColumnsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-expandable-rows": {
+        "title": "Table with expandable rows",
+        "component": TableExpandableRowsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-filtering": {
+        "title": "Table with filtering",
+        "component": TableFilteringExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-footer-row": {
+        "title": "Footer row table",
+        "component": TableFooterRowExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-http": {
+        "title": "Table retrieving data through HTTP",
+        "component": TableHttpExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-multiple-header-footer": {
+        "title": "Table with multiple header and footer rows",
+        "component": TableMultipleHeaderFooterExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-overview": {
+        "title": "Data table with sorting, pagination, and filtering.",
+        "component": TableOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-pagination": {
+        "title": "Table with pagination",
+        "component": TablePaginationExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-row-context": {
+        "title": "Table showing each row context properties.",
+        "component": TableRowContextExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-selection": {
+        "title": "Table with selection",
+        "component": TableSelectionExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-simple-column": {
+        "title": "Table with a custom column component for easy column definition reuse.",
+        "component": TableSimpleColumnExample,
+        "additionalFiles": [],
+        "selectorName": "TableSimpleColumnExample, SimpleColumn"
+    },
+    "table-sorting": {
+        "title": "Table with sorting",
+        "component": TableSortingExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-sticky-columns": {
+        "title": "Table with a sticky columns",
+        "component": TableStickyColumnsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-sticky-complex-flex": {
+        "title": "Flex-layout tables with toggle-able sticky headers, footers, and columns",
+        "component": TableStickyComplexFlexExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-sticky-complex": {
+        "title": "Tables with toggle-able sticky headers, footers, and columns",
+        "component": TableStickyComplexExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-sticky-footer": {
+        "title": "Table with a sticky footer",
+        "component": TableStickyFooterExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-sticky-header": {
+        "title": "Table with sticky header",
+        "component": TableStickyHeaderExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "table-wrapped": {
+        "title": "Table example that shows how to wrap a table component for definition and behavior reuse.",
+        "component": TableWrappedExample,
+        "additionalFiles": [
+            "wrapper-table.html"
+        ],
+        "selectorName": "TableWrappedExample, WrapperTable"
+    },
+    "text-field-autofill-directive": {
+        "title": "Monitoring autofill state with cdkAutofill",
+        "component": TextFieldAutofillDirectiveExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "text-field-autofill-monitor": {
+        "title": "Monitoring autofill state with AutofillMonitor",
+        "component": TextFieldAutofillMonitorExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "text-field-autosize-textarea": {
+        "title": "Auto-resizing textarea",
+        "component": TextFieldAutosizeTextareaExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "toolbar-multirow": {
+        "title": "Multi-row toolbar",
+        "component": ToolbarMultirowExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "toolbar-overview": {
+        "title": "Basic toolbar",
+        "component": ToolbarOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tooltip-auto-hide": {
+        "title": "Tooltip that demonstrates auto-hiding when it clips out of its scrolling container.",
+        "component": TooltipAutoHideExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tooltip-custom-class": {
+        "title": "Tooltip that can have a custom class applied.",
+        "component": TooltipCustomClassExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tooltip-delay": {
+        "title": "Tooltip with a show and hide delay",
+        "component": TooltipDelayExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tooltip-disabled": {
+        "title": "Tooltip that can be disabled",
+        "component": TooltipDisabledExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tooltip-manual": {
+        "title": "Tooltip that can be manually shown/hidden.",
+        "component": TooltipManualExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tooltip-message": {
+        "title": "Tooltip with a changing message",
+        "component": TooltipMessageExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tooltip-modified-defaults": {
+        "title": "Tooltip with a show and hide delay",
+        "component": TooltipModifiedDefaultsExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tooltip-overview": {
+        "title": "Basic tooltip",
+        "component": TooltipOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tooltip-position": {
+        "title": "Tooltip with a custom position",
+        "component": TooltipPositionExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tree-checklist": {
+        "title": "Tree with checkboxes",
+        "component": TreeChecklistExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tree-dynamic": {
+        "title": "Tree with dynamic data",
+        "component": TreeDynamicExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tree-flat-overview": {
+        "title": "Tree with flat nodes",
+        "component": TreeFlatOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tree-loadmore": {
+        "title": "Tree with partially loaded data",
+        "component": TreeLoadmoreExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    },
+    "tree-nested-overview": {
+        "title": "Tree with nested nodes",
+        "component": TreeNestedOverviewExample,
+        "additionalFiles": [],
+        "selectorName": ""
+    }
 };
-var /** @type {?} */ EXAMPLE_LIST = [
+/** @type {?} */
+var EXAMPLE_LIST = [
     AutocompleteAutoActiveFirstOptionExample,
     AutocompleteDisplayExample,
     AutocompleteFilterExample,
@@ -8083,17 +10176,41 @@ var /** @type {?} */ EXAMPLE_LIST = [
     AutocompleteOverviewExample,
     AutocompleteSimpleExample,
     BadgeOverviewExample,
-    BottomSheetOverviewExampleSheet, BottomSheetOverviewExample,
+    BottomSheetOverviewExample,
+    BottomSheetOverviewExampleSheet,
     ButtonOverviewExample,
+    ButtonToggleAppearanceExample,
     ButtonToggleExclusiveExample,
     ButtonToggleOverviewExample,
     ButtonTypesExample,
     CardFancyExample,
     CardOverviewExample,
+    CdkDragDropAxisLockExample,
+    CdkDragDropBoundaryExample,
+    CdkDragDropConnectedSortingGroupExample,
+    CdkDragDropConnectedSortingExample,
+    CdkDragDropCustomPlaceholderExample,
+    CdkDragDropCustomPreviewExample,
+    CdkDragDropDisabledExample,
+    CdkDragDropEnterPredicateExample,
+    CdkDragDropHandleExample,
+    CdkDragDropHorizontalSortingExample,
+    CdkDragDropOverviewExample,
+    CdkDragDropRootElementExample,
+    CdkDragDropSortingExample,
+    CdkPlatformOverviewExample,
     CdkTableBasicFlexExample,
     CdkTableBasicExample,
     CdkTreeFlatExample,
     CdkTreeNestedExample,
+    CdkVirtualScrollContextExample,
+    CdkVirtualScrollCustomStrategyExample,
+    CdkVirtualScrollDataSourceExample,
+    CdkVirtualScrollDlExample,
+    CdkVirtualScrollFixedBufferExample,
+    CdkVirtualScrollHorizontalExample,
+    CdkVirtualScrollOverviewExample,
+    CdkVirtualScrollTemplateCacheExample,
     CheckboxConfigurableExample,
     CheckboxOverviewExample,
     ChipsAutocompleteExample,
@@ -8102,8 +10219,10 @@ var /** @type {?} */ EXAMPLE_LIST = [
     ChipsStackedExample,
     DatepickerApiExample,
     DatepickerColorExample,
-    ExampleHeader, DatepickerCustomHeaderExample,
+    DatepickerCustomHeaderExample,
+    ExampleHeader,
     DatepickerCustomIconExample,
+    DatepickerDateClassExample,
     DatepickerDisabledExample,
     DatepickerEventsExample,
     DatepickerFilterExample,
@@ -8116,10 +10235,14 @@ var /** @type {?} */ EXAMPLE_LIST = [
     DatepickerTouchExample,
     DatepickerValueExample,
     DatepickerViewsSelectionExample,
-    DialogContentExampleDialog, DialogContentExample,
-    DialogDataExampleDialog, DialogDataExample,
-    DialogElementsExampleDialog, DialogElementsExample,
-    DialogOverviewExampleDialog, DialogOverviewExample,
+    DialogContentExample,
+    DialogContentExampleDialog,
+    DialogDataExample,
+    DialogDataExampleDialog,
+    DialogElementsExample,
+    DialogElementsExampleDialog,
+    DialogOverviewExample,
+    DialogOverviewExampleDialog,
     DividerOverviewExample,
     ElevationOverviewExample,
     ExpansionExpandCollapseAllExample,
@@ -8129,7 +10252,8 @@ var /** @type {?} */ EXAMPLE_LIST = [
     FocusMonitorFocusViaExample,
     FocusMonitorOverviewExample,
     FormFieldAppearanceExample,
-    MyTelInput, FormFieldCustomControlExample,
+    FormFieldCustomControlExample,
+    MyTelInput,
     FormFieldErrorExample,
     FormFieldHintExample,
     FormFieldLabelExample,
@@ -8193,14 +10317,20 @@ var /** @type {?} */ EXAMPLE_LIST = [
     SliderConfigurableExample,
     SliderFormattingExample,
     SliderOverviewExample,
-    PizzaPartyComponent, SnackBarComponentExample,
+    SnackBarComponentExample,
+    PizzaPartyComponent,
     SnackBarOverviewExample,
     SnackBarPositionExample,
     SortOverviewExample,
     StepperEditableExample,
+    StepperErrorsExample,
+    StepperLabelPositionBottomExample,
     StepperOptionalExample,
     StepperOverviewExample,
+    StepperStatesExample,
     StepperVerticalExample,
+    TabGroupAlignExample,
+    TabGroupAnimationsExample,
     TabGroupAsyncExample,
     TabGroupBasicExample,
     TabGroupCustomLabelExample,
@@ -8223,12 +10353,16 @@ var /** @type {?} */ EXAMPLE_LIST = [
     TablePaginationExample,
     TableRowContextExample,
     TableSelectionExample,
+    TableSimpleColumnExample,
+    SimpleColumn,
     TableSortingExample,
     TableStickyColumnsExample,
     TableStickyComplexFlexExample,
     TableStickyComplexExample,
     TableStickyFooterExample,
     TableStickyHeaderExample,
+    TableWrappedExample,
+    WrapperTable,
     TextFieldAutofillDirectiveExample,
     TextFieldAutofillMonitorExample,
     TextFieldAutosizeTextareaExample,
@@ -8247,7 +10381,7 @@ var /** @type {?} */ EXAMPLE_LIST = [
     TreeDynamicExample,
     TreeFlatOverviewExample,
     TreeLoadmoreExample,
-    TreeNestedOverviewExample,
+    TreeNestedOverviewExample
 ];
 var ExampleModule = /** @class */ (function () {
     function ExampleModule() {
@@ -8269,7 +10403,7 @@ var ExampleModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Example data
@@ -8281,10 +10415,12 @@ var   /**
  */
 ExampleData = /** @class */ (function () {
     function ExampleData(example) {
+        var _a;
         if (!example || !EXAMPLE_COMPONENTS.hasOwnProperty(example)) {
             return;
         }
-        var /** @type {?} */ exampleConfig = EXAMPLE_COMPONENTS[example];
+        /** @type {?} */
+        var exampleConfig = EXAMPLE_COMPONENTS[example];
         // TODO(tinayuangao): Do not hard-code extensions
         this.exampleFiles = ['html', 'ts', 'css'].map(function (extension) { return example + "-example." + extension; });
         this.examplePath = "/assets/stackblitz/examples/" + example + "/";
@@ -8292,11 +10428,11 @@ ExampleData = /** @class */ (function () {
         if (exampleConfig.additionalFiles) {
             (_a = this.exampleFiles).push.apply(_a, exampleConfig.additionalFiles);
         }
-        var /** @type {?} */ exampleName = example.replace(/(?:^\w|\b\w)/g, function (letter) { return letter.toUpperCase(); });
+        /** @type {?} */
+        var exampleName = example.replace(/(?:^\w|\b\w)/g, function (letter) { return letter.toUpperCase(); });
         this.description = exampleConfig.title || exampleName.replace(/[\-]+/g, ' ') + ' Example';
         this.componentName = exampleConfig.selectorName ||
             exampleName.replace(/[\-]+/g, '') + 'Example';
-        var _a;
     }
     return ExampleData;
 }());
@@ -8322,180 +10458,214 @@ exports.ɵg = BadgeOverviewExample;
 exports.ɵh = BottomSheetOverviewExample;
 exports.ɵi = BottomSheetOverviewExampleSheet;
 exports.ɵj = ButtonOverviewExample;
-exports.ɵk = ButtonToggleExclusiveExample;
-exports.ɵl = ButtonTypesExample;
-exports.ɵm = CardOverviewExample;
-exports.ɵn = CdkTableBasicFlexExample;
-exports.ɵo = CdkTableBasicExample;
-exports.ɵq = CdkTreeFlatExample;
-exports.ɵp = FileDatabase;
-exports.ɵs = CdkTreeNestedExample;
-exports.ɵr = FileDatabase$1;
-exports.ɵt = CheckboxConfigurableExample;
-exports.ɵu = CheckboxOverviewExample;
-exports.ɵv = ChipsAutocompleteExample;
-exports.ɵw = ChipsInputExample;
-exports.ɵx = ChipsOverviewExample;
-exports.ɵy = ChipsStackedExample;
-exports.ɵz = DatepickerApiExample;
-exports.ɵba = DatepickerColorExample;
-exports.ɵbb = DatepickerCustomHeaderExample;
-exports.ɵbc = ExampleHeader;
-exports.ɵbd = DatepickerCustomIconExample;
-exports.ɵbe = DatepickerDisabledExample;
-exports.ɵbf = DatepickerEventsExample;
-exports.ɵbg = DatepickerFilterExample;
-exports.ɵbi = DatepickerFormatsExample;
-exports.ɵbh = MY_FORMATS;
-exports.ɵbj = DatepickerLocaleExample;
-exports.ɵbk = DatepickerMinMaxExample;
-exports.ɵbl = DatepickerMomentExample;
-exports.ɵbm = DatepickerStartViewExample;
-exports.ɵbn = DatepickerTouchExample;
-exports.ɵbo = DatepickerValueExample;
-exports.ɵbq = DatepickerViewsSelectionExample;
-exports.ɵbp = MY_FORMATS$1;
-exports.ɵbr = DialogContentExample;
-exports.ɵbs = DialogContentExampleDialog;
-exports.ɵbt = DialogDataExample;
-exports.ɵbu = DialogDataExampleDialog;
-exports.ɵbv = DialogElementsExample;
-exports.ɵbw = DialogElementsExampleDialog;
-exports.ɵbx = DialogOverviewExample;
-exports.ɵby = DialogOverviewExampleDialog;
-exports.ɵbz = DividerOverviewExample;
-exports.ɵca = ElevationOverviewExample;
-exports.ɵcb = ExpansionExpandCollapseAllExample;
-exports.ɵcc = ExpansionStepsExample;
-exports.ɵcd = FocusMonitorDirectivesExample;
-exports.ɵce = FocusMonitorFocusViaExample;
-exports.ɵcf = FocusMonitorOverviewExample;
-exports.ɵcg = FormFieldAppearanceExample;
-exports.ɵci = FormFieldCustomControlExample;
-exports.ɵch = MyTelInput;
-exports.ɵcj = FormFieldErrorExample;
-exports.ɵck = FormFieldHintExample;
-exports.ɵcl = FormFieldLabelExample;
-exports.ɵcm = FormFieldOverviewExample;
-exports.ɵcn = FormFieldPrefixSuffixExample;
-exports.ɵco = FormFieldThemingExample;
-exports.ɵcp = GridListDynamicExample;
-exports.ɵcq = GridListOverviewExample;
-exports.ɵcr = IconOverviewExample;
-exports.ɵcs = IconSvgExample;
-exports.ɵct = InputClearableExample;
-exports.ɵcu = InputErrorStateMatcherExample;
-exports.ɵcv = InputErrorsExample;
-exports.ɵcw = InputFormExample;
-exports.ɵcx = InputHintExample;
-exports.ɵcy = InputOverviewExample;
-exports.ɵcz = InputPrefixSuffixExample;
-exports.ɵda = ListSectionsExample;
-exports.ɵdb = ListSelectionExample;
-exports.ɵhb = ExampleMaterialModule;
-exports.ɵdc = MenuIconsExample;
-exports.ɵdd = MenuOverviewExample;
-exports.ɵde = NestedMenuExample;
-exports.ɵdf = PaginatorConfigurableExample;
-exports.ɵdg = PaginatorOverviewExample;
-exports.ɵdh = ProgressBarBufferExample;
-exports.ɵdi = ProgressBarConfigurableExample;
-exports.ɵdj = ProgressBarDeterminateExample;
-exports.ɵdk = ProgressBarIndeterminateExample;
-exports.ɵdl = ProgressBarQueryExample;
-exports.ɵdm = ProgressSpinnerConfigurableExample;
-exports.ɵdn = ProgressSpinnerOverviewExample;
-exports.ɵdo = RadioNgModelExample;
-exports.ɵdp = RadioOverviewExample;
-exports.ɵdq = RippleOverviewExample;
-exports.ɵdr = SelectCustomTriggerExample;
-exports.ɵds = SelectDisabledExample;
-exports.ɵdt = SelectErrorStateMatcherExample;
-exports.ɵdu = SelectFormExample;
-exports.ɵdv = SelectHintErrorExample;
-exports.ɵdw = SelectMultipleExample;
-exports.ɵdx = SelectNoRippleExample;
-exports.ɵdy = SelectOptgroupExample;
-exports.ɵdz = SelectOverviewExample;
-exports.ɵea = SelectPanelClassExample;
-exports.ɵeb = SelectResetExample;
-exports.ɵec = SelectValueBindingExample;
-exports.ɵed = SidenavAutosizeExample;
-exports.ɵee = SidenavBackdropExample;
-exports.ɵef = SidenavDisableCloseExample;
-exports.ɵeg = SidenavDrawerOverviewExample;
-exports.ɵeh = SidenavFixedExample;
-exports.ɵei = SidenavModeExample;
-exports.ɵej = SidenavOpenCloseExample;
-exports.ɵek = SidenavOverviewExample;
-exports.ɵel = SidenavPositionExample;
-exports.ɵem = SidenavResponsiveExample;
-exports.ɵen = SlideToggleConfigurableExample;
-exports.ɵeo = SlideToggleFormsExample;
-exports.ɵep = SlideToggleOverviewExample;
-exports.ɵeq = SliderConfigurableExample;
-exports.ɵer = SliderFormattingExample;
-exports.ɵes = SliderOverviewExample;
-exports.ɵeu = PizzaPartyComponent;
-exports.ɵet = SnackBarComponentExample;
-exports.ɵev = SnackBarOverviewExample;
-exports.ɵew = SnackBarPositionExample;
-exports.ɵex = SortOverviewExample;
-exports.ɵey = StepperEditableExample;
-exports.ɵez = StepperOptionalExample;
-exports.ɵfa = StepperVerticalExample;
-exports.ɵfb = TabGroupAsyncExample;
-exports.ɵfc = TabGroupBasicExample;
-exports.ɵfd = TabGroupCustomLabelExample;
-exports.ɵfe = TabGroupDynamicHeightExample;
-exports.ɵff = TabGroupDynamicExample;
-exports.ɵfg = TabGroupHeaderBelowExample;
-exports.ɵfh = TabGroupLazyLoadedExample;
-exports.ɵfi = TabGroupStretchedExample;
-exports.ɵfj = TabGroupThemeExample;
-exports.ɵfk = TabNavBarBasicExample;
-exports.ɵfl = TableBasicFlexExample;
-exports.ɵfm = TableBasicExample;
-exports.ɵfn = TableDynamicColumnsExample;
-exports.ɵfo = TableExpandableRowsExample;
-exports.ɵfp = TableFilteringExample;
-exports.ɵfq = TableFooterRowExample;
-exports.ɵfr = TableHttpExample;
-exports.ɵfs = TableMultipleHeaderFooterExample;
-exports.ɵft = TableOverviewExample;
-exports.ɵfu = TablePaginationExample;
-exports.ɵfv = TableRowContextExample;
-exports.ɵfw = TableSelectionExample;
-exports.ɵfx = TableSortingExample;
-exports.ɵfy = TableStickyColumnsExample;
-exports.ɵfz = TableStickyComplexFlexExample;
-exports.ɵga = TableStickyComplexExample;
-exports.ɵgb = TableStickyFooterExample;
-exports.ɵgc = TableStickyHeaderExample;
-exports.ɵgd = TextFieldAutofillDirectiveExample;
-exports.ɵge = TextFieldAutofillMonitorExample;
-exports.ɵgf = TextFieldAutosizeTextareaExample;
-exports.ɵgg = ToolbarOverviewExample;
-exports.ɵgh = TooltipAutoHideExample;
-exports.ɵgi = TooltipCustomClassExample;
-exports.ɵgj = TooltipDelayExample;
-exports.ɵgk = TooltipDisabledExample;
-exports.ɵgl = TooltipManualExample;
-exports.ɵgm = TooltipMessageExample;
-exports.ɵgo = TooltipModifiedDefaultsExample;
-exports.ɵgn = myCustomTooltipDefaults;
-exports.ɵgp = TooltipOverviewExample;
-exports.ɵgq = TooltipPositionExample;
-exports.ɵgr = ChecklistDatabase;
-exports.ɵgs = TreeChecklistExample;
-exports.ɵgt = DynamicDatabase;
-exports.ɵgu = TreeDynamicExample;
-exports.ɵgv = FileDatabase$2;
-exports.ɵgw = TreeFlatOverviewExample;
-exports.ɵgx = LoadmoreDatabase;
-exports.ɵgy = TreeLoadmoreExample;
-exports.ɵgz = FileDatabase$3;
-exports.ɵha = TreeNestedOverviewExample;
+exports.ɵk = ButtonToggleAppearanceExample;
+exports.ɵl = ButtonToggleExclusiveExample;
+exports.ɵm = ButtonTypesExample;
+exports.ɵn = CardOverviewExample;
+exports.ɵo = CdkDragDropAxisLockExample;
+exports.ɵp = CdkDragDropBoundaryExample;
+exports.ɵq = CdkDragDropConnectedSortingGroupExample;
+exports.ɵr = CdkDragDropConnectedSortingExample;
+exports.ɵs = CdkDragDropCustomPlaceholderExample;
+exports.ɵt = CdkDragDropCustomPreviewExample;
+exports.ɵu = CdkDragDropDisabledExample;
+exports.ɵv = CdkDragDropEnterPredicateExample;
+exports.ɵw = CdkDragDropHandleExample;
+exports.ɵx = CdkDragDropHorizontalSortingExample;
+exports.ɵy = CdkDragDropOverviewExample;
+exports.ɵz = CdkDragDropRootElementExample;
+exports.ɵba = CdkDragDropSortingExample;
+exports.ɵbb = CdkPlatformOverviewExample;
+exports.ɵbc = CdkTableBasicFlexExample;
+exports.ɵbd = CdkTableBasicExample;
+exports.ɵbf = CdkTreeFlatExample;
+exports.ɵbe = FileDatabase;
+exports.ɵbh = CdkTreeNestedExample;
+exports.ɵbg = FileDatabase$1;
+exports.ɵbi = CdkVirtualScrollContextExample;
+exports.ɵbk = CdkVirtualScrollCustomStrategyExample;
+exports.ɵbj = CustomVirtualScrollStrategy;
+exports.ɵbl = CdkVirtualScrollDataSourceExample;
+exports.ɵbm = CdkVirtualScrollDlExample;
+exports.ɵbn = CdkVirtualScrollFixedBufferExample;
+exports.ɵbo = CdkVirtualScrollHorizontalExample;
+exports.ɵbp = CdkVirtualScrollOverviewExample;
+exports.ɵbq = CdkVirtualScrollTemplateCacheExample;
+exports.ɵbr = CheckboxConfigurableExample;
+exports.ɵbs = CheckboxOverviewExample;
+exports.ɵbt = ChipsAutocompleteExample;
+exports.ɵbu = ChipsInputExample;
+exports.ɵbv = ChipsOverviewExample;
+exports.ɵbw = ChipsStackedExample;
+exports.ɵbx = DatepickerApiExample;
+exports.ɵby = DatepickerColorExample;
+exports.ɵbz = DatepickerCustomHeaderExample;
+exports.ɵca = ExampleHeader;
+exports.ɵcb = DatepickerCustomIconExample;
+exports.ɵcc = DatepickerDateClassExample;
+exports.ɵcd = DatepickerDisabledExample;
+exports.ɵce = DatepickerEventsExample;
+exports.ɵcf = DatepickerFilterExample;
+exports.ɵch = DatepickerFormatsExample;
+exports.ɵcg = MY_FORMATS;
+exports.ɵci = DatepickerLocaleExample;
+exports.ɵcj = DatepickerMinMaxExample;
+exports.ɵck = DatepickerMomentExample;
+exports.ɵcl = DatepickerStartViewExample;
+exports.ɵcm = DatepickerTouchExample;
+exports.ɵcn = DatepickerValueExample;
+exports.ɵcp = DatepickerViewsSelectionExample;
+exports.ɵco = MY_FORMATS$1;
+exports.ɵcq = DialogContentExample;
+exports.ɵcr = DialogContentExampleDialog;
+exports.ɵcs = DialogDataExample;
+exports.ɵct = DialogDataExampleDialog;
+exports.ɵcu = DialogElementsExample;
+exports.ɵcv = DialogElementsExampleDialog;
+exports.ɵcw = DialogOverviewExample;
+exports.ɵcx = DialogOverviewExampleDialog;
+exports.ɵcy = DividerOverviewExample;
+exports.ɵcz = ElevationOverviewExample;
+exports.ɵda = ExpansionExpandCollapseAllExample;
+exports.ɵdb = ExpansionStepsExample;
+exports.ɵdc = FocusMonitorDirectivesExample;
+exports.ɵdd = FocusMonitorFocusViaExample;
+exports.ɵde = FocusMonitorOverviewExample;
+exports.ɵdf = FormFieldAppearanceExample;
+exports.ɵdg = FormFieldCustomControlExample;
+exports.ɵdh = MyTelInput;
+exports.ɵdi = FormFieldErrorExample;
+exports.ɵdj = FormFieldHintExample;
+exports.ɵdk = FormFieldLabelExample;
+exports.ɵdl = FormFieldOverviewExample;
+exports.ɵdm = FormFieldPrefixSuffixExample;
+exports.ɵdn = FormFieldThemingExample;
+exports.ɵdo = GridListDynamicExample;
+exports.ɵdp = GridListOverviewExample;
+exports.ɵdq = IconOverviewExample;
+exports.ɵdr = IconSvgExample;
+exports.ɵds = InputClearableExample;
+exports.ɵdt = InputErrorStateMatcherExample;
+exports.ɵdu = InputErrorsExample;
+exports.ɵdv = InputFormExample;
+exports.ɵdw = InputHintExample;
+exports.ɵdx = InputOverviewExample;
+exports.ɵdy = InputPrefixSuffixExample;
+exports.ɵdz = ListSectionsExample;
+exports.ɵea = ListSelectionExample;
+exports.ɵij = ExampleMaterialModule;
+exports.ɵeb = MenuIconsExample;
+exports.ɵec = MenuOverviewExample;
+exports.ɵed = NestedMenuExample;
+exports.ɵee = PaginatorConfigurableExample;
+exports.ɵef = PaginatorOverviewExample;
+exports.ɵeg = ProgressBarBufferExample;
+exports.ɵeh = ProgressBarConfigurableExample;
+exports.ɵei = ProgressBarDeterminateExample;
+exports.ɵej = ProgressBarIndeterminateExample;
+exports.ɵek = ProgressBarQueryExample;
+exports.ɵel = ProgressSpinnerConfigurableExample;
+exports.ɵem = ProgressSpinnerOverviewExample;
+exports.ɵen = RadioNgModelExample;
+exports.ɵeo = RadioOverviewExample;
+exports.ɵep = RippleOverviewExample;
+exports.ɵeq = SelectCustomTriggerExample;
+exports.ɵer = SelectDisabledExample;
+exports.ɵes = SelectErrorStateMatcherExample;
+exports.ɵet = SelectFormExample;
+exports.ɵeu = SelectHintErrorExample;
+exports.ɵev = SelectMultipleExample;
+exports.ɵew = SelectNoRippleExample;
+exports.ɵex = SelectOptgroupExample;
+exports.ɵey = SelectOverviewExample;
+exports.ɵez = SelectPanelClassExample;
+exports.ɵfa = SelectResetExample;
+exports.ɵfb = SelectValueBindingExample;
+exports.ɵfc = SidenavAutosizeExample;
+exports.ɵfd = SidenavBackdropExample;
+exports.ɵfe = SidenavDisableCloseExample;
+exports.ɵff = SidenavDrawerOverviewExample;
+exports.ɵfg = SidenavFixedExample;
+exports.ɵfh = SidenavModeExample;
+exports.ɵfi = SidenavOpenCloseExample;
+exports.ɵfj = SidenavOverviewExample;
+exports.ɵfk = SidenavPositionExample;
+exports.ɵfl = SidenavResponsiveExample;
+exports.ɵfm = SlideToggleConfigurableExample;
+exports.ɵfn = SlideToggleFormsExample;
+exports.ɵfo = SlideToggleOverviewExample;
+exports.ɵfp = SliderConfigurableExample;
+exports.ɵfq = SliderFormattingExample;
+exports.ɵfr = SliderOverviewExample;
+exports.ɵft = PizzaPartyComponent;
+exports.ɵfs = SnackBarComponentExample;
+exports.ɵfu = SnackBarOverviewExample;
+exports.ɵfv = SnackBarPositionExample;
+exports.ɵfw = SortOverviewExample;
+exports.ɵfx = StepperEditableExample;
+exports.ɵfy = StepperErrorsExample;
+exports.ɵfz = StepperLabelPositionBottomExample;
+exports.ɵga = StepperOptionalExample;
+exports.ɵgb = StepperStatesExample;
+exports.ɵgc = StepperVerticalExample;
+exports.ɵgd = TabGroupAlignExample;
+exports.ɵge = TabGroupAnimationsExample;
+exports.ɵgf = TabGroupAsyncExample;
+exports.ɵgg = TabGroupBasicExample;
+exports.ɵgh = TabGroupCustomLabelExample;
+exports.ɵgi = TabGroupDynamicHeightExample;
+exports.ɵgj = TabGroupDynamicExample;
+exports.ɵgk = TabGroupHeaderBelowExample;
+exports.ɵgl = TabGroupLazyLoadedExample;
+exports.ɵgm = TabGroupStretchedExample;
+exports.ɵgn = TabGroupThemeExample;
+exports.ɵgo = TabNavBarBasicExample;
+exports.ɵgp = TableBasicFlexExample;
+exports.ɵgq = TableBasicExample;
+exports.ɵgr = TableDynamicColumnsExample;
+exports.ɵgs = TableExpandableRowsExample;
+exports.ɵgt = TableFilteringExample;
+exports.ɵgu = TableFooterRowExample;
+exports.ɵgv = TableHttpExample;
+exports.ɵgw = TableMultipleHeaderFooterExample;
+exports.ɵgx = TableOverviewExample;
+exports.ɵgy = TablePaginationExample;
+exports.ɵgz = TableRowContextExample;
+exports.ɵha = TableSelectionExample;
+exports.ɵhc = SimpleColumn;
+exports.ɵhb = TableSimpleColumnExample;
+exports.ɵhd = TableSortingExample;
+exports.ɵhe = TableStickyColumnsExample;
+exports.ɵhf = TableStickyComplexFlexExample;
+exports.ɵhg = TableStickyComplexExample;
+exports.ɵhh = TableStickyFooterExample;
+exports.ɵhi = TableStickyHeaderExample;
+exports.ɵhj = TableWrappedExample;
+exports.ɵhk = WrapperTable;
+exports.ɵhl = TextFieldAutofillDirectiveExample;
+exports.ɵhm = TextFieldAutofillMonitorExample;
+exports.ɵhn = TextFieldAutosizeTextareaExample;
+exports.ɵho = ToolbarOverviewExample;
+exports.ɵhp = TooltipAutoHideExample;
+exports.ɵhq = TooltipCustomClassExample;
+exports.ɵhr = TooltipDelayExample;
+exports.ɵhs = TooltipDisabledExample;
+exports.ɵht = TooltipManualExample;
+exports.ɵhu = TooltipMessageExample;
+exports.ɵhw = TooltipModifiedDefaultsExample;
+exports.ɵhv = myCustomTooltipDefaults;
+exports.ɵhx = TooltipOverviewExample;
+exports.ɵhy = TooltipPositionExample;
+exports.ɵhz = ChecklistDatabase;
+exports.ɵia = TreeChecklistExample;
+exports.ɵib = DynamicDatabase;
+exports.ɵic = TreeDynamicExample;
+exports.ɵid = FileDatabase$2;
+exports.ɵie = TreeFlatOverviewExample;
+exports.ɵif = LoadmoreDatabase;
+exports.ɵig = TreeLoadmoreExample;
+exports.ɵih = FileDatabase$3;
+exports.ɵii = TreeNestedOverviewExample;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
