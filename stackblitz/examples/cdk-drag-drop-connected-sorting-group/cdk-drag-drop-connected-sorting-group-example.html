@@ -1,18 +1,25 @@
-<html><head></head><body><div cdkdroplistgroup="">
+<div cdkDropListGroup>
   <div class="example-container">
     <h2>To do</h2>
 
-    <div cdkdroplist="" [cdkdroplistdata]="todo" class="example-list" (cdkdroplistdropped)="drop($event)">
-      <div class="example-box" *ngfor="let item of todo" cdkdrag="">{{item}}</div>
+    <div
+      cdkDropList
+      [cdkDropListData]="todo"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
     </div>
   </div>
 
   <div class="example-container">
     <h2>Done</h2>
 
-    <div cdkdroplist="" [cdkdroplistdata]="done" class="example-list" (cdkdroplistdropped)="drop($event)">
-      <div class="example-box" *ngfor="let item of done" cdkdrag="">{{item}}</div>
+    <div
+      cdkDropList
+      [cdkDropListData]="done"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
     </div>
   </div>
 </div>
-</body></html>

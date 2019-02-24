@@ -1,14 +1,13 @@
-<html><head></head><body><form>
+<form>
   <mat-form-field>
     <mat-label>First name</mat-label>
-    <input matinput="" (cdkautofill)="firstNameAutofilled = $event.isAutofilled">
-    <mat-hint *ngif="firstNameAutofilled">Autofilled!</mat-hint>
+    <input matInput (cdkAutofill)="firstNameAutofilled = $event.isAutofilled">
+    <mat-hint *ngIf="firstNameAutofilled">Autofilled!</mat-hint>
   </mat-form-field>
   <mat-form-field>
     <mat-label>Last name</mat-label>
-    <input matinput="" (cdkautofill)="lastNameAutofilled = $event.isAutofilled">
-    <mat-hint *ngif="lastNameAutofilled">Autofilled!</mat-hint>
+    <input matInput (cdkAutofill)="lastNameAutofilled = $event.isAutofilled">
+    <mat-hint *ngIf="lastNameAutofilled">Autofilled!</mat-hint>
   </mat-form-field>
-  <button mat-raised-button="">Submit</button>
+  <button mat-raised-button>Submit</button>
 </form>
-</body></html>

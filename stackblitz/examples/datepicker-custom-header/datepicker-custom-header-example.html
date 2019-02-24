@@ -1,7 +1,6 @@
-<html><head></head><body><mat-form-field>
+<mat-form-field>
   <mat-label>Custom calendar header</mat-label>
-  <input matinput="" [matdatepicker]="picker">
-  <mat-datepicker-toggle matsuffix="" [for]="picker"></mat-datepicker-toggle>
-  <mat-datepicker #picker="" [calendarheadercomponent]="exampleHeader"></mat-datepicker>
+  <input matInput [matDatepicker]="picker">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker [calendarHeaderComponent]="exampleHeader"></mat-datepicker>
 </mat-form-field>
-</body></html>

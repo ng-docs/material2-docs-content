@@ -1,8 +1,8 @@
-<html><head></head><body><form>
+<form>
   <h4>mat-select</h4>
   <mat-form-field>
-    <mat-select placeholder="Favorite food" [(ngmodel)]="selectedValue" name="food">
-      <mat-option *ngfor="let food of foods" [value]="food.value">
+    <mat-select placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">
+      <mat-option *ngFor="let food of foods" [value]="food.value">
         {{food.viewValue}}
       </mat-option>
     </mat-select>
@@ -10,13 +10,12 @@
   <p> Selected food: {{selectedValue}} </p>
   <h4>native html select</h4>
   <mat-form-field>
-    <select matnativecontrol="" placeholder="Favorite car" [(ngmodel)]="selectedCar" name="car">
-      <option value="" selected=""></option>
-      <option *ngfor="let car of cars" [value]="car.value">
+    <select matNativeControl placeholder="Favorite car" [(ngModel)]="selectedCar" name="car">
+      <option value="" selected></option>
+      <option *ngFor="let car of cars" [value]="car.value">
         {{car.viewValue}}
       </option>
     </select>
   </mat-form-field>
   <p> Selected car: {{selectedCar}} </p>
 </form>
-</body></html>

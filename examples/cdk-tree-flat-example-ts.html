@@ -1,4 +1,4 @@
-<html><head></head><body><span class="hljs-keyword">import</span> {FlatTreeControl} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/tree'</span>;
+<span class="hljs-keyword">import</span> {FlatTreeControl} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/cdk/tree'</span>;
 <span class="hljs-keyword">import</span> {Component, Injectable} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/core'</span>;
 <span class="hljs-keyword">import</span> {MatTreeFlatDataSource, MatTreeFlattener} <span class="hljs-keyword">from</span> <span class="hljs-string">'@angular/material/tree'</span>;
 <span class="hljs-keyword">import</span> {BehaviorSubject, Observable, of <span class="hljs-keyword">as</span> observableOf} <span class="hljs-keyword">from</span> <span class="hljs-string">'rxjs'</span>;
@@ -147,4 +147,3 @@
 
   <span class="hljs-keyword">private</span> _getChildren = (node: FileNode): Observable&lt;FileNode[]&gt; =&gt; observableOf(node.children);
 }
-</body></html>

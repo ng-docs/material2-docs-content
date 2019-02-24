@@ -1,22 +1,21 @@
-<html><head></head><body><ng-content></ng-content><ng-container matcolumndef="position">
-    </ng-container><ng-container matcolumndef="weight">
-    </ng-container><ng-container matcolumndef="symbol">
-    </ng-container><table mat-table="" [datasource]="dataSource" class="mat-elevation-z8">
-  
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-content></ng-content>
 
   <!-- Position Column -->
-  <tbody><tr><th mat-header-cell="" *matheadercelldef="" mat-sort-header=""> No. </th>
-    <td mat-cell="" *matcelldef="let element"> {{element.position}} </td>
-  
+  <ng-container matColumnDef="position">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> No. </th>
+    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+  </ng-container>
 
   <!-- Weight Column -->
-  <th mat-header-cell="" *matheadercelldef="" mat-sort-header=""> Weight </th>
-    <td mat-cell="" *matcelldef="let element"> {{element.weight}} </td>
-  
+  <ng-container matColumnDef="weight">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Weight </th>
+    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+  </ng-container>
 
   <!-- Color Column -->
-  <th mat-header-cell="" *matheadercelldef=""> Symbol </th>
-    <td mat-cell="" *matcelldef="let element"> {{element.symbol}} </td>
-  
-</tr></tbody></table>
-</body></html>
+  <ng-container matColumnDef="symbol">
+    <th mat-header-cell *matHeaderCellDef> Symbol </th>
+    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+  </ng-container>
+</table>

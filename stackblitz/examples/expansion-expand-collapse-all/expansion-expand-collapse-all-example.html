@@ -1,8 +1,8 @@
-<html><head></head><body><div class="example-action-buttons">
-  <button mat-button="" (click)="accordion.openAll()">Expand All</button>
-  <button mat-button="" (click)="accordion.closeAll()">Collapse All</button>
+<div class="example-action-buttons">
+  <button mat-button (click)="accordion.openAll()">Expand All</button>
+  <button mat-button (click)="accordion.closeAll()">Collapse All</button>
 </div>
-<mat-accordion class="example-headers-align" multi="">
+<mat-accordion class="example-headers-align" multi>
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
@@ -15,16 +15,16 @@
     </mat-expansion-panel-header>
 
     <mat-form-field>
-      <input matinput="" placeholder="First name">
+      <input matInput placeholder="First name">
     </mat-form-field>
 
     <mat-form-field>
-      <input matinput="" type="number" min="1" placeholder="Age">
+      <input matInput type="number" min="1" placeholder="Age">
     </mat-form-field>
 
   </mat-expansion-panel>
 
-  <mat-expansion-panel disabled="">
+  <mat-expansion-panel disabled>
     <mat-expansion-panel-header>
       <mat-panel-title>
         Destination
@@ -36,7 +36,7 @@
     </mat-expansion-panel-header>
 
     <mat-form-field>
-      <input matinput="" placeholder="Country">
+      <input matInput placeholder="Country">
     </mat-form-field>
   </mat-expansion-panel>
 
@@ -52,9 +52,8 @@
     </mat-expansion-panel-header>
 
     <mat-form-field>
-      <input matinput="" placeholder="Date" [matdatepicker]="picker" (focus)="picker.open()" readonly="">
+      <input matInput placeholder="Date" [matDatepicker]="picker" (focus)="picker.open()" readonly>
     </mat-form-field>
-    <mat-datepicker #picker=""></mat-datepicker>
+    <mat-datepicker #picker></mat-datepicker>
   </mat-expansion-panel>
 </mat-accordion>
-</body></html>
