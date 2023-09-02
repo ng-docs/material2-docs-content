@@ -1,0 +1,119 @@
+<div class="docs-markdown"><h1>Getting Started with Angular Material</h1><h1>Angular Material 入门指南</h1><p>This guide explains how to set up your Angular project to begin using Angular Material. It includes
+information on prerequisites, installing Angular Material, and optionally displaying a sample
+Material component in your application to verify your setup.</p>
+<p>本指南讲解了如何设置 Angular 项目以开始使用 Angular Material。它包含有关先决条件的信息、如何安装 Angular Material，以及在应用中显示一个 Material 范例组件，以验证你的设置。</p>
+<p><em>Angular Resources</em></p>
+<p><em>Angular 资源</em></p>
+<p>If you are new to Angular or getting started with a new Angular application, see
+<a href="https://angular.io/start">Angular&#39;s full Getting Started Guide</a> and
+<a href="https://angular.io/guide/setup-local">Setting up your environment</a>.</p>
+<p>如果你是 Angular 新手，或从一个新的 Angular 应用开始，参见 <a href="https://angular.cn/start">Angular 的完整入门指南</a>和<a href="https://angular.cn/guide/setup-local">设置你的环境</a>。</p>
+<p>For existing applications, follow the steps below to begin using Angular Material.</p>
+<p>对于已有的应用，请按照以下步骤开始使用 Angular Material。</p>
+
+        <h2 id="install-angular-material" class="docs-header-link">
+          <span header-link="install-angular-material"></span>
+          Install Angular Material
+        </h2>
+      
+        <h2 id="安装-angular-material" class="docs-header-link">
+          <span header-link="安装-angular-material"></span>
+          安装 Angular Material
+        </h2>
+      <p>Use the Angular CLI&#39;s installation <a href="https://material.angular.io/guide/schematics">schematic</a> to set
+up your Angular Material project by running the following command:</p>
+<p>使用 Angular CLI 的安装<a href="https://material.angular.cn/guide/schematics">原理图</a>通过运行以下命令来设置你的 Angular Material 项目：</p>
+<pre><code class="language-bash">ng add @angular/material
+</code></pre>
+<p>The <code>ng add</code> command will install Angular Material, the
+<a href="https://material.angular.io/cdk/categories">Component Dev Kit (CDK)</a>,
+<a href="https://angular.io/guide/animations">Angular Animations</a> and ask you the following questions to
+determine which features to include:</p>
+<p>该 <code>ng add</code> 命令将安装 Angular Material、<a href="https://material.angular.cn/cdk/categories">组件开发工具包（CDK）</a>、<a href="https://angular.cn/guide/animations">Angular 动画</a>，并询问下列问题，以确定要包括哪些功能：</p>
+<ol>
+<li><p>Choose a prebuilt theme name, or &quot;custom&quot; for a custom theme:</p>
+<p>选择一个预置的主题名或为自定义主题选择 “custom”：</p>
+<p>You can choose from <a href="https://material.angular.io/guide/theming#using-a-pre-built-theme">prebuilt material design themes</a> or set up an extensible <a href="https://material.angular.io/guide/theming#defining-a-theme">custom theme</a>.</p>
+<p>你可以选择一个<a href="https://material.angular.cn/guide/theming#using-a-pre-built-theme">预置的 Material Design 主题</a>或建立一个可扩展的<a href="https://material.angular.cn/guide/theming#defining-a-custom-theme">自定义主题</a>。</p>
+</li>
+<li><p>Set up global Angular Material typography styles:</p>
+<p>设置全局 Angular Material 排版样式：</p>
+<p>Whether to apply the global <a href="https://material.angular.io/guide/typography">typography</a> styles to your application.</p>
+<p>是否为应用程序套用全局<a href="https://material.angular.cn/guide/typography">排版</a>样式。</p>
+</li>
+<li><p>Set up browser animations for Angular Material:</p>
+<p>为 Angular Material 设置浏览器动画：</p>
+<p>Importing the <a href="https://angular.io/api/platform-browser/animations/BrowserAnimationsModule"><code>BrowserAnimationsModule</code></a> into your application enables Angular&#39;s <a href="https://angular.io/guide/animations">animation system</a>. Declining this will disable most of Angular Material&#39;s animations.</p>
+<p>把 <a href="https://angular.cn/api/platform-browser/animations/BrowserAnimationsModule"><code>BrowserAnimationsModule</code></a>导入到应用中，可以启用 Angular 的<a href="https://angular.cn/guide/animations">动画体系</a>。拒绝它会使 Angular Material 中的动画失效。</p>
+</li>
+</ol>
+<p>The <code>ng add</code> command will additionally perform the following actions:</p>
+<p><code>ng add</code> 命令还将执行以下动作：</p>
+<ul>
+<li><p>Add project dependencies to <code>package.json</code></p>
+<p>把项目依赖加入到 <code>package.json</code> 中</p>
+</li>
+<li><p>Add the Roboto font to your <code>index.html</code></p>
+<p>把 Roboto 字体添加到你的 <code>index.html</code> 中</p>
+</li>
+<li><p>Add the Material Design icon font to your <code>index.html</code></p>
+<p>把 Material Design 的图标字体添加到你 <code>index.html</code> 中</p>
+</li>
+<li><p>Add a few global CSS styles to:</p>
+<p>添加一些全局 CSS 样式：</p>
+<ul>
+<li><p>Remove margins from <code>body</code></p>
+<p>去掉 <code>body</code> 的边距</p>
+</li>
+<li><p>Set <code>height: 100%</code> on <code>html</code> and <code>body</code></p>
+<p>为 <code>html</code> 和 <code>body</code> 设置 <code>height: 100%</code></p>
+</li>
+<li><p>Set Roboto as the default application font</p>
+<p>把 Roboto 设置为默认的应用字体</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>You&#39;re done! Angular Material is now configured to be used in your application.</p>
+<p>完工！ Angular Material 已经配置好应用于你的应用中了。</p>
+
+        <h3 id="display-a-component" class="docs-header-link">
+          <span header-link="display-a-component"></span>
+          Display a component
+        </h3>
+      
+        <h3 id="显示一个组件" class="docs-header-link">
+          <span header-link="显示一个组件"></span>
+          显示一个组件
+        </h3>
+      <p>Let&#39;s display a slide toggle component in your app and verify that everything works.</p>
+<p>让我们在应用中显示一个滑块开关组件，来验证一切正常。</p>
+<p>You need to import the <code>MatSlideToggleModule</code> that you want to display by adding the following lines to
+your <code>app.module.ts</code> file.</p>
+<p>你需要通过把以下代码添加到 <code>app.module.ts</code> 文件中来导入 <code>MatSlideToggleModule</code>。</p>
+<pre><code class="language-ts"><span class="hljs-keyword">import</span> { MatSlideToggleModule } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@angular/material/slide-toggle&#x27;</span>;
+
+<span class="hljs-meta">@NgModule</span> ({
+  <span class="hljs-attr">imports</span>: [
+    MatSlideToggleModule,
+  ]
+})
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppModule</span> </span>{}
+</code></pre>
+<p>Add the <code>&lt;mat-slide-toggle&gt;</code> tag to the <code>app.component.html</code> like so:</p>
+<p>把 <code>&lt;mat-slide-toggle&gt;</code> 标签添加到 <code>app.component.html</code>，就像这样：</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">mat-slide-toggle</span>&gt;</span>Toggle me!<span class="hljs-tag">&lt;/<span class="hljs-name">mat-slide-toggle</span>&gt;</span>
+</code></pre>
+<p>Run your local dev server:</p>
+<p>运行本地开发服务器：</p>
+<pre><code class="language-bash">ng serve
+</code></pre>
+<p>Then point your browser to <a href="http://localhost:4200">http://localhost:4200</a></p>
+<p>让浏览器访问 <a href="http://localhost:4200">http://localhost:4200</a></p>
+<p>You should see the Material slide toggle component on the page.</p>
+<p>你会在页面上看到这个 Material 滑块开关组件。</p>
+<p>In addition to the installation schematic, Angular Material comes with
+<a href="https://material.angular.io/guide/schematics">several other schematics</a> (like nav, table,
+address-form, etc.) that can be used to easily generate pre-built components in your application.</p>
+<p>除了安装原理图之外，Angular Material 还带有<a href="https://material.angular.cn/guide/schematics">另外一些原理图</a>（如导航、表格、地址表单等），可用于方便地在应用中生成预置的组件。</p>
+</div>
